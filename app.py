@@ -225,9 +225,10 @@ def main():
         
         # Show search results in table
         if search_term:
-            # Filter foods that contain the search term
+            # Filter foods that contain the search term in either name OR category
             filtered_foods = df[
-                df['name'].str.contains(search_term, case=False, na=False)
+                df['name'].str.contains(search_term, case=False, na=False) |
+                df['category'].str.contains(search_term, case=False, na=False)
             ]
             
             if len(filtered_foods) > 0:
