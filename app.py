@@ -239,29 +239,37 @@ def main():
                     traffic_emoji = {"Green": "💚", "Amber": "💛", "Red": "❤️"}
                     fodmaps = get_fodmap_list(row)
                     
-                    # Make safe amount more friendly
+                    # Simplified safe amount with traffic light info
                     safe_amount = row['safe_amount']
                     if safe_amount == 'Any':
-                        safe_amount = "✨ Enjoy freely! ✨"
+                        safe_amount = "💚 Unlimited"
                     elif safe_amount == 'None':
-                        safe_amount = "💔 Avoid for now"
+                        safe_amount = "❤️ Avoid"
                     else:
-                        safe_amount = f"💕 Up to {safe_amount}"
+                        safe_amount = f"💛 {safe_amount}"  # Show amount with amber emoji
                     
                     table_data.append({
                         "🍽️ Food": row['name'],
-                        "🏷️ Type": get_category_emoji(row['category']),
-                        "🚦 Status": traffic_emoji.get(row['traffic_light'], '💜'),
+                        "🏷️": get_category_emoji(row['category']),
                         "💝 Safe Amount": safe_amount,
-                        "🧬 FODMAPs": fodmaps if fodmaps != 'None detected' else '✨ None detected! ✨'
+                        "🧬 FODMAPs": fodmaps if fodmaps != 'None detected' else ''
                     })
                 
                 # Create DataFrame and display as table
                 results_df = pd.DataFrame(table_data)
                 
                 # Sort by traffic light priority
-                priority_map = {"💚": 0, "💛": 1, "❤️": 2}
-                results_df['sort_priority'] = results_df['🚦 Status'].map(priority_map)
+                priority_map = {"💚 Unlimited": 0, "💛": 1, "❤️ Avoid": 2}
+                # For amber foods, we need to check if it starts with 💛
+                def get_priority(safe_amount):
+                    if safe_amount == "💚 Unlimited":
+                        return 0
+                    elif safe_amount == "❤️ Avoid":
+                        return 2
+                    else:
+                        return 1  # All amber foods
+                
+                results_df['sort_priority'] = results_df['💝 Safe Amount'].apply(get_priority)
                 results_df = results_df.sort_values(['sort_priority', '🍽️ Food']).drop('sort_priority', axis=1)
                 
                 st.dataframe(
@@ -269,11 +277,10 @@ def main():
                     use_container_width=True,
                     hide_index=True,
                     column_config={
-                        "🍽️ Food": st.column_config.TextColumn("🍽️ Food", width=100),
-                        "🏷️": st.column_config.TextColumn("🏷️", width=25),
-                        "🚦": st.column_config.TextColumn("🚦", width=25),
-                        "💝 Safe Amount": st.column_config.TextColumn("💝 Amount", width=50),
-                        "🧬 FODMAPs": st.column_config.TextColumn("🧬 FODMAPs", width=50)
+                        "🍽️ Food": st.column_config.TextColumn("🍽️ Food", width=140),
+                        "🏷️": st.column_config.TextColumn("🏷️", width=40),
+                        "💝 Safe Amount": st.column_config.TextColumn("💝 Safe Amount", width=100),
+                        "🧬 FODMAPs": st.column_config.TextColumn("🧬 FODMAPs", width=100)
                     }
                 )
             else:
