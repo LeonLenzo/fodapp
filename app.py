@@ -6,16 +6,39 @@ import numpy as np
 st.set_page_config(
     page_title="FODMAP Food Search",
     page_icon="🥗",
-    layout="wide",
-    initial_sidebar_state="expanded"
+    layout="centered",
+    initial_sidebar_state="collapsed"
 )
 
-# Custom CSS for better mobile experience and styling
+# Custom CSS for mobile-optimized styling
 st.markdown("""
 <style>
     .stApp {
-        max-width: 1200px;
+        max-width: 800px;
         margin: 0 auto;
+        padding: 1rem;
+    }
+    
+    .main-search {
+        background: white;
+        padding: 2rem;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    
+    .search-title {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #1f2937;
+        margin-bottom: 0.5rem;
+    }
+    
+    .search-subtitle {
+        color: #6b7280;
+        margin-bottom: 1.5rem;
+        font-size: 1.1rem;
     }
     
     .food-card {
@@ -43,14 +66,14 @@ st.markdown("""
     }
     
     .food-name {
-        font-size: 1.25rem;
+        font-size: 1.4rem;
         font-weight: bold;
         margin-bottom: 0.5rem;
         color: #1f2937;
     }
     
     .food-category {
-        font-size: 0.875rem;
+        font-size: 1rem;
         color: #6b7280;
         margin-bottom: 0.75rem;
     }
@@ -63,9 +86,9 @@ st.markdown("""
     }
     
     .fodmap-badge {
-        padding: 0.25rem 0.75rem;
+        padding: 0.3rem 0.8rem;
         border-radius: 20px;
-        font-size: 0.75rem;
+        font-size: 0.8rem;
         font-weight: 600;
         background: #3b82f6;
         color: white;
@@ -74,9 +97,9 @@ st.markdown("""
     
     .safe-amount {
         font-weight: bold;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         margin-top: 0.75rem;
-        padding: 0.5rem;
+        padding: 0.75rem;
         border-radius: 8px;
         text-align: center;
     }
@@ -95,22 +118,69 @@ st.markdown("""
     }
     
     .traffic-light-indicator {
-        width: 20px;
-        height: 20px;
+        width: 24px;
+        height: 24px;
         border-radius: 50%;
         display: inline-block;
-        margin-right: 0.5rem;
+        margin-right: 0.75rem;
     }
     
     .green-light { background-color: #22c55e; }
     .amber-light { background-color: #f59e0b; }
     .red-light { background-color: #ef4444; }
     
-    .search-results-header {
-        color: #374151;
-        font-size: 1.1rem;
-        margin: 1rem 0;
+    .category-section {
+        margin: 2rem 0;
+    }
+    
+    .category-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+    
+    .category-button {
+        background: #f8fafc;
+        border: 2px solid #e2e8f0;
+        border-radius: 12px;
+        padding: 1rem;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.2s;
         font-weight: 600;
+        color: #475569;
+    }
+    
+    .category-button:hover {
+        background: #e2e8f0;
+        border-color: #cbd5e1;
+    }
+    
+    @media (max-width: 768px) {
+        .stApp {
+            padding: 0.5rem;
+        }
+        
+        .main-search {
+            padding: 1.5rem;
+        }
+        
+        .search-title {
+            font-size: 1.7rem;
+        }
+        
+        .food-card {
+            padding: 1.25rem;
+        }
+        
+        .food-name {
+            font-size: 1.2rem;
+        }
+        
+        .category-grid {
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        }
     }
 </style>
 """, unsafe_allow_html=True)
@@ -177,102 +247,85 @@ def display_food_card(row):
     st.markdown(card_html, unsafe_allow_html=True)
 
 def main():
-    st.title("🥗 FODMAP Food Search")
-    st.markdown("*Find safe foods and portions for your low-FODMAP diet*")
+    # Main search interface
+    st.markdown("""
+    <div class="main-search">
+        <div class="search-title">🥗 FODMAP Food Search</div>
+        <div class="search-subtitle">Find safe foods and portions for your low-FODMAP diet</div>
+    </div>
+    """, unsafe_allow_html=True)
     
-    # Load data from CSV file
+    # Load data
     df = load_fodmap_data()
     
     if df is not None:
-        # Sidebar filters
-        st.sidebar.header("🔍 Search & Filter")
-        
-        # Predictive search dropdown
+        # Main search box
         food_names = [''] + sorted(df['name'].unique().tolist())
-        selected_food = st.sidebar.selectbox(
-            "🔍 Search for foods:",
+        selected_food = st.selectbox(
+            "🔍 Search for a specific food:",
             options=food_names,
             index=0,
-            help="Start typing to find foods quickly"
+            help="Start typing to find foods quickly",
+            key="main_search"
         )
         
-        # Additional text search for partial matches
-        search_term = st.sidebar.text_input(
-            "Or search by typing:",
-            placeholder="e.g., apple, carrot, bread...",
-            help="Type any part of a food name for broader search"
-        )
-        
-        # Category filter
-        categories = ['All'] + sorted(df['category'].unique().tolist())
-        category_filter = st.sidebar.selectbox("Category:", categories)
-        
-        # Traffic light filter
-        traffic_lights = ['All', 'Green', 'Amber', 'Red']
-        traffic_filter = st.sidebar.selectbox("Traffic Light:", traffic_lights)
-        
-        # FODMAP type filter
-        fodmap_types = ['All', 'Fructans', 'GOS', 'Fructose', 'Lactose', 'Sorbitol', 'Mannitol']
-        fodmap_filter = st.sidebar.selectbox("Contains FODMAP:", fodmap_types)
-        
-        # Apply filters
-        filtered_df = df.copy()
-        
-        # Predictive search filter (exact match)
+        # Show selected food if any
         if selected_food:
-            filtered_df = filtered_df[filtered_df['name'] == selected_food]
-        # Text search filter (partial match) - only apply if no specific food selected
-        elif search_term:
-            filtered_df = filtered_df[
-                filtered_df['name'].str.contains(search_term, case=False, na=False)
-            ]
+            st.markdown("### Your Search Result:")
+            food_row = df[df['name'] == selected_food].iloc[0]
+            display_food_card(food_row)
         
-        # Category filter
-        if category_filter != 'All':
-            filtered_df = filtered_df[filtered_df['category'] == category_filter]
-        
-        # Traffic light filter
-        if traffic_filter != 'All':
-            filtered_df = filtered_df[filtered_df['traffic_light'] == traffic_filter]
-        
-        # FODMAP filter
-        if fodmap_filter != 'All':
-            fodmap_col = fodmap_filter.lower()
-            if fodmap_col in filtered_df.columns:
-                filtered_df = filtered_df[filtered_df[fodmap_col] == True]
-        
-        # Display results
-        st.markdown(f'<div class="search-results-header">Found {len(filtered_df)} foods</div>', unsafe_allow_html=True)
-        
-        if len(filtered_df) == 0:
-            st.info("No foods found matching your criteria. Try adjusting your search or filters.")
-        else:
-            # Sort by traffic light (Green, Amber, Red) then by name
-            traffic_order = {'Green': 0, 'Amber': 1, 'Red': 2}
-            filtered_df['sort_order'] = filtered_df['traffic_light'].map(traffic_order)
-            filtered_df = filtered_df.sort_values(['sort_order', 'name'])
+        # Browse by category section
+        with st.expander("📂 **Browse by Category**", expanded=False):
+            categories = sorted(df['category'].unique().tolist())
             
-            # Display cards
-            for _, row in filtered_df.iterrows():
-                display_food_card(row)
+            # Create category buttons using columns
+            cols_per_row = 3
+            for i in range(0, len(categories), cols_per_row):
+                cols = st.columns(cols_per_row)
+                for j, category in enumerate(categories[i:i+cols_per_row]):
+                    if j < len(cols):
+                        with cols[j]:
+                            if st.button(category, key=f"cat_{category}", use_container_width=True):
+                                st.session_state.selected_category = category
+            
+            # Show foods from selected category
+            if 'selected_category' in st.session_state:
+                selected_category = st.session_state.selected_category
+                st.markdown(f"### {selected_category}")
+                
+                category_foods = df[df['category'] == selected_category]
+                
+                # Sort by traffic light (Green, Amber, Red) then by name
+                traffic_order = {'Green': 0, 'Amber': 1, 'Red': 2}
+                category_foods['sort_order'] = category_foods['traffic_light'].map(traffic_order)
+                category_foods = category_foods.sort_values(['sort_order', 'name'])
+                
+                for _, row in category_foods.iterrows():
+                    display_food_card(row)
+                
+                # Clear button
+                if st.button("← Back to categories", key="clear_category"):
+                    del st.session_state.selected_category
+                    st.rerun()
         
-        # Summary statistics in sidebar
-        st.sidebar.markdown("---")
-        st.sidebar.subheader("📊 Quick Stats")
+        # Quick stats at bottom
+        st.markdown("---")
+        col1, col2, col3, col4 = st.columns(4)
         
         total_foods = len(df)
         green_foods = len(df[df['traffic_light'] == 'Green'])
         amber_foods = len(df[df['traffic_light'] == 'Amber'])
         red_foods = len(df[df['traffic_light'] == 'Red'])
         
-        st.sidebar.metric("Total Foods", total_foods)
-        col1, col2, col3 = st.sidebar.columns(3)
         with col1:
-            st.metric("🟢", green_foods)
+            st.metric("Total", total_foods)
         with col2:
-            st.metric("🟡", amber_foods)
+            st.metric("🟢 Safe", green_foods)
         with col3:
-            st.metric("🔴", red_foods)
+            st.metric("🟡 Limited", amber_foods)
+        with col4:
+            st.metric("🔴 Avoid", red_foods)
     
     else:
         st.error("❌ Unable to load FODMAP data. Please check that 'data.csv' exists and is properly formatted.")
