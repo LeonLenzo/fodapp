@@ -259,37 +259,38 @@ def main():
     df = load_fodmap_data()
     
     if df is not None:
-        # Text input for predictive search
-        search_term = st.text_input(
-            "🔍 Start typing to search for foods:",
+        # Text input for filtering
+        search_filter = st.text_input(
+            "🔍 Type to filter foods:",
             placeholder="e.g., apple, banana, bread...",
-            help="Type any part of a food name",
-            key="predictive_search"
+            help="Start typing to see matching foods in the dropdown below",
+            key="search_filter"
         )
         
-        # Show search results only when user types something
-        if search_term and len(search_term) >= 2:
-            # Filter foods that match the search term
-            filtered_foods = df[
-                df['name'].str.contains(search_term, case=False, na=False)
-            ]
-            
-            if len(filtered_foods) > 0:
-                st.markdown(f"### Found {len(filtered_foods)} food(s):")
-                
-                # Sort by traffic light (Green, Amber, Red) then by name
-                traffic_order = {'Green': 0, 'Amber': 1, 'Red': 2}
-                filtered_foods['sort_order'] = filtered_foods['traffic_light'].map(traffic_order)
-                filtered_foods = filtered_foods.sort_values(['sort_order', 'name'])
-                
-                # Display matching foods
-                for _, row in filtered_foods.iterrows():
-                    display_food_card(row)
-            else:
-                st.info("No foods found matching your search. Try different keywords.")
+        # Filter food names based on the text input
+        all_food_names = sorted(df['name'].unique().tolist())
         
-        elif search_term and len(search_term) < 2:
-            st.info("💡 Type at least 2 characters to search")
+        if search_filter and len(search_filter) >= 1:
+            # Filter foods that match the search term
+            filtered_names = [name for name in all_food_names 
+                            if search_filter.lower() in name.lower()]
+            dropdown_options = ['Select a food...'] + filtered_names
+        else:
+            # Show empty dropdown when nothing is typed
+            dropdown_options = ['Start typing above to see foods...']
+        
+        # Dropdown with filtered options
+        selected_food = st.selectbox(
+            "Select from matching foods:",
+            options=dropdown_options,
+            index=0,
+            key="food_dropdown"
+        )
+        
+        # Show selected food if valid selection
+        if selected_food and selected_food not in ['Select a food...', 'Start typing above to see foods...']:
+            food_row = df[df['name'] == selected_food].iloc[0]
+            display_food_card(food_row)
     
     else:
         st.error("❌ Unable to load FODMAP data. Please check that 'data.csv' exists and is properly formatted.")
