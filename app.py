@@ -269,10 +269,10 @@ def main():
                     use_container_width=True,
                     hide_index=True,
                     column_config={
-                        "🍽️ Food": st.column_config.TextColumn("🍽️ Food", width="large"),
-                        "🏷️ Type": st.column_config.TextColumn("🏷️ Type", width="small"),
-                        "🚦 Status": st.column_config.TextColumn("🚦 Status", width="small"),
-                        "💝 Safe Amount": st.column_config.TextColumn("💝 Safe Amount", width="medium"),
+                        "🍽️ Food": st.column_config.TextColumn("🍽️ Food", width="medium"),
+                        "🏷️ Type": st.column_config.TextColumn("🏷️", width="small"),
+                        "🚦 Status": st.column_config.TextColumn("🚦", width="small"),
+                        "💝 Safe Amount": st.column_config.TextColumn("💝 Amount", width="medium"),
                         "🧬 FODMAPs": st.column_config.TextColumn("🧬 FODMAPs", width="large")
                     }
                 )
