@@ -173,6 +173,20 @@ def load_fodmap_data():
         st.error(f"❌ Error loading CSV file: {e}")
         return None
 
+def get_category_emoji(category):
+    """Convert category to emoji"""
+    category_map = {
+        'Vegetables': '🥕',
+        'Pulses': '🫘', 
+        'Grains': '🌾',
+        'Fruits': '🍓',
+        'Dairy': '🥛',
+        'Condiments': '🧂',
+        'Beverages': '🍹',
+        'Additives': '✨'
+    }
+    return category_map.get(category, '🍽️')
+
 def get_fodmap_list(row):
     """Get list of FODMAPs for a food item"""
     fodmaps = []
