@@ -72,26 +72,37 @@ st.markdown("""
         border: 1px solid #f9a8d4;
     }
     
-    /* Custom table styling */
-    .dataframe {
+    /* Fix dataframe styling */
+    .stDataFrame > div {
         background: linear-gradient(135deg, #ffffff 0%, #fef7ff 100%) !important;
     }
     
-    .dataframe th {
+    .stDataFrame table {
+        background: linear-gradient(135deg, #ffffff 0%, #fef7ff 100%) !important;
+    }
+    
+    .stDataFrame thead tr th {
         background: linear-gradient(135deg, #f9a8d4 0%, #c084fc 100%) !important;
-        color: white !important;
+        color: #ffffff !important;
         font-weight: 600 !important;
         padding: 1rem !important;
         border: none !important;
+        text-align: center !important;
     }
     
-    .dataframe td {
+    .stDataFrame tbody tr td {
+        background: rgba(255, 255, 255, 0.8) !important;
         padding: 1rem !important;
         border-bottom: 1px solid #fce7f3 !important;
         color: #be185d !important;
+        text-align: center !important;
     }
     
-    .dataframe tr:hover {
+    .stDataFrame tbody tr:nth-child(even) td {
+        background: rgba(253, 242, 248, 0.6) !important;
+    }
+    
+    .stDataFrame tbody tr:hover td {
         background: #fdf2f8 !important;
     }
     
@@ -225,8 +236,8 @@ def main():
                     
                     table_data.append({
                         "🍽️ Food": row['name'],
-                        "🏷️ Category": row['category'],
-                        "🚦 Status": f"{traffic_emoji.get(row['traffic_light'], '💜')} {row['traffic_light']}",
+                        "🏷️ Type": get_category_emoji(row['category']),
+                        "🚦 Status": traffic_emoji.get(row['traffic_light'], '💜'),
                         "💝 Safe Amount": safe_amount,
                         "🧬 FODMAPs": fodmaps if fodmaps != 'None detected' else '✨ None detected! ✨'
                     })
@@ -235,7 +246,7 @@ def main():
                 results_df = pd.DataFrame(table_data)
                 
                 # Sort by traffic light priority
-                priority_map = {"💚 Green": 0, "💛 Amber": 1, "❤️ Red": 2}
+                priority_map = {"💚": 0, "💛": 1, "❤️": 2}
                 results_df['sort_priority'] = results_df['🚦 Status'].map(priority_map)
                 results_df = results_df.sort_values(['sort_priority', '🍽️ Food']).drop('sort_priority', axis=1)
                 
@@ -244,8 +255,8 @@ def main():
                     use_container_width=True,
                     hide_index=True,
                     column_config={
-                        "🍽️ Food": st.column_config.TextColumn("🍽️ Food", width="medium"),
-                        "🏷️ Category": st.column_config.TextColumn("🏷️ Category", width="small"),
+                        "🍽️ Food": st.column_config.TextColumn("🍽️ Food", width="large"),
+                        "🏷️ Type": st.column_config.TextColumn("🏷️ Type", width="small"),
                         "🚦 Status": st.column_config.TextColumn("🚦 Status", width="small"),
                         "💝 Safe Amount": st.column_config.TextColumn("💝 Safe Amount", width="medium"),
                         "🧬 FODMAPs": st.column_config.TextColumn("🧬 FODMAPs", width="large")
