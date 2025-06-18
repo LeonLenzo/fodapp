@@ -214,8 +214,14 @@ def main():
     
     # Load data
     df = load_fodmap_data()
+
+
     
     if df is not None:
+
+        # Create a searchable FODMAP text column
+        df['fodmap_text'] = df.apply(get_fodmap_list, axis=1)
+
         # Search input
         search_term = st.text_input(
             "🔍 Search:",
@@ -227,8 +233,9 @@ def main():
         if search_term:
             # Filter foods that contain the search term in either name OR category
             filtered_foods = df[
-                df['name'].str.contains(search_term, case=False, na=False) |
-                df['category'].str.contains(search_term, case=False, na=False)
+                df['name'].str.contains(search_term, case=False, na=False),
+                df['category'].str.contains(search_term, case=False, na=False),
+                df['fodmap_text'].str.contains(search_term, case=False, na=False)
             ]
             
             if len(filtered_foods) > 0:
