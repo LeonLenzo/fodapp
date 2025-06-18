@@ -225,7 +225,7 @@ def main():
         # Search input
         search_term = st.text_input(
             "🔍 Search:",
-            placeholder="Start typing... (e.g., pasta, snacky etc.)",
+            placeholder="Search for foods by name, category, or FODMAPs...",
             help="💕 Type to search for your favorite foods!"
         )
         
