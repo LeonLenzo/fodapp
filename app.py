@@ -259,47 +259,20 @@ def main():
     df = load_fodmap_data()
     
     if df is not None:
-        # Initialize session state for tracking if user has typed
-        if 'has_typed' not in st.session_state:
-            st.session_state.has_typed = False
-        
-        # Single search box with conditional options
-        all_food_names = sorted(df['name'].unique().tolist())
-        
-        # Text input that triggers the dropdown population
-        search_input = st.text_input(
-            "🔍 Start typing to search for foods:",
-            placeholder="Type a food name (e.g., apple, banana, bread...)",
-            key="search_input",
-            on_change=lambda: setattr(st.session_state, 'has_typed', True)
+        # Simple predictive search dropdown
+        food_names = [''] + sorted(df['name'].unique().tolist())
+        selected_food = st.selectbox(
+            "🔍 Search for a food:",
+            options=food_names,
+            index=0,
+            placeholder="Start typing or click to see all foods...",
+            help="Click to see all foods, or start typing to filter the list"
         )
         
-        # Show selectbox only after user has started typing
-        if st.session_state.has_typed and search_input:
-            # Filter foods based on what user typed
-            filtered_foods = [name for name in all_food_names 
-                            if search_input.lower() in name.lower()]
-            
-            if filtered_foods:
-                dropdown_options = ['Select from matches...'] + filtered_foods
-                
-                selected_food = st.selectbox(
-                    f"Found {len(filtered_foods)} matching food(s):",
-                    options=dropdown_options,
-                    index=0,
-                    key="filtered_dropdown"
-                )
-                
-                # Show selected food details
-                if selected_food and selected_food != 'Select from matches...':
-                    food_row = df[df['name'] == selected_food].iloc[0]
-                    display_food_card(food_row)
-            else:
-                st.info("No foods found matching your search. Try different keywords.")
-        
-        elif st.session_state.has_typed and not search_input:
-            # User cleared the search box
-            st.session_state.has_typed = False
+        # Show selected food details
+        if selected_food:
+            food_row = df[df['name'] == selected_food].iloc[0]
+            display_food_card(food_row)
     
     else:
         st.error("❌ Unable to load FODMAP data. Please check that 'data.csv' exists and is properly formatted.")
