@@ -218,8 +218,8 @@ def main():
     if df is not None:
         # Search input
         search_term = st.text_input(
-            "🔍 Search for foods:",
-            placeholder="Start typing... (e.g., strawberry 🍓, avocado 🥑, oats 🌾)",
+            "🔍 Search:",
+            placeholder="Start typing... (e.g., pasta, snacky etc.)",
             help="💕 Type to search for your favorite foods!"
         )
         
@@ -231,7 +231,7 @@ def main():
             ]
             
             if len(filtered_foods) > 0:
-                st.markdown(f"### 💖 Found {len(filtered_foods)} lovely food(s) for you!")
+                st.markdown(f"### 💖 Found {len(filtered_foods)} fring(s)!")
                 
                 # Prepare data for table
                 table_data = []
