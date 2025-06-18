@@ -245,7 +245,7 @@ def main():
                     if safe_amount == 'Any':
                         safe_amount = "💚 Unlimited"
                     elif safe_amount == 'None' or safe_amount == 'nan' or pd.isna(row['safe_amount']):
-                        safe_amount = "❤️ Avoid"
+                        safe_amount = "💔 Avoid"
                     else:
                         safe_amount = f"💛 {safe_amount}"  # Show amount with amber emoji
                     
@@ -260,12 +260,12 @@ def main():
                 results_df = pd.DataFrame(table_data)
                 
                 # Sort by traffic light priority
-                priority_map = {"💚 Unlimited": 0, "💛": 1, "❤️ Avoid": 2}
+                priority_map = {"💚 Unlimited": 0, "💛": 1, "💔 Avoid": 2}
                 # For amber foods, we need to check if it starts with 💛
                 def get_priority(safe_amount):
                     if safe_amount == "💚 Unlimited":
                         return 0
-                    elif safe_amount == "❤️ Avoid":
+                    elif safe_amount == "💔 Avoid":
                         return 2
                     else:
                         return 1  # All amber foods
@@ -279,8 +279,8 @@ def main():
                     hide_index=True,
                     column_config={
                         "🍽️ Food": st.column_config.TextColumn("🍽️ Food", width=140),
-                        "🏷️": st.column_config.TextColumn("🏷️", width=40),
-                        "💝 Safe Amount": st.column_config.TextColumn("💝 Safe Amount", width=100),
+                        "🏷️": st.column_config.TextColumn("🏷️", width=80),
+                        "💝 Safe Amount": st.column_config.TextColumn("💝 Safe Amount", width=80),
                         "🧬 FODMAPs": st.column_config.TextColumn("🧬 FODMAPs", width=100)
                     }
                 )
