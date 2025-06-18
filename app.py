@@ -250,10 +250,10 @@ def main():
                         safe_amount = f"💛 {safe_amount}"  # Show amount with amber emoji
                     
                     table_data.append({
-                        "🍽️ Food": row['name'],
+                        "🍽️": row['name'],
                         "🏷️": get_category_emoji(row['category']),
                         "🚦": safe_amount,
-                        "🧬 FODMAPs": fodmaps if fodmaps != 'None detected' else ''
+                        "🧬": fodmaps if fodmaps != 'None detected' else ''
                     })
                 
                 # Create DataFrame and display as table
@@ -271,17 +271,17 @@ def main():
                         return 1  # All amber foods
                 
                 results_df['sort_priority'] = results_df['🚦'].apply(get_priority)
-                results_df = results_df.sort_values(['sort_priority', '🍽️ Food']).drop('sort_priority', axis=1)
+                results_df = results_df.sort_values(['sort_priority', '🍽️']).drop('sort_priority', axis=1)
                 
                 st.dataframe(
                     results_df,
                     use_container_width=True,
                     hide_index=True,
                     column_config={
-                        "🍽️ Food": st.column_config.TextColumn("🍽️ Food", width=140),
+                        "🍽️": st.column_config.TextColumn("🍽️", width=140),
                         "🏷️": st.column_config.TextColumn("🏷️", width=80),
                         "🚦": st.column_config.TextColumn("🚦", width=80),
-                        "🧬 FODMAPs": st.column_config.TextColumn("🧬 FODMAPs", width=100)
+                        "🧬": st.column_config.TextColumn("🧬", width=100)
                     }
                 )
             else:
