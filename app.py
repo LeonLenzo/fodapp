@@ -10,85 +10,111 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# Custom CSS for mobile-optimized styling
+# Custom CSS for feminine, mobile-optimized styling
 st.markdown("""
 <style>
     .stApp {
         max-width: 800px;
         margin: 0 auto;
         padding: 1rem;
+        background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 50%, #f3e8ff 100%);
+        min-height: 100vh;
     }
     
     .main-search {
-        background: white;
-        padding: 2rem;
-        border-radius: 15px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        background: linear-gradient(135deg, #ffffff 0%, #fef7ff 100%);
+        padding: 2.5rem;
+        border-radius: 20px;
+        box-shadow: 0 8px 32px rgba(219, 39, 119, 0.1);
         margin-bottom: 2rem;
         text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.2);
     }
     
     .search-title {
-        font-size: 2rem;
+        font-size: 2.2rem;
         font-weight: bold;
-        color: #1f2937;
+        background: linear-gradient(135deg, #db2777 0%, #c084fc 50%, #f472b6 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
         margin-bottom: 0.5rem;
     }
     
     .search-subtitle {
-        color: #6b7280;
+        color: #be185d;
         margin-bottom: 1.5rem;
         font-size: 1.1rem;
+        font-style: italic;
     }
     
-    .autocomplete-suggestion {
-        background: #f8fafc;
-        border: 1px solid #e2e8f0;
-        border-radius: 8px;
-        padding: 0.75rem;
-        margin: 0.25rem 0;
-        cursor: pointer;
-        transition: all 0.2s;
-    }
-    
-    .autocomplete-suggestion:hover {
-        background: #e2e8f0;
-        border-color: #cbd5e1;
-    }
-    
-    .traffic-light {
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-        display: inline-block;
-        margin-right: 0.5rem;
-    }
-    
-    .green-light { background-color: #22c55e; }
-    .amber-light { background-color: #f59e0b; }
-    .red-light { background-color: #ef4444; }
-    
-    .results-table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 1rem;
-    }
-    
-    .results-table th {
-        background: #f8fafc;
+    /* Style the search input */
+    .stTextInput > div > div > input {
+        background: linear-gradient(135deg, #fdf2f8 0%, #ffffff 100%);
+        border: 2px solid #f9a8d4;
+        border-radius: 15px;
         padding: 1rem;
-        text-align: left;
-        border-bottom: 2px solid #e2e8f0;
-        font-weight: 600;
+        font-size: 1.1rem;
+        color: #be185d;
     }
     
-    .results-table td {
-        padding: 1rem;
-        border-bottom: 1px solid #e2e8f0;
+    .stTextInput > div > div > input:focus {
+        border-color: #db2777;
+        box-shadow: 0 0 0 3px rgba(219, 39, 119, 0.1);
     }
     
-    .results-table tr:hover {
-        background: #f8fafc;
+    /* Style the dataframe */
+    .stDataFrame {
+        background: linear-gradient(135deg, #ffffff 0%, #fef7ff 100%);
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 6px 20px rgba(219, 39, 119, 0.08);
+        border: 1px solid #f9a8d4;
+    }
+    
+    /* Custom table styling */
+    .dataframe {
+        background: linear-gradient(135deg, #ffffff 0%, #fef7ff 100%) !important;
+    }
+    
+    .dataframe th {
+        background: linear-gradient(135deg, #f9a8d4 0%, #c084fc 100%) !important;
+        color: white !important;
+        font-weight: 600 !important;
+        padding: 1rem !important;
+        border: none !important;
+    }
+    
+    .dataframe td {
+        padding: 1rem !important;
+        border-bottom: 1px solid #fce7f3 !important;
+        color: #be185d !important;
+    }
+    
+    .dataframe tr:hover {
+        background: #fdf2f8 !important;
+    }
+    
+    /* Section headers */
+    h3 {
+        color: #be185d !important;
+        font-weight: 600 !important;
+        margin: 1.5rem 0 1rem 0 !important;
+    }
+    
+    /* Info messages */
+    .stInfo {
+        background: linear-gradient(135deg, #fdf2f8 0%, #ffffff 100%);
+        border: 1px solid #f9a8d4;
+        border-radius: 12px;
+        color: #be185d;
+    }
+    
+    /* Error messages */
+    .stError {
+        background: linear-gradient(135deg, #fef2f2 0%, #ffffff 100%);
+        border: 1px solid #fca5a5;
+        border-radius: 12px;
     }
     
     @media (max-width: 768px) {
@@ -97,17 +123,22 @@ st.markdown("""
         }
         
         .main-search {
-            padding: 1.5rem;
+            padding: 2rem 1.5rem;
         }
         
         .search-title {
-            font-size: 1.7rem;
+            font-size: 1.8rem;
         }
         
-        .results-table th,
-        .results-table td {
-            padding: 0.75rem 0.5rem;
-            font-size: 0.9rem;
+        .stTextInput > div > div > input {
+            padding: 0.75rem;
+            font-size: 1rem;
+        }
+        
+        .dataframe th,
+        .dataframe td {
+            padding: 0.75rem 0.5rem !important;
+            font-size: 0.9rem !important;
         }
     }
 </style>
@@ -144,40 +175,15 @@ def get_fodmap_list(row):
     return ', '.join(fodmaps) if fodmaps else 'None detected'
 
 def display_autocomplete_suggestions(search_term, df, max_suggestions=5):
-    """Display autocomplete suggestions"""
-    if not search_term or len(search_term) < 2:
-        return None
-    
-    # Filter foods that start with or contain the search term
-    starts_with = df[df['name'].str.lower().str.startswith(search_term.lower())]['name'].tolist()
-    contains = df[df['name'].str.lower().str.contains(search_term.lower()) & 
-                 ~df['name'].str.lower().str.startswith(search_term.lower())]['name'].tolist()
-    
-    suggestions = starts_with[:max_suggestions] + contains[:max_suggestions - len(starts_with)]
-    suggestions = suggestions[:max_suggestions]
-    
-    if suggestions:
-        st.markdown("**Suggestions:**")
-        for suggestion in suggestions:
-            food_info = df[df['name'] == suggestion].iloc[0]
-            traffic_color = food_info['traffic_light'].lower()
-            
-            suggestion_html = f"""
-            <div class="autocomplete-suggestion" onclick="document.querySelector('input[aria-label=\\"🔍 Search for foods:\\"]').value='{suggestion}'; document.querySelector('input[aria-label=\\"🔍 Search for foods:\\"]').dispatchEvent(new Event('input', {{bubbles: true}}));">
-                <span class="traffic-light {traffic_color}-light"></span>
-                <strong>{suggestion}</strong> - {food_info['category']} - {food_info['safe_amount']}
-            </div>
-            """
-            st.markdown(suggestion_html, unsafe_allow_html=True)
-    
-    return suggestions
+    """Display autocomplete suggestions - REMOVED"""
+    return None
 
 def main():
     # Main search interface
     st.markdown("""
     <div class="main-search">
-        <div class="search-title">🥗 FODMAP Food Search</div>
-        <div class="search-subtitle">Find safe foods and portions for your low-FODMAP diet</div>
+        <div class="search-title">🌸 FODMAP Food Finder 🌸</div>
+        <div class="search-subtitle">✨ Discover safe & delicious foods for your wellness journey ✨</div>
     </div>
     """, unsafe_allow_html=True)
     
@@ -188,13 +194,9 @@ def main():
         # Search input
         search_term = st.text_input(
             "🔍 Search for foods:",
-            placeholder="Start typing... (e.g., wheat, apple, dairy)",
-            help="Type to search and see suggestions"
+            placeholder="Start typing... (e.g., strawberry 🍓, avocado 🥑, oats 🌾)",
+            help="💕 Type to search for your favorite foods!"
         )
-        
-        # Show autocomplete suggestions
-        if search_term and len(search_term) >= 2:
-            suggestions = display_autocomplete_suggestions(search_term, df)
         
         # Show search results in table
         if search_term:
@@ -204,46 +206,55 @@ def main():
             ]
             
             if len(filtered_foods) > 0:
-                st.markdown(f"### Found {len(filtered_foods)} food(s)")
+                st.markdown(f"### 💖 Found {len(filtered_foods)} lovely food(s) for you!")
                 
                 # Prepare data for table
                 table_data = []
                 for _, row in filtered_foods.iterrows():
-                    traffic_emoji = {"Green": "🟢", "Amber": "🟡", "Red": "🔴"}
+                    traffic_emoji = {"Green": "💚", "Amber": "💛", "Red": "❤️"}
                     fodmaps = get_fodmap_list(row)
                     
+                    # Make safe amount more friendly
+                    safe_amount = row['safe_amount']
+                    if safe_amount == 'Any':
+                        safe_amount = "✨ Enjoy freely! ✨"
+                    elif safe_amount == 'None':
+                        safe_amount = "💔 Avoid for now"
+                    else:
+                        safe_amount = f"💕 Up to {safe_amount}"
+                    
                     table_data.append({
-                        "Food": row['name'],
-                        "Category": row['category'],
-                        "Status": f"{traffic_emoji.get(row['traffic_light'], '⚪')} {row['traffic_light']}",
-                        "Safe Amount": row['safe_amount'],
-                        "FODMAPs": fodmaps
+                        "🍽️ Food": row['name'],
+                        "🏷️ Category": row['category'],
+                        "🚦 Status": f"{traffic_emoji.get(row['traffic_light'], '💜')} {row['traffic_light']}",
+                        "💝 Safe Amount": safe_amount,
+                        "🧬 FODMAPs": fodmaps if fodmaps != 'None detected' else '✨ None detected! ✨'
                     })
                 
                 # Create DataFrame and display as table
                 results_df = pd.DataFrame(table_data)
                 
                 # Sort by traffic light priority
-                priority_map = {"🟢 Green": 0, "🟡 Amber": 1, "🔴 Red": 2}
-                results_df['sort_priority'] = results_df['Status'].map(priority_map)
-                results_df = results_df.sort_values(['sort_priority', 'Food']).drop('sort_priority', axis=1)
+                priority_map = {"💚 Green": 0, "💛 Amber": 1, "❤️ Red": 2}
+                results_df['sort_priority'] = results_df['🚦 Status'].map(priority_map)
+                results_df = results_df.sort_values(['sort_priority', '🍽️ Food']).drop('sort_priority', axis=1)
                 
                 st.dataframe(
                     results_df,
                     use_container_width=True,
                     hide_index=True,
                     column_config={
-                        "Food": st.column_config.TextColumn("Food", width="medium"),
-                        "Category": st.column_config.TextColumn("Category", width="small"),
-                        "Status": st.column_config.TextColumn("Status", width="small"),
-                        "Safe Amount": st.column_config.TextColumn("Safe Amount", width="medium"),
-                        "FODMAPs": st.column_config.TextColumn("FODMAPs", width="large")
+                        "🍽️ Food": st.column_config.TextColumn("🍽️ Food", width="medium"),
+                        "🏷️ Category": st.column_config.TextColumn("🏷️ Category", width="small"),
+                        "🚦 Status": st.column_config.TextColumn("🚦 Status", width="small"),
+                        "💝 Safe Amount": st.column_config.TextColumn("💝 Safe Amount", width="medium"),
+                        "🧬 FODMAPs": st.column_config.TextColumn("🧬 FODMAPs", width="large")
                     }
                 )
             else:
-                st.info(f"No foods found containing '{search_term}'. Try different keywords.")
+                st.info(f"💭 No foods found containing '{search_term}'. Try different keywords, beautiful! 💕")
         else:
-            st.markdown("### 💡 Start typing above to search for foods")
+            st.markdown("### 🌟 Start typing above to discover amazing foods! 🌟")
     
     else:
         st.error("❌ Unable to load FODMAP data. Please check that 'data.csv' exists and is properly formatted.")
