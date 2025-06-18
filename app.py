@@ -259,14 +259,14 @@ def main():
     df = load_fodmap_data()
     
     if df is not None:
-        # Text input for flexible search
+        # Single text input for search
         search_term = st.text_input(
             "🔍 Search for foods:",
             placeholder="e.g., wheat, apple, dairy...",
-            help="Type any part of a food name to see all matching foods"
+            help="Type to search - click on suggestions below or press Enter to see all results"
         )
         
-        # Show search results and suggestions
+        # Show search results and clickable suggestions
         if search_term:
             # Filter foods that contain the search term
             filtered_foods = df[
@@ -274,31 +274,34 @@ def main():
             ]
             
             if len(filtered_foods) > 0:
-                # Show dropdown with specific matching foods for selection
-                food_options = ['Show all results'] + sorted(filtered_foods['name'].tolist())
-                selected_specific = st.selectbox(
-                    f"Found {len(filtered_foods)} foods - select one for details or 'Show all results':",
-                    options=food_options,
-                    index=0
-                )
+                # Show clickable suggestions if there are multiple results
+                if len(filtered_foods) > 1:
+                    st.markdown(f"**Quick suggestions** (click to see details):")
+                    
+                    # Create clickable buttons for first few suggestions
+                    suggestion_foods = sorted(filtered_foods['name'].tolist())[:6]  # Show max 6 suggestions
+                    
+                    cols = st.columns(min(3, len(suggestion_foods)))
+                    for i, food_name in enumerate(suggestion_foods):
+                        with cols[i % 3]:
+                            if st.button(food_name, key=f"suggestion_{i}", use_container_width=True):
+                                # Show just this specific food
+                                st.markdown(f"### {food_name}")
+                                food_row = df[df['name'] == food_name].iloc[0]
+                                display_food_card(food_row)
+                                st.stop()  # Stop here to show only this food
+                    
+                    st.markdown("---")
+                    st.markdown(f"**All {len(filtered_foods)} results containing '{search_term}':**")
                 
-                if selected_specific == 'Show all results':
-                    # Show all matching foods as cards
-                    st.markdown(f"### All foods containing '{search_term}':")
-                    
-                    # Sort by traffic light (Green, Amber, Red) then by name
-                    traffic_order = {'Green': 0, 'Amber': 1, 'Red': 2}
-                    filtered_foods['sort_order'] = filtered_foods['traffic_light'].map(traffic_order)
-                    filtered_foods = filtered_foods.sort_values(['sort_order', 'name'])
-                    
-                    # Display all matching foods
-                    for _, row in filtered_foods.iterrows():
-                        display_food_card(row)
-                else:
-                    # Show just the selected specific food
-                    st.markdown(f"### Details for: {selected_specific}")
-                    food_row = df[df['name'] == selected_specific].iloc[0]
-                    display_food_card(food_row)
+                # Sort and show all results
+                traffic_order = {'Green': 0, 'Amber': 1, 'Red': 2}
+                filtered_foods['sort_order'] = filtered_foods['traffic_light'].map(traffic_order)
+                filtered_foods = filtered_foods.sort_values(['sort_order', 'name'])
+                
+                # Display all matching foods
+                for _, row in filtered_foods.iterrows():
+                    display_food_card(row)
             else:
                 st.info(f"No foods found containing '{search_term}'. Try different keywords.")
         else:
