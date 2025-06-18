@@ -259,20 +259,35 @@ def main():
     df = load_fodmap_data()
     
     if df is not None:
-        # Simple predictive search dropdown
-        food_names = [''] + sorted(df['name'].unique().tolist())
-        selected_food = st.selectbox(
-            "🔍 Search for a food:",
-            options=food_names,
-            index=0,
-            placeholder="Start typing or click to see all foods...",
-            help="Click to see all foods, or start typing to filter the list"
+        # Search input
+        search_term = st.text_input(
+            "🔍 Search for foods:",
+            placeholder="e.g., wheat, apple, dairy...",
+            help="Type any part of a food name to see all matching foods"
         )
         
-        # Show selected food details
-        if selected_food:
-            food_row = df[df['name'] == selected_food].iloc[0]
-            display_food_card(food_row)
+        # Show search results
+        if search_term:
+            # Filter foods that contain the search term
+            filtered_foods = df[
+                df['name'].str.contains(search_term, case=False, na=False)
+            ]
+            
+            if len(filtered_foods) > 0:
+                st.markdown(f"### Found {len(filtered_foods)} food(s) containing '{search_term}':")
+                
+                # Sort by traffic light (Green, Amber, Red) then by name
+                traffic_order = {'Green': 0, 'Amber': 1, 'Red': 2}
+                filtered_foods['sort_order'] = filtered_foods['traffic_light'].map(traffic_order)
+                filtered_foods = filtered_foods.sort_values(['sort_order', 'name'])
+                
+                # Display all matching foods
+                for _, row in filtered_foods.iterrows():
+                    display_food_card(row)
+            else:
+                st.info(f"No foods found containing '{search_term}'. Try different keywords.")
+        else:
+            st.markdown("### 💡 Start typing above to search for foods")
     
     else:
         st.error("❌ Unable to load FODMAP data. Please check that 'data.csv' exists and is properly formatted.")
