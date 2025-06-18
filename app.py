@@ -4,7 +4,7 @@ import numpy as np
 
 # Configure the page
 st.set_page_config(
-    page_title="FODMAP Food Search",
+    page_title="FODapp",
     page_icon="🥗",
     layout="centered",
     initial_sidebar_state="collapsed"
@@ -207,8 +207,8 @@ def main():
     # Main search interface
     st.markdown("""
     <div class="main-search">
-        <div class="search-title">🌸 FODMAP Food Finder 🌸</div>
-        <div class="search-subtitle">✨ Discover safe & delicious foods for your wellness journey ✨</div>
+        <div class="search-title">🌸 FODapp 🌸</div>
+        <div class="search-subtitle">✨ Safe foods for Caitlin ✨</div>
     </div>
     """, unsafe_allow_html=True)
     
@@ -286,7 +286,7 @@ def main():
             else:
                 st.info(f"💭 No foods found containing '{search_term}'. Try different keywords, beautiful! 💕")
         else:
-            st.markdown("### 🌟 Start typing above to discover amazing foods! 🌟")
+            st.markdown("### I love you darling! 💖")
     
     else:
         st.error("❌ Unable to load FODMAP data. Please check that 'data.csv' exists and is properly formatted.")
