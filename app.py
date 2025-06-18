@@ -259,73 +259,37 @@ def main():
     df = load_fodmap_data()
     
     if df is not None:
-        # Main search box
-        food_names = [''] + sorted(df['name'].unique().tolist())
-        selected_food = st.selectbox(
-            "🔍 Search for a specific food:",
-            options=food_names,
-            index=0,
-            help="Start typing to find foods quickly",
-            key="main_search"
+        # Text input for predictive search
+        search_term = st.text_input(
+            "🔍 Start typing to search for foods:",
+            placeholder="e.g., apple, banana, bread...",
+            help="Type any part of a food name",
+            key="predictive_search"
         )
         
-        # Show selected food if any
-        if selected_food:
-            st.markdown("### Your Search Result:")
-            food_row = df[df['name'] == selected_food].iloc[0]
-            display_food_card(food_row)
-        
-        # Browse by category section
-        with st.expander("📂 **Browse by Category**", expanded=False):
-            categories = sorted(df['category'].unique().tolist())
+        # Show search results only when user types something
+        if search_term and len(search_term) >= 2:
+            # Filter foods that match the search term
+            filtered_foods = df[
+                df['name'].str.contains(search_term, case=False, na=False)
+            ]
             
-            # Create category buttons using columns
-            cols_per_row = 3
-            for i in range(0, len(categories), cols_per_row):
-                cols = st.columns(cols_per_row)
-                for j, category in enumerate(categories[i:i+cols_per_row]):
-                    if j < len(cols):
-                        with cols[j]:
-                            if st.button(category, key=f"cat_{category}", use_container_width=True):
-                                st.session_state.selected_category = category
-            
-            # Show foods from selected category
-            if 'selected_category' in st.session_state:
-                selected_category = st.session_state.selected_category
-                st.markdown(f"### {selected_category}")
-                
-                category_foods = df[df['category'] == selected_category]
+            if len(filtered_foods) > 0:
+                st.markdown(f"### Found {len(filtered_foods)} food(s):")
                 
                 # Sort by traffic light (Green, Amber, Red) then by name
                 traffic_order = {'Green': 0, 'Amber': 1, 'Red': 2}
-                category_foods['sort_order'] = category_foods['traffic_light'].map(traffic_order)
-                category_foods = category_foods.sort_values(['sort_order', 'name'])
+                filtered_foods['sort_order'] = filtered_foods['traffic_light'].map(traffic_order)
+                filtered_foods = filtered_foods.sort_values(['sort_order', 'name'])
                 
-                for _, row in category_foods.iterrows():
+                # Display matching foods
+                for _, row in filtered_foods.iterrows():
                     display_food_card(row)
-                
-                # Clear button
-                if st.button("← Back to categories", key="clear_category"):
-                    del st.session_state.selected_category
-                    st.rerun()
+            else:
+                st.info("No foods found matching your search. Try different keywords.")
         
-        # Quick stats at bottom
-        st.markdown("---")
-        col1, col2, col3, col4 = st.columns(4)
-        
-        total_foods = len(df)
-        green_foods = len(df[df['traffic_light'] == 'Green'])
-        amber_foods = len(df[df['traffic_light'] == 'Amber'])
-        red_foods = len(df[df['traffic_light'] == 'Red'])
-        
-        with col1:
-            st.metric("Total", total_foods)
-        with col2:
-            st.metric("🟢 Safe", green_foods)
-        with col3:
-            st.metric("🟡 Limited", amber_foods)
-        with col4:
-            st.metric("🔴 Avoid", red_foods)
+        elif search_term and len(search_term) < 2:
+            st.info("💡 Type at least 2 characters to search")
     
     else:
         st.error("❌ Unable to load FODMAP data. Please check that 'data.csv' exists and is properly formatted.")
