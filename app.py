@@ -269,11 +269,11 @@ def main():
                     use_container_width=True,
                     hide_index=True,
                     column_config={
-                        "🍽️ Food": st.column_config.TextColumn("🍽️ Food", width=200),
-                        "🏷️ Type": st.column_config.TextColumn("🏷️", width=50),
-                        "🚦 Status": st.column_config.TextColumn("🚦", width=50),
-                        "💝 Safe Amount": st.column_config.TextColumn("💝 Amount", width=150),
-                        "🧬 FODMAPs": st.column_config.TextColumn("🧬 FODMAPs", width=200)
+                        "🍽️ Food": st.column_config.TextColumn("🍽️ Food", width=100),
+                        "🏷️": st.column_config.TextColumn("🏷️", width=25),
+                        "🚦": st.column_config.TextColumn("🚦", width=25),
+                        "💝 Safe Amount": st.column_config.TextColumn("💝 Amount", width=50),
+                        "🧬 FODMAPs": st.column_config.TextColumn("🧬 FODMAPs", width=50)
                     }
                 )
             else:
