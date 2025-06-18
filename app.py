@@ -176,14 +176,14 @@ def load_fodmap_data():
 def get_category_emoji(category):
     """Convert category to emoji"""
     category_map = {
-        'Vegetables': '🥕',
-        'Pulses': '🫘', 
-        'Grains': '🌾',
-        'Fruits': '🍓',
-        'Dairy': '🥛',
-        'Condiments': '🧂',
-        'Beverages': '🍹',
-        'Additives': '✨'
+        'Vegetables': 'Veggies🥕',
+        'Pulses': 'Pulses🫘', 
+        'Grains': 'Grains🌾',
+        'Fruits': 'Fruits🍓',
+        'Dairy': 'Dairy🥛',
+        'Condiments': 'Condiments🧂',
+        'Beverages': 'Beverages🍹',
+        'Additives': 'Additives✨'
     }
     return category_map.get(category, '🍽️')
 
