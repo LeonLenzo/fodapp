@@ -41,120 +41,54 @@ st.markdown("""
         font-size: 1.1rem;
     }
     
-    .food-card {
-        background: white;
-        padding: 1.5rem;
-        border-radius: 12px;
-        border-left: 6px solid;
-        margin-bottom: 1rem;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    }
-    
-    .green-card {
-        border-left-color: #22c55e;
-        background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
-    }
-    
-    .amber-card {
-        border-left-color: #f59e0b;
-        background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
-    }
-    
-    .red-card {
-        border-left-color: #ef4444;
-        background: linear-gradient(135deg, #fef2f2 0%, #fecaca 100%);
-    }
-    
-    .food-name {
-        font-size: 1.4rem;
-        font-weight: bold;
-        margin-bottom: 0.5rem;
-        color: #1f2937;
-    }
-    
-    .food-category {
-        font-size: 1rem;
-        color: #6b7280;
-        margin-bottom: 0.75rem;
-    }
-    
-    .fodmap-badges {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-        margin: 0.75rem 0;
-    }
-    
-    .fodmap-badge {
-        padding: 0.3rem 0.8rem;
-        border-radius: 20px;
-        font-size: 0.8rem;
-        font-weight: 600;
-        background: #3b82f6;
-        color: white;
-        text-transform: uppercase;
-    }
-    
-    .safe-amount {
-        font-weight: bold;
-        font-size: 1.3rem;
-        margin-top: 0.75rem;
-        padding: 0.75rem;
+    .autocomplete-suggestion {
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
         border-radius: 8px;
-        text-align: center;
+        padding: 0.75rem;
+        margin: 0.25rem 0;
+        cursor: pointer;
+        transition: all 0.2s;
     }
     
-    .green-amount { 
-        color: #059669; 
-        background: rgba(34, 197, 94, 0.1);
-    }
-    .amber-amount { 
-        color: #d97706; 
-        background: rgba(245, 158, 11, 0.1);
-    }
-    .red-amount { 
-        color: #dc2626; 
-        background: rgba(239, 68, 68, 0.1);
+    .autocomplete-suggestion:hover {
+        background: #e2e8f0;
+        border-color: #cbd5e1;
     }
     
-    .traffic-light-indicator {
-        width: 24px;
-        height: 24px;
+    .traffic-light {
+        width: 12px;
+        height: 12px;
         border-radius: 50%;
         display: inline-block;
-        margin-right: 0.75rem;
+        margin-right: 0.5rem;
     }
     
     .green-light { background-color: #22c55e; }
     .amber-light { background-color: #f59e0b; }
     .red-light { background-color: #ef4444; }
     
-    .category-section {
-        margin: 2rem 0;
-    }
-    
-    .category-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: 1rem;
+    .results-table {
+        width: 100%;
+        border-collapse: collapse;
         margin-top: 1rem;
     }
     
-    .category-button {
+    .results-table th {
         background: #f8fafc;
-        border: 2px solid #e2e8f0;
-        border-radius: 12px;
         padding: 1rem;
-        text-align: center;
-        cursor: pointer;
-        transition: all 0.2s;
+        text-align: left;
+        border-bottom: 2px solid #e2e8f0;
         font-weight: 600;
-        color: #475569;
     }
     
-    .category-button:hover {
-        background: #e2e8f0;
-        border-color: #cbd5e1;
+    .results-table td {
+        padding: 1rem;
+        border-bottom: 1px solid #e2e8f0;
+    }
+    
+    .results-table tr:hover {
+        background: #f8fafc;
     }
     
     @media (max-width: 768px) {
@@ -170,16 +104,10 @@ st.markdown("""
             font-size: 1.7rem;
         }
         
-        .food-card {
-            padding: 1.25rem;
-        }
-        
-        .food-name {
-            font-size: 1.2rem;
-        }
-        
-        .category-grid {
-            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        .results-table th,
+        .results-table td {
+            padding: 0.75rem 0.5rem;
+            font-size: 0.9rem;
         }
     }
 </style>
@@ -203,48 +131,46 @@ def load_fodmap_data():
         st.error(f"❌ Error loading CSV file: {e}")
         return None
 
-def get_fodmap_badges(row):
-    """Generate FODMAP badges for a food item"""
-    badges = []
+def get_fodmap_list(row):
+    """Get list of FODMAPs for a food item"""
+    fodmaps = []
     fodmap_columns = ['fructans', 'gos', 'fructose', 'lactose', 'sorbitol', 'mannitol']
     fodmap_names = ['Fructans', 'GOS', 'Fructose', 'Lactose', 'Sorbitol', 'Mannitol']
     
     for col, name in zip(fodmap_columns, fodmap_names):
         if col in row and row[col]:
-            badges.append(f'<span class="fodmap-badge">{name}</span>')
+            fodmaps.append(name)
     
-    return ''.join(badges) if badges else '<span style="color: #6b7280; font-style: italic;">No FODMAPs detected</span>'
+    return ', '.join(fodmaps) if fodmaps else 'None detected'
 
-def display_food_card(row):
-    """Display a food item as a card"""
-    traffic_light = row['traffic_light']
-    card_class = f"{traffic_light.lower()}-card"
-    amount_class = f"{traffic_light.lower()}-amount"
-    light_class = f"{traffic_light.lower()}-light"
+def display_autocomplete_suggestions(search_term, df, max_suggestions=5):
+    """Display autocomplete suggestions"""
+    if not search_term or len(search_term) < 2:
+        return None
     
-    # Format safe amount
-    if row['safe_amount'] == 'Any':
-        amount_text = "✅ Eat freely - any amount"
-    elif row['safe_amount'] == 'None':
-        amount_text = "❌ Avoid completely"
-    else:
-        amount_text = f"⚠️ Safe up to: {row['safe_amount']}"
+    # Filter foods that start with or contain the search term
+    starts_with = df[df['name'].str.lower().str.startswith(search_term.lower())]['name'].tolist()
+    contains = df[df['name'].str.lower().str.contains(search_term.lower()) & 
+                 ~df['name'].str.lower().str.startswith(search_term.lower())]['name'].tolist()
     
-    fodmap_badges = get_fodmap_badges(row)
+    suggestions = starts_with[:max_suggestions] + contains[:max_suggestions - len(starts_with)]
+    suggestions = suggestions[:max_suggestions]
     
-    card_html = f"""
-    <div class="food-card {card_class}">
-        <div style="display: flex; align-items: center; margin-bottom: 0.5rem;">
-            <span class="traffic-light-indicator {light_class}"></span>
-            <div class="food-name">{row['name']}</div>
-        </div>
-        <div class="food-category">{row['category']}</div>
-        <div class="fodmap-badges">{fodmap_badges}</div>
-        <div class="safe-amount {amount_class}">{amount_text}</div>
-    </div>
-    """
+    if suggestions:
+        st.markdown("**Suggestions:**")
+        for suggestion in suggestions:
+            food_info = df[df['name'] == suggestion].iloc[0]
+            traffic_color = food_info['traffic_light'].lower()
+            
+            suggestion_html = f"""
+            <div class="autocomplete-suggestion" onclick="document.querySelector('input[aria-label=\\"🔍 Search for foods:\\"]').value='{suggestion}'; document.querySelector('input[aria-label=\\"🔍 Search for foods:\\"]').dispatchEvent(new Event('input', {{bubbles: true}}));">
+                <span class="traffic-light {traffic_color}-light"></span>
+                <strong>{suggestion}</strong> - {food_info['category']} - {food_info['safe_amount']}
+            </div>
+            """
+            st.markdown(suggestion_html, unsafe_allow_html=True)
     
-    st.markdown(card_html, unsafe_allow_html=True)
+    return suggestions
 
 def main():
     # Main search interface
@@ -259,14 +185,18 @@ def main():
     df = load_fodmap_data()
     
     if df is not None:
-        # Single text input for search
+        # Search input
         search_term = st.text_input(
             "🔍 Search for foods:",
-            placeholder="e.g., wheat, apple, dairy...",
-            help="Type to search - click on suggestions below or press Enter to see all results"
+            placeholder="Start typing... (e.g., wheat, apple, dairy)",
+            help="Type to search and see suggestions"
         )
         
-        # Show search results and clickable suggestions
+        # Show autocomplete suggestions
+        if search_term and len(search_term) >= 2:
+            suggestions = display_autocomplete_suggestions(search_term, df)
+        
+        # Show search results in table
         if search_term:
             # Filter foods that contain the search term
             filtered_foods = df[
@@ -274,34 +204,42 @@ def main():
             ]
             
             if len(filtered_foods) > 0:
-                # Show clickable suggestions if there are multiple results
-                if len(filtered_foods) > 1:
-                    st.markdown(f"**Quick suggestions** (click to see details):")
-                    
-                    # Create clickable buttons for first few suggestions
-                    suggestion_foods = sorted(filtered_foods['name'].tolist())[:6]  # Show max 6 suggestions
-                    
-                    cols = st.columns(min(3, len(suggestion_foods)))
-                    for i, food_name in enumerate(suggestion_foods):
-                        with cols[i % 3]:
-                            if st.button(food_name, key=f"suggestion_{i}", use_container_width=True):
-                                # Show just this specific food
-                                st.markdown(f"### {food_name}")
-                                food_row = df[df['name'] == food_name].iloc[0]
-                                display_food_card(food_row)
-                                st.stop()  # Stop here to show only this food
-                    
-                    st.markdown("---")
-                    st.markdown(f"**All {len(filtered_foods)} results containing '{search_term}':**")
+                st.markdown(f"### Found {len(filtered_foods)} food(s)")
                 
-                # Sort and show all results
-                traffic_order = {'Green': 0, 'Amber': 1, 'Red': 2}
-                filtered_foods['sort_order'] = filtered_foods['traffic_light'].map(traffic_order)
-                filtered_foods = filtered_foods.sort_values(['sort_order', 'name'])
-                
-                # Display all matching foods
+                # Prepare data for table
+                table_data = []
                 for _, row in filtered_foods.iterrows():
-                    display_food_card(row)
+                    traffic_emoji = {"Green": "🟢", "Amber": "🟡", "Red": "🔴"}
+                    fodmaps = get_fodmap_list(row)
+                    
+                    table_data.append({
+                        "Food": row['name'],
+                        "Category": row['category'],
+                        "Status": f"{traffic_emoji.get(row['traffic_light'], '⚪')} {row['traffic_light']}",
+                        "Safe Amount": row['safe_amount'],
+                        "FODMAPs": fodmaps
+                    })
+                
+                # Create DataFrame and display as table
+                results_df = pd.DataFrame(table_data)
+                
+                # Sort by traffic light priority
+                priority_map = {"🟢 Green": 0, "🟡 Amber": 1, "🔴 Red": 2}
+                results_df['sort_priority'] = results_df['Status'].map(priority_map)
+                results_df = results_df.sort_values(['sort_priority', 'Food']).drop('sort_priority', axis=1)
+                
+                st.dataframe(
+                    results_df,
+                    use_container_width=True,
+                    hide_index=True,
+                    column_config={
+                        "Food": st.column_config.TextColumn("Food", width="medium"),
+                        "Category": st.column_config.TextColumn("Category", width="small"),
+                        "Status": st.column_config.TextColumn("Status", width="small"),
+                        "Safe Amount": st.column_config.TextColumn("Safe Amount", width="medium"),
+                        "FODMAPs": st.column_config.TextColumn("FODMAPs", width="large")
+                    }
+                )
             else:
                 st.info(f"No foods found containing '{search_term}'. Try different keywords.")
         else:
