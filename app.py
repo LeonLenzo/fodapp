@@ -243,9 +243,9 @@ def main():
                     # Simplified safe amount with traffic light info
                     safe_amount = str(row['safe_amount'])  # Convert to string first
                     if safe_amount == 'Any':
-                        safe_amount = "💚 Unlimited"
+                        safe_amount = "💚"
                     elif safe_amount == 'None' or safe_amount == 'nan' or pd.isna(row['safe_amount']):
-                        safe_amount = "💔 Avoid"
+                        safe_amount = "💔"
                     else:
                         safe_amount = f"💛 {safe_amount}"  # Show amount with amber emoji
                     
@@ -260,12 +260,12 @@ def main():
                 results_df = pd.DataFrame(table_data)
                 
                 # Sort by traffic light priority
-                priority_map = {"💚 Unlimited": 0, "💛": 1, "💔 Avoid": 2}
+                priority_map = {"💚": 0, "💛": 1, "💔": 2}
                 # For amber foods, we need to check if it starts with 💛
                 def get_priority(safe_amount):
-                    if safe_amount == "💚 Unlimited":
+                    if safe_amount == "💚":
                         return 0
-                    elif safe_amount == "💔 Avoid":
+                    elif safe_amount == "💔":
                         return 2
                     else:
                         return 1  # All amber foods
