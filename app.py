@@ -259,12 +259,19 @@ def main():
     df = load_fodmap_data()
     
     if df is not None:
-        # Search input
-        search_term = st.text_input(
+        # Get all unique food names for suggestions
+        all_food_names = sorted(df['name'].unique().tolist())
+        
+        # Dropdown with all foods for selection
+        selected_food = st.selectbox(
             "🔍 Search for foods:",
-            placeholder="e.g., wheat, apple, dairy...",
-            help="Type any part of a food name to see all matching foods"
+            options=[''] + all_food_names,
+            index=0,
+            help="Start typing to filter and find foods"
         )
+        
+        # Use the selected food as search term
+        search_term = selected_food
         
         # Show search results
         if search_term:
@@ -287,7 +294,7 @@ def main():
             else:
                 st.info(f"No foods found containing '{search_term}'. Try different keywords.")
         else:
-            st.markdown("### 💡 Start typing above to search for foods")
+            st.markdown("### 💡 Select a food above to see its details and similar foods")
     
     else:
         st.error("❌ Unable to load FODMAP data. Please check that 'data.csv' exists and is properly formatted.")
