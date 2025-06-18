@@ -240,10 +240,10 @@ def main():
                     fodmaps = get_fodmap_list(row)
                     
                     # Simplified safe amount with traffic light info
-                    safe_amount = row['safe_amount']
+                    safe_amount = str(row['safe_amount'])  # Convert to string first
                     if safe_amount == 'Any':
                         safe_amount = "💚 Unlimited"
-                    elif safe_amount == 'None':
+                    elif safe_amount == 'None' or safe_amount == 'nan' or pd.isna(row['safe_amount']):
                         safe_amount = "❤️ Avoid"
                     else:
                         safe_amount = f"💛 {safe_amount}"  # Show amount with amber emoji
