@@ -233,8 +233,8 @@ def main():
         if search_term:
             # Filter foods that contain the search term in either name OR category
             filtered_foods = df[
-                df['name'].str.contains(search_term, case=False, na=False),
-                df['category'].str.contains(search_term, case=False, na=False),
+                df['name'].str.contains(search_term, case=False, na=False) |
+                df['category'].str.contains(search_term, case=False, na=False) |
                 df['fodmap_text'].str.contains(search_term, case=False, na=False)
             ]
             
