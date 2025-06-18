@@ -252,7 +252,7 @@ def main():
                     table_data.append({
                         "🍽️ Food": row['name'],
                         "🏷️": get_category_emoji(row['category']),
-                        "💝 Safe Amount": safe_amount,
+                        "🚦": safe_amount,
                         "🧬 FODMAPs": fodmaps if fodmaps != 'None detected' else ''
                     })
                 
@@ -270,7 +270,7 @@ def main():
                     else:
                         return 1  # All amber foods
                 
-                results_df['sort_priority'] = results_df['💝 Safe Amount'].apply(get_priority)
+                results_df['sort_priority'] = results_df['🚦'].apply(get_priority)
                 results_df = results_df.sort_values(['sort_priority', '🍽️ Food']).drop('sort_priority', axis=1)
                 
                 st.dataframe(
@@ -280,7 +280,7 @@ def main():
                     column_config={
                         "🍽️ Food": st.column_config.TextColumn("🍽️ Food", width=140),
                         "🏷️": st.column_config.TextColumn("🏷️", width=80),
-                        "💝 Safe Amount": st.column_config.TextColumn("💝 Safe Amount", width=80),
+                        "🚦": st.column_config.TextColumn("🚦", width=80),
                         "🧬 FODMAPs": st.column_config.TextColumn("🧬 FODMAPs", width=100)
                     }
                 )
