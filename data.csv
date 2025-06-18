@@ -1,57 +1,350 @@
 ﻿name,category,traffic_light,fructans,gos,fructose,lactose,sorbitol,mannitol,safe_amount
-Aloe drink,Beverages,Amber,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,64ml
-Chrysanthemum tea,Beverages,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,180ml
-Cranberry juice,Beverages,Amber,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,30ml
-Fresh coconut water,Beverages,Amber,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,100ml
-Fresh orange juice,Beverages,Amber,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,72ml
-Red wine,Beverages,Amber,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,149ml
-Vegetable juice,Beverages,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,75ml
-Weak chai tea,Beverages,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,250ml
-Weak dandelion tea,Beverages,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,250ml
-Beer,Beverages,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Black tea,Beverages,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Espresso,Beverages,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Gin,Beverages,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Green tea,Beverages,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Instant coffee,Beverages,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Kvass,Beverages,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Liquorice tea,Beverages,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Peppermint tea,Beverages,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Rooibos tea,Beverages,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Vodka,Beverages,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Water,Beverages,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Wheatgrass powder,Beverages,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Whiskey,Beverages,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-White wine,Beverages,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Apple juice,Beverages,Red,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,None
-Chamomile tea,Beverages,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
-Fennel tea,Beverages,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
-Oolong tea,Beverages,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
-Rum,Beverages,Red,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,None
-Sticky wine,Beverages,Red,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,None
-Tropical juice,Beverages,Red,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,None
-Balsamic vinegar,Condiments,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,21g
-Bay leaves,Condiments,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,1g
-Chili powder,Condiments,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,2g
-Miso paste,Condiments,Amber,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,12g
-Pesto,Condiments,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,10g
-Raspberry jam,Condiments,Amber,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,40g
-Sriracha chili sauce,Condiments,Amber,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,5g
-Sweet soy sauce,Condiments,Amber,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,20g
-Tomato sauce/ketchup,Condiments,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,13g
-Worcestershire sauce,Condiments,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,42g
+Alfalfa,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Ancho chili,Vegetables,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
+Arugula/rocket,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Asparagus,Vegetables,Amber,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,12g
+Baby spinach,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Bean sprouts,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Black pitted olives,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Bok choy,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,75g
+Broccoli heads only),Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,75g
+Broccoli stalks only),Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,75g
+Broccolini heads only),Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,21g
+Broccolini stalks only),Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,75g
+Brussels sprouts,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,53g
+Butternut pumpkin,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,83g
+Butternut squash,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,83g
+Canned artichoke hearts,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,50g
+Canned baby corn,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Canned bamboo shoots,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Canned beetroot,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,60g
+Canned champignon mushrooms,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Canned corn,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,75g
+Canned pumpkin,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,75g
+Canned tomato,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Carrot,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Cauliflower,Vegetables,Red,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,None
+Celeriac,Vegetables,Amber,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,75g
+Celery,Vegetables,Amber,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,10g
+Cherry tomato,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Chicory leaves,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,28g
+Chinese broccoli,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,75g
+Choy sum,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Chrysanthemum,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Collard greens,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Daikon white),Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,75g
+Drained canned tomatillo,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Dried lotus root,Vegetables,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
+Dried porcini mushrooms,Vegetables,Amber,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,12g
+Dried shiitake mushroom,Vegetables,Red,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,None
+Edamame,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,75g
+Endish spinach,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Fennel bulb,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,15g
+Fennel leaves,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,47g
+Fermented red cabbage,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,75g
+Fresh bamboo shoots,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Galangal,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Garlic,Vegetables,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
+Gherkins in vinegar,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Ginger root,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Globe artichoke,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,16g
+Green beans,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,75g
+Green bell pepper,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,75g
+Green chili,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Green peas canned),Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,53g
+Green pitted olives,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Heart of palms canned,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Jicama,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,75g
+Kale,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Karela,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,15g
+Kimchi,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,47g
+Leek bulb),Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,14g
+Leek leaves only),Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,75g
+Lettuce,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Lotus root frozen),Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,75g
+Marjoram,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,75g
+Okra,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,70g
+Oyster mushrooms,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Parsnip,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Pickled artichokes,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,13g
+Pickled beetroot,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,75g
+Pickled jalapeño,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Pickled onions,Vegetables,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
+Portobello mushrooms,Vegetables,Amber,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,9g
+Potato dumplings,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Red bell pepper,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Red cabbage,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,23g
+Roma tomato,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Sauerkraut,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,40g
+Savoy cabbage,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,40g
+Shallot onion,Vegetables,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
+Snow peas,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,75g
+Spanish onion,Vegetables,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
+Spring onion/scallion bulb),Vegetables,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
+Spring onion/shallots green tops only),Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Squash,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,75g
+Sugar snap peas,Vegetables,Amber,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,14g
+Sweet potato,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,75g
+Swiss chard,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Taro,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,75g
+Thawed peas,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,15g
+Tomatillo raw),Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,75g
+Tomato,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Turnip,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,75g
+Wakame flakes,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,9g
+Water chestnuts,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+White onion,Vegetables,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
+White potato peeled,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Wombok,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,75g
+Yam,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Zucchini,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,67g
+Activated cashews,Pulses,Amber,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,15g
+Almond butter,Pulses,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,20g
+Almond meal,Pulses,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,33g
+Almonds,Pulses,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,12g
+Baked beans,Pulses,Amber,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,10g
+Brazil nuts,Pulses,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Caraway seeds,Pulses,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,10g
+Cashews,Pulses,Red,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,None
+Chestnuts,Pulses,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Chia seeds,Pulses,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Cooked adzuki beans,Pulses,Amber,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,38g
+Cooked black beans,Pulses,Amber,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,40g
+Cooked black-eyed peas,Pulses,Amber,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,21g
+Cooked borlotti beans,Pulses,Red,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,None
+Cooked broad beans,Pulses,Red,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,None
+Cooked brown lentils,Pulses,Amber,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,46g
+Cooked butter beans,Pulses,Amber,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,35g
+Cooked chickpeas,Pulses,Amber,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,42g
+Cooked garbanzo beans,Pulses,Amber,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,42g
+Cooked green lentils,Pulses,Amber,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,29g
+Cooked lima beans,Pulses,Amber,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,39g
+Cooked mung beans,Pulses,Amber,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,75g
+Cooked pinto beans,Pulses,Amber,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,39g
+Cooked red lentils,Pulses,Amber,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,23g
+Egg replacer,Pulses,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Falafel,Pulses,Red,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,None
+Fava beans,Pulses,Red,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,None
+Flaxseeds/linseeds,Pulses,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,15g
+Hazelnuts,Pulses,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,24g
+Hemp seeds,Pulses,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+LSA linseed sunflower almond mix),Pulses,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Macadamias,Pulses,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Navy beans,Pulses,Red,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,None
+Peanut butter,Pulses,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Peanuts,Pulses,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Pecans,Pulses,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Pine nuts,Pulses,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Pistachios,Pulses,Red,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,None
+Poppy seeds,Pulses,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Pumpkin seeds,Pulses,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Red kidney beans,Pulses,Red,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,None
+Sesame seeds,Pulses,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Silken tofu,Pulses,Amber,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,39g
+Soy beans,Pulses,Red,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,None
+Split peas,Pulses,Red,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,None
+Sprouted mung beans,Pulses,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Sunflower seeds,Pulses,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Tahini,Pulses,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Tempeh plain),Pulses,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Textured vegetable protein TVP),Pulses,Red,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,None
+Tiger nuts,Pulses,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Tofu firm/hard only),Pulses,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Walnuts,Pulses,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Amaranth flour,Grains,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
+Arrowroot,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Barley flakes,Grains,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
+Barley flour,Grains,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
+Buckwheat flakes cooked),Grains,Amber,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,120g
+Buckwheat flour,Grains,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
+Buckwheat groats,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Buckwheat kernels,Grains,Amber,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,27g
+Bulghal,Grains,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,44g
+Chickpea pasta,Grains,Amber,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,100g
+Coconut flour,Grains,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
+Corn bread,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Corn flakes,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Cornstarch,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Egg noodles,Grains,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,40g
+Filo pastry,Grains,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,20g
+Fine semolina,Grains,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
+Freekeh,Grains,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
+Gluten free bread,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Gluten free flour,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Gluten free pasta,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Green banana flour,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Lupin flour,Grains,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
+Maize,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Millet,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Naan/roti bread,Grains,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
+Nutritional yeast,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Oat bran,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Oat flakes,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Oat sourdough,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Pearl barley,Grains,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,30g
+Pearl barley sprouted),Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Polenta,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Potato starch,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Puffed amaranth,Grains,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,10g
+Puffed rice,Grains,Amber,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,15g
+Pumpernickel bread,Grains,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
+Quick oats uncooked),Grains,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,23g
+Quinoa,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Quinoa flakes,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Quinoa flour,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Raisin toast,Grains,Red,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,None
+Rice,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Rice and corn couscous,Grains,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,37g
+Rice bran,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Rice flakes,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Rice flour,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Rice noodles,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Rolled oats,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Rye bread,Grains,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
+Rye flour,Grains,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
+Sago,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Sorghum,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Spelt pasta,Grains,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,74g
+Spelt sourdough,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Tapioca,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Teff,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Vital wheat gluten,Grains,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,30g
+Wheat bran,Grains,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
+Wheat bread,Grains,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,24g
+Wheat couscous,Grains,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
+Wheat flour,Grains,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
+Wheat noodles,Grains,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
+Wheat pasta,Grains,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,74g
+Ackee in brine,Fruits,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Apple,Fruits,Red,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,None
+Apricots,Fruits,Red,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,None
+Avocado,Fruits,Amber,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,80g
+Black diamond plum,Fruits,Red,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,None
+Blackberries,Fruits,Red,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,None
+Boysenberry,Fruits,Red,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,None
+Breadfruit similar to jackfruit),Fruits,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Canned peaches,Fruits,Red,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,None
+Carambola,Fruits,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Cherries,Fruits,Red,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,None
+Clementine,Fruits,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Clingstone peach,Fruits,Red,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,None
+Coconut,Fruits,Amber,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,81g
+Coconut cream,Fruits,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Cumquats,Fruits,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Currants,Fruits,Amber,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,13g
+Custard apple,Fruits,Red,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,None
+Dates,Fruits,Red,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,None
+Dragonfruit,Fruits,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Dried apple,Fruits,Red,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,None
+Dried banana chips,Fruits,Amber,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,30g
+Dried cranberries,Fruits,Amber,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,22g
+Dried fig,Fruits,Red,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,None
+Dried goji berries,Fruits,Amber,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,11g
+Dried guava in syrup,Fruits,Amber,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,47g
+Dried mango,Fruits,Red,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,None
+Dried paw paw,Fruits,Red,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,None
+Dried pear,Fruits,Red,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,None
+Dried pineapple,Fruits,Red,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,None
+Durian,Fruits,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Feijoa,Fruits,Red,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,None
+Firm sugar banana,Fruits,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Fresh fig,Fruits,Red,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,None
+Grapefruit,Fruits,Amber,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,80g
+Grapes,Fruits,Green,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,Any
+Guava,Fruits,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Kiwi fruit,Fruits,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Lemon,Fruits,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Limes,Fruits,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Lychee,Fruits,Amber,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,96g
+Mandarin,Fruits,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Mango,Fruits,Amber,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,40g
+Nashi pear,Fruits,Red,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,None
+Nectarine,Fruits,Red,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,None
+Oranges,Fruits,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Packhara pear,Fruits,Red,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,None
+Papaya,Fruits,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Passion fruit,Fruits,Amber,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,46g
+Persimmon,Fruits,Amber,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,96g
+Pineapple,Fruits,Amber,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,140g
+Plantain,Fruits,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Pomegranate,Fruits,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,42g
+Prickly pear,Fruits,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Prunes,Fruits,Red,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,None
+Raisins,Fruits,Amber,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,13g
+Raspberries,Fruits,Amber,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,58g
+Rhubarb,Fruits,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Ripe banana,Fruits,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,95g
+Ripe sugar banana,Fruits,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,112g
+Rockmelon/cantaloupe,Fruits,Amber,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,121g
+Seedless watermelon,Fruits,Red,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,None
+Shredded coconut,Fruits,Amber,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,30g
+Starfruit,Fruits,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Strawberries,Fruits,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Sultanas,Fruits,Red,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,None
+Tamarillo,Fruits,Amber,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,65g
+Unripe banana,Fruits,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,95g
+Unripe guava,Fruits,Red,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,None
+White peach,Fruits,Red,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,None
+Yellow peach,Fruits,Amber,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,30g
+Almond milk,Dairy,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Brie cheese,Dairy,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Butter,Dairy,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Buttermilk,Dairy,Amber,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,16g
+Canned coconut milk,Dairy,Amber,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,60g
+Cheddar cheese,Dairy,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Coconut milk powder,Dairy,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Coconut yogurt,Dairy,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Comte French cheese,Dairy,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Condensed milk,Dairy,Amber,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,7g
+Cottage cheese,Dairy,Amber,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,40g
+Cream,Dairy,Amber,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,60g
+Cream cheese,Dairy,Amber,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,40g
+Custard,Dairy,Amber,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,25g
+Evaporated milk,Dairy,Amber,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,10g
+Feta cheese,Dairy,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Ghee,Dairy,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Goat cheese,Dairy,Amber,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,40g
+Goat milk,Dairy,Amber,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,30g
+Greek yogurt,Dairy,Amber,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,23g
+Gruyere cheese,Dairy,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Hemp milk,Dairy,Amber,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,120g
+Kefir,Dairy,Amber,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,23g
+Lactose free milk,Dairy,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Lactose free yogurt,Dairy,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Macadamia milk,Dairy,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Manchego cheese,Dairy,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Monterey Jack,Dairy,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Mozzarella,Dairy,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Paneer cheese,Dairy,Amber,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,40g
+Queso fresco,Dairy,Amber,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,40g
+Rice milk,Dairy,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Ricotta cheese,Dairy,Amber,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,40g
+Sour cream,Dairy,Amber,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,40g
+Soy cheese,Dairy,Amber,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,40g
+Soy milk from soy beans,Dairy,Red,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,None
+Soy milk soy protein isolate),Dairy,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Swiss cheese,Dairy,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+UHT coconut milk,Dairy,Amber,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,120g
+Vanilla ice cream,Dairy,Amber,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,30g
+Whipped cream,Dairy,Amber,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,60g
 Apple cider vinegar,Condiments,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Balsamic vinegar,Condiments,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,21g
 Barbecue sauce,Condiments,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
 Basil,Condiments,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Bay leaves,Condiments,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,1g
 Black pepper,Condiments,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Blackcurrant jam,Condiments,Red,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,None
+Blueberry jam,Condiments,Red,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,None
 Capers,Condiments,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
 Cardamom,Condiments,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Chili powder,Condiments,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,2g
 Chives,Condiments,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
 Cinnamon,Condiments,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
 Cloves,Condiments,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
 Corn relish,Condiments,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
 Curry leaves,Condiments,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
 Curry powder,Condiments,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Currywurst,Condiments,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
 Dill seeds,Condiments,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
 Dried oregano,Condiments,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
 Fennel seeds,Condiments,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
@@ -67,6 +360,7 @@ Fresh sage,Condiments,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
 Fresh thyme,Condiments,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
 Fresh watercress,Condiments,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
 Garam masala,Condiments,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Garlic powder,Condiments,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
 Habanero sauce,Condiments,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
 Horseradish,Condiments,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
 Kaffir lime leaves,Condiments,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
@@ -78,383 +372,89 @@ Mayonnaise,Condiments,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
 Mild salsa,Condiments,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
 Mint jelly,Condiments,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
 Mint sauce,Condiments,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Miso paste,Condiments,Amber,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,12g
 Mustard,Condiments,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
 Mustard seeds,Condiments,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
 Nutmeg,Condiments,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
 Oyster sauce,Condiments,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
 Paprika,Condiments,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Pesto,Condiments,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,10g
+Raspberry jam,Condiments,Amber,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,40g
 Red wine vinegar,Condiments,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
 Rice wine vinegar,Condiments,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
 Saffron,Condiments,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
 Salsa verde,Condiments,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
 Shrimp paste,Condiments,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
 Smoked paprika,Condiments,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Sriracha chili sauce,Condiments,Amber,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,5g
 Star anise,Condiments,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
 Sumac,Condiments,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Sweet soy sauce,Condiments,Amber,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,20g
 Tamarind paste,Condiments,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
 Tarragon,Condiments,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
 Thai basil,Condiments,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
 Tomato paste,Condiments,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Tomato sauce/ketchup,Condiments,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,13g
 Turmeric ground,Condiments,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
 Vanilla bean pods,Condiments,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
 Vanilla essence,Condiments,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
 Vegemite,Condiments,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Wasabi powder,Condiments,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Blackcurrant jam,Condiments,Red,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,None
-Blueberry jam,Condiments,Red,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,None
-Currywurst,Condiments,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
-Garlic powder,Condiments,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
 Wasabi,Condiments,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
-Buttermilk,Dairy,Amber,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,16g
-Canned coconut milk,Dairy,Amber,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,60g
-Condensed milk,Dairy,Amber,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,7g
-Cottage cheese,Dairy,Amber,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,40g
-Cream,Dairy,Amber,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,60g
-Cream cheese,Dairy,Amber,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,40g
-Custard,Dairy,Amber,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,25g
-Evaporated milk,Dairy,Amber,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,10g
-Goat cheese,Dairy,Amber,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,40g
-Goat milk,Dairy,Amber,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,30g
-Greek yogurt,Dairy,Amber,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,23g
-Hemp milk,Dairy,Amber,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,120g
-Kefir,Dairy,Amber,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,23g
-Paneer cheese,Dairy,Amber,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,40g
-Queso fresco,Dairy,Amber,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,40g
-Ricotta cheese,Dairy,Amber,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,40g
-Sour cream,Dairy,Amber,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,40g
-Soy cheese,Dairy,Amber,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,40g
-UHT coconut milk,Dairy,Amber,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,120g
-Vanilla ice cream,Dairy,Amber,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,30g
-Whipped cream,Dairy,Amber,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,60g
-Almond milk,Dairy,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Brie cheese,Dairy,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Butter,Dairy,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Cheddar cheese,Dairy,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Coconut milk powder,Dairy,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Coconut yogurt,Dairy,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Comte French cheese,Dairy,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Feta cheese,Dairy,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Ghee,Dairy,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Gruyere cheese,Dairy,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Lactose free milk,Dairy,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Lactose free yogurt,Dairy,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Macadamia milk,Dairy,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Manchego cheese,Dairy,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Monterey Jack,Dairy,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Mozzarella,Dairy,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Rice milk,Dairy,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Soy milk soy protein isolate),Dairy,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Swiss cheese,Dairy,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Soy milk from soy beans,Dairy,Red,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,None
-Avocado,Fruits,Amber,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,80g
-Coconut,Fruits,Amber,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,81g
-Currants,Fruits,Amber,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,13g
-Dried banana chips,Fruits,Amber,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,30g
-Dried cranberries,Fruits,Amber,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,22g
-Dried goji berries,Fruits,Amber,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,11g
-Dried guava in syrup,Fruits,Amber,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,47g
-Grapefruit,Fruits,Amber,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,80g
-Lychee,Fruits,Amber,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,96g
-Mango,Fruits,Amber,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,40g
-Passion fruit,Fruits,Amber,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,46g
-Persimmon,Fruits,Amber,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,96g
-Pineapple,Fruits,Amber,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,140g
-Pomegranate,Fruits,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,42g
-Raisins,Fruits,Amber,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,13g
-Raspberries,Fruits,Amber,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,58g
-Ripe banana,Fruits,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,95g
-Ripe sugar banana,Fruits,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,112g
-Rockmelon/cantaloupe,Fruits,Amber,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,121g
-Shredded coconut,Fruits,Amber,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,30g
-Tamarillo,Fruits,Amber,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,65g
-Unripe banana,Fruits,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,95g
-Yellow peach,Fruits,Amber,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,30g
-Ackee in brine,Fruits,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Breadfruit similar to jackfruit),Fruits,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Carambola,Fruits,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Clementine,Fruits,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Coconut cream,Fruits,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Cumquats,Fruits,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Dragonfruit,Fruits,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Durian,Fruits,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Firm sugar banana,Fruits,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Grapes,Fruits,Green,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,Any
-Guava,Fruits,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Kiwi fruit,Fruits,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Lemon,Fruits,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Limes,Fruits,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Mandarin,Fruits,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Oranges,Fruits,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Papaya,Fruits,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Plantain,Fruits,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Prickly pear,Fruits,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Rhubarb,Fruits,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Starfruit,Fruits,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Strawberries,Fruits,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Apple,Fruits,Red,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,None
-Apricots,Fruits,Red,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,None
-Black diamond plum,Fruits,Red,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,None
-Blackberries,Fruits,Red,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,None
-Boysenberry,Fruits,Red,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,None
-Canned peaches,Fruits,Red,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,None
-Cherries,Fruits,Red,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,None
-Clingstone peach,Fruits,Red,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,None
-Custard apple,Fruits,Red,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,None
-Dates,Fruits,Red,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,None
-Dried apple,Fruits,Red,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,None
-Dried fig,Fruits,Red,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,None
-Dried mango,Fruits,Red,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,None
-Dried paw paw,Fruits,Red,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,None
-Dried pear,Fruits,Red,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,None
-Dried pineapple,Fruits,Red,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,None
-Feijoa,Fruits,Red,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,None
-Fresh fig,Fruits,Red,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,None
-Nashi pear,Fruits,Red,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,None
-Nectarine,Fruits,Red,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,None
-Packhara pear,Fruits,Red,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,None
-Prunes,Fruits,Red,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,None
-Seedless watermelon,Fruits,Red,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,None
-Sultanas,Fruits,Red,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,None
-Unripe guava,Fruits,Red,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,None
-White peach,Fruits,Red,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,None
-Buckwheat flakes cooked),Grains,Amber,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,120g
-Buckwheat kernels,Grains,Amber,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,27g
-Bulghal,Grains,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,44g
-Chickpea pasta,Grains,Amber,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,100g
-Egg noodles,Grains,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,40g
-Filo pastry,Grains,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,20g
-Pearl barley,Grains,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,30g
-Puffed amaranth,Grains,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,10g
-Puffed rice,Grains,Amber,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,15g
-Quick oats uncooked),Grains,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,23g
-Rice and corn couscous,Grains,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,37g
-Spelt pasta,Grains,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,74g
-Vital wheat gluten,Grains,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,30g
-Wheat bread,Grains,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,24g
-Wheat pasta,Grains,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,74g
-Arrowroot,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Buckwheat groats,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Corn bread,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Corn flakes,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Cornstarch,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Gluten free bread,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Gluten free flour,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Gluten free pasta,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Green banana flour,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Maize,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Millet,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Nutritional yeast,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Oat bran,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Oat flakes,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Oat sourdough,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Pearl barley sprouted),Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Polenta,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Potato starch,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Quinoa,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Quinoa flakes,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Quinoa flour,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Rice,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Rice bran,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Rice flakes,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Rice flour,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Rice noodles,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Rolled oats,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Sago,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Sorghum,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Spelt sourdough,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Tapioca,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Teff,Grains,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Amaranth flour,Grains,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
-Barley flakes,Grains,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
-Barley flour,Grains,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
-Buckwheat flour,Grains,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
-Coconut flour,Grains,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
-Fine semolina,Grains,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
-Freekeh,Grains,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
-Lupin flour,Grains,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
-Naan/roti bread,Grains,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
-Pumpernickel bread,Grains,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
-Raisin toast,Grains,Red,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,None
-Rye bread,Grains,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
-Rye flour,Grains,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
-Wheat bran,Grains,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
-Wheat couscous,Grains,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
-Wheat flour,Grains,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
-Wheat noodles,Grains,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
-Activated cashews,Pulses,Amber,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,15g
-Almond butter,Pulses,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,20g
-Almond meal,Pulses,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,33g
-Almonds,Pulses,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,12g
-Baked beans,Pulses,Amber,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,10g
-Caraway seeds,Pulses,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,10g
-Cooked adzuki beans,Pulses,Amber,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,38g
-Cooked black beans,Pulses,Amber,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,40g
-Cooked black-eyed peas,Pulses,Amber,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,21g
-Cooked brown lentils,Pulses,Amber,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,46g
-Cooked butter beans,Pulses,Amber,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,35g
-Cooked chickpeas,Pulses,Amber,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,42g
-Cooked garbanzo beans,Pulses,Amber,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,42g
-Cooked green lentils,Pulses,Amber,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,29g
-Cooked lima beans,Pulses,Amber,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,39g
-Cooked mung beans,Pulses,Amber,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,75g
-Cooked pinto beans,Pulses,Amber,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,39g
-Cooked red lentils,Pulses,Amber,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,23g
-Flaxseeds/linseeds,Pulses,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,15g
-Hazelnuts,Pulses,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,24g
-Silken tofu,Pulses,Amber,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,39g
-Brazil nuts,Pulses,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Chestnuts,Pulses,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Chia seeds,Pulses,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Egg replacer,Pulses,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Hemp seeds,Pulses,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-LSA linseed sunflower almond mix),Pulses,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Macadamias,Pulses,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Peanut butter,Pulses,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Peanuts,Pulses,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Pecans,Pulses,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Pine nuts,Pulses,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Poppy seeds,Pulses,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Pumpkin seeds,Pulses,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Sesame seeds,Pulses,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Sprouted mung beans,Pulses,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Sunflower seeds,Pulses,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Tahini,Pulses,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Tempeh plain),Pulses,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Tiger nuts,Pulses,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Tofu firm/hard only),Pulses,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Walnuts,Pulses,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Cashews,Pulses,Red,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,None
-Cooked borlotti beans,Pulses,Red,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,None
-Cooked broad beans,Pulses,Red,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,None
-Falafel,Pulses,Red,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,None
-Fava beans,Pulses,Red,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,None
-Navy beans,Pulses,Red,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,None
-Pistachios,Pulses,Red,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,None
-Red kidney beans,Pulses,Red,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,None
-Soy beans,Pulses,Red,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,None
-Split peas,Pulses,Red,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,None
-Textured vegetable protein TVP),Pulses,Red,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,None
+Wasabi powder,Condiments,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Worcestershire sauce,Condiments,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,42g
+Aloe drink,Beverages,Amber,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,64ml
+Apple juice,Beverages,Red,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,None
+Beer,Beverages,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Black tea,Beverages,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Chamomile tea,Beverages,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
+Chrysanthemum tea,Beverages,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,180ml
+Cranberry juice,Beverages,Amber,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,30ml
+Espresso,Beverages,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Fennel tea,Beverages,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
+Fresh coconut water,Beverages,Amber,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,100ml
+Fresh orange juice,Beverages,Amber,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,72ml
+Gin,Beverages,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Green tea,Beverages,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Instant coffee,Beverages,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Kvass,Beverages,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Liquorice tea,Beverages,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Oolong tea,Beverages,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
+Peppermint tea,Beverages,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Red wine,Beverages,Amber,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,149ml
+Rooibos tea,Beverages,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Rum,Beverages,Red,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,None
+Sticky wine,Beverages,Red,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,None
+Tropical juice,Beverages,Red,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,None
+Vegetable juice,Beverages,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,75ml
+Vodka,Beverages,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Water,Beverages,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Weak chai tea,Beverages,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,250ml
+Weak dandelion tea,Beverages,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,250ml
+Wheatgrass powder,Beverages,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Whiskey,Beverages,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+White wine,Beverages,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Agar agar,Additives,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
 Agave,Additives,Amber,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,5g
+Apple syrup,Additives,Red,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,None
 Barley malt extract,Additives,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,12g
+Brown sugar,Additives,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Cacao powder,Additives,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
 Carob powder,Additives,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,6g
+Chocolate drinking powder,Additives,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Cocoa powder,Additives,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
 Coconut sugar,Additives,Amber,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,4g
 Coconut treacle syrup,Additives,Amber,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,14g
 Dark chocolate,Additives,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,30g
 Golden syrup,Additives,Amber,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,7g
 Honey,Additives,Amber,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,7g
-Milk chocolate,Additives,Amber,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,20g
-Molasses,Additives,Amber,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,5g
-White chocolate,Additives,Amber,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,25g
-Agar agar,Additives,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Brown sugar,Additives,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Cacao powder,Additives,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Chocolate drinking powder,Additives,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Cocoa powder,Additives,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
 Icing sugar,Additives,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
 Jelly,Additives,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
 Maple syrup,Additives,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+Milk chocolate,Additives,Amber,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,20g
+Molasses,Additives,Amber,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,5g
 Palm sugar,Additives,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
 Raw sugar,Additives,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
 Rice malt syrup,Additives,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
 Stevia,Additives,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
+White chocolate,Additives,Amber,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,25g
 White sugar,Additives,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Apple syrup,Additives,Red,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,None
-Asparagus,Vegetables,Amber,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,12g
-Bok choy,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,75g
-Broccoli heads only),Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,75g
-Broccoli stalks only),Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,75g
-Broccolini heads only),Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,21g
-Broccolini stalks only),Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,75g
-Brussels sprouts,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,53g
-Butternut pumpkin,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,83g
-Butternut squash,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,83g
-Canned artichoke hearts,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,50g
-Canned beetroot,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,60g
-Canned corn,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,75g
-Canned pumpkin,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,75g
-Celeriac,Vegetables,Amber,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,75g
-Celery,Vegetables,Amber,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,10g
-Chicory leaves,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,28g
-Chinese broccoli,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,75g
-Daikon white),Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,75g
-Dried porcini mushrooms,Vegetables,Amber,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,12g
-Edamame,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,75g
-Fennel bulb,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,15g
-Fennel leaves,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,47g
-Fermented red cabbage,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,75g
-Globe artichoke,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,16g
-Green beans,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,75g
-Green bell pepper,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,75g
-Green peas canned),Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,53g
-Jicama,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,75g
-Karela,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,15g
-Kimchi,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,47g
-Leek bulb),Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,14g
-Leek leaves only),Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,75g
-Lotus root frozen),Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,75g
-Marjoram,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,75g
-Okra,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,70g
-Pickled artichokes,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,13g
-Pickled beetroot,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,75g
-Portobello mushrooms,Vegetables,Amber,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,9g
-Red cabbage,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,23g
-Sauerkraut,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,40g
-Savoy cabbage,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,40g
-Snow peas,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,75g
-Squash,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,75g
-Sugar snap peas,Vegetables,Amber,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,14g
-Sweet potato,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,75g
-Taro,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,75g
-Thawed peas,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,15g
-Tomatillo raw),Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,75g
-Turnip,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,75g
-Wakame flakes,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,9g
-Wombok,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,75g
-Zucchini,Vegetables,Amber,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,67g
-Alfalfa,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Arugula/rocket,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Baby spinach,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Bean sprouts,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Black pitted olives,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Canned baby corn,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Canned bamboo shoots,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Canned champignon mushrooms,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Canned tomato,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Carrot,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Cherry tomato,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Choy sum,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Chrysanthemum,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Collard greens,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Drained canned tomatillo,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Endish spinach,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Fresh bamboo shoots,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Galangal,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Gherkins in vinegar,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Ginger root,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Green chili,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Green pitted olives,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Heart of palms canned,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Kale,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Lettuce,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Oyster mushrooms,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Parsnip,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Pickled jalapeño,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Potato dumplings,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Red bell pepper,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Roma tomato,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Spring onion/shallots green tops only),Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Swiss chard,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Tomato,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Water chestnuts,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-White potato peeled,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Yam,Vegetables,Green,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Any
-Ancho chili,Vegetables,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
-Cauliflower,Vegetables,Red,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,None
-Dried lotus root,Vegetables,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
-Dried shiitake mushroom,Vegetables,Red,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,None
-Garlic,Vegetables,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
-Pickled onions,Vegetables,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
-Shallot onion,Vegetables,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
-Spanish onion,Vegetables,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
-Spring onion/scallion bulb),Vegetables,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
-White onion,Vegetables,Red,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,None
