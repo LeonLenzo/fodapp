@@ -285,31 +285,44 @@ def get_fodmap_list(row):
 
 def parse_recipes(recipes_data):
     """Parse the recipes JSON data into display format"""
-    if not recipes_data:
+    if not recipes_data or 'recipes' not in recipes_data:
         return {}
     
     recipes_by_category = {}
     
-    # Category mapping
+    # Category mapping with emojis
     category_mapping = {
-        "seafood": "🐟 Seafood Dishes",
-        "red_meat": "🥩 Red Meat Dishes", 
-        "chicken": "🐔 Chicken Dishes",
-        "vegetarian": "🥗 Vegetarian Sides & Salads"
+        "Breakfast": "🌅 Breakfast",
+        "Vegetarian": "🥗 Vegetarian",
+        "White Meat": "🐟 White Meat",
+        "Red Meat": "🥩 Red Meat"
     }
     
-    for category_key, category_name in category_mapping.items():
-        if category_key in recipes_data:
-            recipes_by_category[category_name] = recipes_data[category_key]
+    # Group recipes by category
+    for recipe in recipes_data['recipes']:
+        category = recipe.get('category', 'Other')
+        display_category = category_mapping.get(category, f"🍽️ {category}")
+        
+        if display_category not in recipes_by_category:
+            recipes_by_category[display_category] = []
+        
+        recipes_by_category[display_category].append(recipe)
     
     return recipes_by_category
 
 def display_recipe(recipe):
     """Display a single recipe in a nice format"""
+    # Handle serves field - it might be null or a string
+    serves_text = recipe.get('serves', '')
+    if serves_text:
+        serves_display = serves_text
+    else:
+        serves_display = "Serves: Not specified"
+    
     st.markdown(f"""
     <div class="recipe-card">
-        <div class="recipe-title">✨ {recipe['title']} ✨</div>
-        <div class="recipe-meta">{recipe['serves']}</div>
+        <div class="recipe-title">✨ {recipe['name']} ✨</div>
+        <div class="recipe-meta">{serves_display}</div>
     </div>
     """, unsafe_allow_html=True)
     
@@ -323,12 +336,15 @@ def display_recipe(recipe):
     with col2:
         st.markdown("**👩‍🍳 Instructions:**")
         for i, instruction in enumerate(recipe['instructions'], 1):
-            # Clean up instruction numbering
-            clean_instruction = instruction
-            if instruction.startswith(f"{i}."):
-                clean_instruction = instruction[len(f"{i}."):]
-            elif instruction[0].isdigit() and ". " in instruction:
-                clean_instruction = instruction.split(". ", 1)[1]
+            # Clean up instruction numbering if it exists
+            clean_instruction = instruction.strip()
+            if clean_instruction.startswith(f"{i}."):
+                clean_instruction = clean_instruction[len(f"{i}."):]
+            elif len(clean_instruction) > 0 and clean_instruction[0].isdigit() and ". " in clean_instruction:
+                # Remove any existing numbering
+                parts = clean_instruction.split(". ", 1)
+                if len(parts) > 1:
+                    clean_instruction = parts[1]
             
             st.markdown(f"{i}. {clean_instruction}")
 
@@ -441,8 +457,8 @@ def recipes_tab():
                 for category, recipes in recipes_by_category.items():
                     matching_recipes = []
                     for recipe in recipes:
-                        # Search in title and ingredients
-                        if (search_lower in recipe['title'].lower() or 
+                        # Search in name and ingredients
+                        if (search_lower in recipe['name'].lower() or 
                             any(search_lower in ingredient.lower() for ingredient in recipe['ingredients'])):
                             matching_recipes.append(recipe)
                     
@@ -454,7 +470,7 @@ def recipes_tab():
                     for category, recipes in filtered_recipes.items():
                         st.markdown(f"#### {category}")
                         for recipe in recipes:
-                            with st.expander(f"✨ {recipe['title']} ✨"):
+                            with st.expander(f"✨ {recipe['name']} ✨"):
                                 display_recipe(recipe)
                 else:
                     st.info(f"💭 No recipes found matching '{recipe_search}'. Try different keywords, beautiful! 💕")
@@ -468,7 +484,7 @@ def recipes_tab():
                     st.markdown(f"#### {category}")
                     
                     for recipe in recipes:
-                        with st.expander(f"✨ {recipe['title']} ✨"):
+                        with st.expander(f"✨ {recipe['name']} ✨"):
                             display_recipe(recipe)
         else:
             st.error("❌ Unable to parse recipes. Please check the format of your recipes.json file.")
