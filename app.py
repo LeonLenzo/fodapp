@@ -293,6 +293,9 @@ def parse_recipes(content):
     
     for section in sections[1:]:  # Skip the first empty split
         lines = section.strip().split('\n')
+        if not lines:
+            continue
+            
         category = lines[0].strip()
         
         # Clean up category name
@@ -315,6 +318,9 @@ def parse_recipes(content):
         
         for line in lines[1:]:
             line = line.strip()
+            if not line:
+                continue
+                
             if line.startswith("### "):
                 # New recipe
                 if current_recipe:
@@ -326,16 +332,17 @@ def parse_recipes(content):
                     "instructions": []
                 }
                 current_section = None
-            elif line.startswith("**Serves"):
+            elif line.startswith("**Serves") and current_recipe:
                 current_recipe["serves"] = line
                 current_section = "meta"
-            elif line.startswith("**Ingredients:**"):
+            elif line.startswith("**Ingredients:**") and current_recipe:
                 current_section = "ingredients"
-            elif line.startswith("**Instructions:**"):
+            elif line.startswith("**Instructions:**") and current_recipe:
                 current_section = "instructions"
-            elif line.startswith("- ") and current_section == "ingredients":
+            elif line.startswith("- ") and current_section == "ingredients" and current_recipe:
                 current_recipe["ingredients"].append(line[2:])
-            elif line and current_section == "instructions" and (line[0].isdigit() or line.startswith("1.")):
+            elif (line and current_section == "instructions" and current_recipe and 
+                  (line[0].isdigit() or line.startswith("1."))):
                 current_recipe["instructions"].append(line)
             elif line.startswith("---"):
                 continue
