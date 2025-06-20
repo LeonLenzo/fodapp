@@ -48,6 +48,51 @@ st.markdown("""
         font-style: italic;
     }
     
+    /* Navigation tabs */
+    .stTabs [data-baseweb="tab-list"] {
+        gap: 8px;
+        background: transparent;
+    }
+    
+    .stTabs [data-baseweb="tab"] {
+        background: linear-gradient(135deg, #ffffff 0%, #fef7ff 100%);
+        border-radius: 15px;
+        color: #be185d;
+        border: 2px solid #f9a8d4;
+        padding: 0.5rem 1rem;
+        font-weight: 600;
+    }
+    
+    .stTabs [aria-selected="true"] {
+        background: linear-gradient(135deg, #db2777 0%, #c084fc 100%);
+        color: white;
+        border-color: #db2777;
+    }
+    
+    /* Recipe cards */
+    .recipe-card {
+        background: linear-gradient(135deg, #ffffff 0%, #fef7ff 100%);
+        padding: 1.5rem;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(219, 39, 119, 0.08);
+        margin-bottom: 1.5rem;
+        border: 1px solid #f9a8d4;
+    }
+    
+    .recipe-title {
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: #be185d;
+        margin-bottom: 0.5rem;
+    }
+    
+    .recipe-meta {
+        color: #9333ea;
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+        font-style: italic;
+    }
+    
     /* Style the search input */
     .stTextInput > div > div > input {
         background: linear-gradient(135deg, #fdf2f8 0%, #ffffff 100%);
@@ -128,6 +173,22 @@ st.markdown("""
         border-radius: 12px;
     }
     
+    /* Style expanders */
+    .streamlit-expanderHeader {
+        background: linear-gradient(135deg, #fdf2f8 0%, #ffffff 100%);
+        border: 1px solid #f9a8d4;
+        border-radius: 12px;
+        color: #be185d;
+        font-weight: 600;
+    }
+    
+    .streamlit-expanderContent {
+        background: linear-gradient(135deg, #ffffff 0%, #fef7ff 100%);
+        border: 1px solid #f9a8d4;
+        border-top: none;
+        border-radius: 0 0 12px 12px;
+    }
+    
     @media (max-width: 768px) {
         .stApp {
             padding: 0.5rem;
@@ -151,6 +212,14 @@ st.markdown("""
             padding: 0.75rem 0.5rem !important;
             font-size: 0.9rem !important;
         }
+        
+        .recipe-card {
+            padding: 1rem;
+        }
+        
+        .recipe-title {
+            font-size: 1.1rem;
+        }
     }
 </style>
 """, unsafe_allow_html=True)
@@ -171,6 +240,20 @@ def load_fodmap_data():
         return None
     except Exception as e:
         st.error(f"❌ Error loading CSV file: {e}")
+        return None
+
+@st.cache_data
+def load_recipes():
+    """Load recipes from text file"""
+    try:
+        with open("recipes.txt", "r", encoding="utf-8") as f:
+            content = f.read()
+        return content
+    except FileNotFoundError:
+        st.error("❌ Could not find 'recipes.txt' file. Please make sure it's in the same directory as your app.")
+        return None
+    except Exception as e:
+        st.error(f"❌ Error loading recipes file: {e}")
         return None
 
 def get_category_emoji(category):
@@ -199,26 +282,104 @@ def get_fodmap_list(row):
     
     return ', '.join(fodmaps) if fodmaps else 'None detected'
 
-def display_autocomplete_suggestions(search_term, df, max_suggestions=5):
-    """Display autocomplete suggestions - REMOVED"""
-    return None
+def parse_recipes(content):
+    """Parse the recipes content into structured data"""
+    if not content:
+        return {}
+    
+    # Split by main sections
+    sections = content.split("## ")
+    recipes_by_category = {}
+    
+    for section in sections[1:]:  # Skip the first empty split
+        lines = section.strip().split('\n')
+        category = lines[0].strip()
+        
+        # Clean up category name
+        if category == "Seafood Dishes":
+            category_emoji = "🐟"
+        elif category == "Red Meat Dishes":
+            category_emoji = "🥩"
+        elif category == "Chicken Dishes":
+            category_emoji = "🐔"
+        elif category == "Vegetarian Sides & Salads":
+            category_emoji = "🥗"
+        else:
+            category_emoji = "🍽️"
+        
+        recipes_by_category[f"{category_emoji} {category}"] = []
+        
+        # Parse individual recipes
+        current_recipe = None
+        current_section = None
+        
+        for line in lines[1:]:
+            line = line.strip()
+            if line.startswith("### "):
+                # New recipe
+                if current_recipe:
+                    recipes_by_category[f"{category_emoji} {category}"].append(current_recipe)
+                current_recipe = {
+                    "title": line[4:],
+                    "serves": "",
+                    "ingredients": [],
+                    "instructions": []
+                }
+                current_section = None
+            elif line.startswith("**Serves"):
+                current_recipe["serves"] = line
+                current_section = "meta"
+            elif line.startswith("**Ingredients:**"):
+                current_section = "ingredients"
+            elif line.startswith("**Instructions:**"):
+                current_section = "instructions"
+            elif line.startswith("- ") and current_section == "ingredients":
+                current_recipe["ingredients"].append(line[2:])
+            elif line and current_section == "instructions" and (line[0].isdigit() or line.startswith("1.")):
+                current_recipe["instructions"].append(line)
+            elif line.startswith("---"):
+                continue
+        
+        # Add the last recipe
+        if current_recipe:
+            recipes_by_category[f"{category_emoji} {category}"].append(current_recipe)
+    
+    return recipes_by_category
 
-def main():
-    # Main search interface
-    st.markdown("""
-    <div class="main-search">
-        <div class="search-title">🌸 FODapp 🌸</div>
-        <div class="search-subtitle">✨ Safe foods for Caitlin ✨</div>
+def display_recipe(recipe):
+    """Display a single recipe in a nice format"""
+    st.markdown(f"""
+    <div class="recipe-card">
+        <div class="recipe-title">✨ {recipe['title']} ✨</div>
+        <div class="recipe-meta">{recipe['serves']}</div>
     </div>
     """, unsafe_allow_html=True)
     
+    col1, col2 = st.columns([1, 1])
+    
+    with col1:
+        st.markdown("**💕 Ingredients:**")
+        for ingredient in recipe['ingredients']:
+            st.markdown(f"• {ingredient}")
+    
+    with col2:
+        st.markdown("**👩‍🍳 Instructions:**")
+        for i, instruction in enumerate(recipe['instructions'], 1):
+            # Clean up instruction numbering
+            clean_instruction = instruction
+            if instruction.startswith(f"{i}."):
+                clean_instruction = instruction[len(f"{i}."):]
+            elif instruction[0].isdigit() and ". " in instruction:
+                clean_instruction = instruction.split(". ", 1)[1]
+            
+            st.markdown(f"{i}. {clean_instruction}")
+
+def fodmap_search_tab():
+    """FODMAP food search functionality"""
     # Load data
     df = load_fodmap_data()
-
-
     
     if df is not None:
-
         # Create a searchable FODMAP text column
         df['fodmap_text'] = df.apply(get_fodmap_list, axis=1)
 
@@ -226,7 +387,8 @@ def main():
         search_term = st.text_input(
             "🔍 Search:",
             placeholder="Search for foods by name, category, or FODMAPs...",
-            help="💕 Type to search for your favorite foods!"
+            help="💕 Type to search for your favorite foods!",
+            key="food_search"
         )
         
         # Show search results in table
@@ -239,7 +401,7 @@ def main():
             ]
             
             if len(filtered_foods) > 0:
-                st.markdown(f"### 💖 Found {len(filtered_foods)} fring(s)!")
+                st.markdown(f"### 💖 Found {len(filtered_foods)} result(s)!")
                 
                 # Prepare data for table
                 table_data = []
@@ -267,8 +429,6 @@ def main():
                 results_df = pd.DataFrame(table_data)
                 
                 # Sort by traffic light priority
-                priority_map = {"💚": 0, "💛": 1, "💔": 2}
-                # For amber foods, we need to check if it starts with 💛
                 def get_priority(safe_amount):
                     if safe_amount == "💚":
                         return 0
@@ -298,6 +458,82 @@ def main():
     
     else:
         st.error("❌ Unable to load FODMAP data. Please check that 'data.csv' exists and is properly formatted.")
+
+def recipes_tab():
+    """Recipe browser functionality"""
+    recipes_content = load_recipes()
+    
+    if recipes_content:
+        recipes_by_category = parse_recipes(recipes_content)
+        
+        if recipes_by_category:
+            # Recipe search
+            recipe_search = st.text_input(
+                "🔍 Search Recipes:",
+                placeholder="Search by recipe name or ingredient...",
+                help="💕 Find the perfect meal for you and dad!",
+                key="recipe_search"
+            )
+            
+            # Filter recipes based on search
+            if recipe_search:
+                filtered_recipes = {}
+                search_lower = recipe_search.lower()
+                
+                for category, recipes in recipes_by_category.items():
+                    matching_recipes = []
+                    for recipe in recipes:
+                        # Search in title and ingredients
+                        if (search_lower in recipe['title'].lower() or 
+                            any(search_lower in ingredient.lower() for ingredient in recipe['ingredients'])):
+                            matching_recipes.append(recipe)
+                    
+                    if matching_recipes:
+                        filtered_recipes[category] = matching_recipes
+                
+                if filtered_recipes:
+                    st.markdown(f"### 💖 Found recipes matching '{recipe_search}'!")
+                    for category, recipes in filtered_recipes.items():
+                        st.markdown(f"#### {category}")
+                        for recipe in recipes:
+                            with st.expander(f"✨ {recipe['title']} ✨"):
+                                display_recipe(recipe)
+                else:
+                    st.info(f"💭 No recipes found matching '{recipe_search}'. Try different keywords, beautiful! 💕")
+            
+            else:
+                # Show all recipes by category
+                st.markdown("### 💖 Mediterranean Low-FODMAP Recipes 💖")
+                st.markdown("*Delicious recipes that support both IBS management and cardiovascular health* ✨")
+                
+                for category, recipes in recipes_by_category.items():
+                    st.markdown(f"#### {category}")
+                    
+                    for recipe in recipes:
+                        with st.expander(f"✨ {recipe['title']} ✨"):
+                            display_recipe(recipe)
+        else:
+            st.error("❌ Unable to parse recipes. Please check the format of your recipes.txt file.")
+    else:
+        st.error("❌ Unable to load recipes. Please check that 'recipes.txt' exists and is properly formatted.")
+
+def main():
+    # Main search interface
+    st.markdown("""
+    <div class="main-search">
+        <div class="search-title">🌸 FODapp 🌸</div>
+        <div class="search-subtitle">✨ Safe foods & recipes for Caitlin ✨</div>
+    </div>
+    """, unsafe_allow_html=True)
+    
+    # Create tabs
+    tab1, tab2 = st.tabs(["🍽️ FODMAP Foods", "👩‍🍳 Recipes"])
+    
+    with tab1:
+        fodmap_search_tab()
+    
+    with tab2:
+        recipes_tab()
 
 if __name__ == "__main__":
     main()
