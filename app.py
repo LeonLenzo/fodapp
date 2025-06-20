@@ -461,8 +461,8 @@ def recipes_tab():
             
             else:
                 # Show all recipes by category
-                st.markdown("### 💖 Mediterranean Low-FODMAP Recipes 💖")
-                st.markdown("*Delicious recipes that support both IBS management and cardiovascular health* ✨")
+                st.markdown("### 💖 Low-FODMAP Recipes 💖")
+                st.markdown("*Delicious recipes for your poopy butt* ✨")
                 
                 for category, recipes in recipes_by_category.items():
                     st.markdown(f"#### {category}")
