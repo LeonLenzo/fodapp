@@ -485,7 +485,7 @@ def main():
     """, unsafe_allow_html=True)
     
     # Create tabs
-    tab1, tab2 = st.tabs(["🍽️ FODMAP Foods", "👩‍🍳 Recipes"])
+    tab1, tab2 = st.tabs(["🚦Tracker", "👩‍🍳 Recipes"])
     
     with tab1:
         fodmap_search_tab()
