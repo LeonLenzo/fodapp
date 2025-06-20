@@ -1,7 +1,7 @@
 {
   "recipes": [
     {
-      "category": "Breakfast",
+      "category": "Breakfast Boosters",
       "name": "Quinoa Porridge with Blackberry Compote",
       "ingredients": [
         "1/2 cup quinoa",
@@ -19,11 +19,10 @@
         "Rinse the quinoa in a sieve. Put it in a pan with the milk, cinnamon and vanilla extract, then bring to the boil. Turn down the heat and let it cook for 15 min.",
         "While it's cooking, put the blackberries, honey, half the lemon zest and all the juice in a small pan. Bring to the boil, then simmer for 10 min, breaking down the blackberries with the back of the spoon to form a compote.",
         "Just before everything is ready, julienne or cut the apple into thin slivers."
-      ],
-      "serves": null
+      ]
     },
     {
-      "category": "Breakfast",
+      "category": "Breakfast Boosters",
       "name": "Herby Cheese and Tomato Omelette",
       "ingredients": [
         "2 tomatoes, sliced",
@@ -39,11 +38,10 @@
         "Put the eggs, parmesan and spring onion in another small bowl and beat together with a fork. Season well with ground black pepper.",
         "Spray a non-stick frying pan with a little oil and put over a medium heat. When hot, pour in the egg mixture and swirl so it coats the bottom of the pan. As the edges cook, pull them into the centre of the pan with a wooden spoon so the uncooked egg runs into the gaps. Repeat until all the egg is almost cooked and the bottom is golden, then gently flip over and cook for around 1 min on the other side.",
         "When the omelette is cooked but still a little soft in the middle, slide it on to a plate. Spoon the tomatoes over one half of the omelette, then fold the other half over. Serve sprinkled with black pepper and the rest of the parsley."
-      ],
-      "serves": null
+      ]
     },
     {
-      "category": "Breakfast",
+      "category": "Breakfast Boosters",
       "name": "Turmeric Porridge with Banana and Pecans",
       "ingredients": [
         "1 cup rolled oats",
@@ -59,11 +57,10 @@
       "instructions": [
         "Combine the oats, soya milk, cinnamon, turmeric, orange zest and juice in a large pan. Set over a medium heat and bring to a simmer. Reduce the heat and cook, stirring occasionally, for 5–6 min or until the oats are softened, thick and creamy.",
         "Divide the porridge among 4 bowls. Top each with banana slices, a drizzle of agave nectar and a dollop of yogurt, then sprinkle with chopped pecans."
-      ],
-      "serves": null
+      ]
     },
     {
-      "category": "Breakfast",
+      "category": "Breakfast Boosters",
       "name": "Banana and Walnut Toast",
       "ingredients": [
         "4 slices wholemeal bread",
@@ -76,11 +73,10 @@
       "instructions": [
         "Lightly toast the bread, then slice in half diagonally.",
         "Top the toasts with the banana slices and drizzle with the lemon juice. Scatter over the walnuts and chia seeds, drizzle with the honey and serve."
-      ],
-      "serves": null
+      ]
     },
     {
-      "category": "Breakfast",
+      "category": "Breakfast Boosters",
       "name": "Spiced Cherry Smoothie Bowl",
       "ingredients": [
         "1 cup frozen cherries",
@@ -97,11 +93,10 @@
       "instructions": [
         "Blitz cherries, strawberries, linseeds, yoghurt, psyllium husks, milk and cinnamon in a blender until thick.",
         "Place the contents in a serving bowl and top with kiwifruit, berries and almonds."
-      ],
-      "serves": null
+      ]
     },
     {
-      "category": "Breakfast",
+      "category": "Breakfast Boosters",
       "name": "Tomato & Avocado Scrambled Eggs",
       "ingredients": [
         "2 slices wholegrain bread",
@@ -116,11 +111,10 @@
         "Toast the bread. Meanwhile, whisk together the eggs, tomatoes and parsley and season with freshly ground black pepper.",
         "Spray a medium non-stick frying pan with oil and set over a medium-high heat. Pour in the egg mixture and gently scrape across the pan with a flat spatula until the egg is cooked and scrambled.",
         "Divide the spinach among the slices of toast, top with the avocado, then spoon over the scrambled eggs and serve immediately."
-      ],
-      "serves": null
+      ]
     },
     {
-      "category": "Breakfast",
+      "category": "Breakfast Boosters",
       "name": "Chia & Mixed Berry Breakfast Pudding",
       "ingredients": [
         "2 cups unsweetened almond milk",
@@ -139,11 +133,10 @@
         "Place berries and prunes in a saucepan, bring to the boil, then reduce heat. Simmer for 10 minutes.",
         "Mash berry mixture with a fork, then refrigerate until chilled.",
         "When ready to serve, divide chia mixture between two bowls or large glasses. Top with berry sauce, yoghurt, kiwifruit and apple. Sprinkle puddings with LSA."
-      ],
-      "serves": null
+      ]
     },
     {
-      "category": "Breakfast",
+      "category": "Breakfast Boosters",
       "name": "Choc Jaffa Balls",
       "ingredients": [
         "1 1/3 cups pitted dates, chopped into small pieces",
@@ -157,150 +150,10 @@
         "In a bowl, soak the dates in the orange juice for a few min, turning them so they're evenly soaked.",
         "Pulse the oats and cashew nuts in a food processor for 30 sec. Add the soaked dates and orange juice, then add the cacao powder and the orange zest. Blend for about 2 min until the mixture has a smooth texture.",
         "Roll the mixture into small balls, about the size of a small brussels sprout, and roll in your chosen coating. The ball will keep, covered, in the fridge for up to 1 month."
-      ],
-      "serves": null
+      ]
     },
     {
-      "category": "Breakfast",
-      "name": "Scrambled Tofu",
-      "ingredients": [
-        "1 tablespoon reduced-fat spread",
-        "1 teaspoon ground turmeric",
-        "1 teaspoon ground cumin",
-        "1/2 teaspoon smoked paprika",
-        "300g tofu, drained and mashed with a fork",
-        "pinch salt and cracked black pepper",
-        "4 tomatoes, diced",
-        "handful fresh flat-leaf parsley, roughly chopped",
-        "4 slices wholegrain toast, to serve"
-      ],
-      "instructions": [
-        "In a nonstick frypan, melt spread over medium heat. Add spices and cook, stirring, for about 30 seconds or until fragrant.",
-        "Add tofu and mash well into spices until fully combined. Season with salt and pepper. Cook, stirring, for 1 minute, then add tomatoes. Cook, stirring occasionally, for another couple of minutes until tomatoes are softened and heated through.",
-        "Garnish tofu with parsley and serve with toast."
-      ],
-      "serves": null
-    },
-    {
-      "category": "Breakfast",
-      "name": "Indian Style Chickpea Toasties",
-      "ingredients": [
-        "125g can chickpeas, drained, rinsed",
-        "100g cherry tomatoes, chopped",
-        "2 green onions, sliced thinly (green part only)",
-        "1 tbsp chopped coriander",
-        "1/2 tsp ground cumin",
-        "4 slices of wholegrain gluten-free bread",
-        "spray olive oil",
-        "1/4 cup (25g) ricotta",
-        "30g baby spinach leaves"
-      ],
-      "instructions": [
-        "Place chickpeas in a medium bowl; roughly mash with a fork. Add tomatoes, green onion, coriander and cumin; stir to combine. Season.",
-        "Lay a sheet of baking paper on a chopping board; top with bread slices. Lightly spray slices with olive oil. Turn 2 slices so the oiled side faces down; spread with ricotta and top with chickpea mixture and spinach. Sandwich with the remaining bread slices, oiled-side up.",
-        "Preheat a sandwich press. Toast sandwiches in hot sandwich press for 3 minutes or until golden and crisp."
-      ],
-      "serves": null
-    },
-    {
-      "category": "Breakfast",
-      "name": "Green Spanish Omelette",
-      "ingredients": [
-        "1 small potato, peeled and diced",
-        "1 teaspoon olive oil",
-        "2 spring onions, finely chopped",
-        "1/2 red or yellow capsicum, diced",
-        "1/2 teaspoon dried oregano",
-        "80g frozen peas",
-        "2 eggs, plus 1 egg white",
-        "50g baby spinach",
-        "1 tablespoon grated parmesan",
-        "1 teaspoon balsamic vinegar, to serve"
-      ],
-      "instructions": [
-        "Put the potato in a microwave-safe bowl, cover, then heat on high for 3 min (or steam until tender). Heat the oil in an 18–20cm non-stick frying pan that has a lid, then add the potato along with the spring onions, capsicum and oregano and fry for 3–4 min, stirring occasionally. Add the peas and cook for 1 min.",
-        "Beat the eggs and egg white in a small bowl, then season with black pepper. Pour the whisked eggs over the vegetables, tilting the pan from side to side so the egg covers the veg and the base of the pan.",
-        "Cover the frying pan with the lid and cook for 5 min over a low heat or until the omelette is set.",
-        "Turn the omelette out onto a dinner plate, scatter with the spinach and cheese, then drizzle with the balsamic vinegar. Serve straight away."
-      ],
-      "serves": null
-    },
-    {
-      "category": "Breakfast",
-      "name": "Vegetable Frittata",
-      "ingredients": [
-        "½ medium sweet potato, cubed",
-        "2 tbsp olive oil",
-        "1 tsp paprika",
-        "3 spring onions, green tops only, sliced",
-        "Broccoli florets, chopped",
-        "1 zucchini, grated",
-        "5 eggs",
-        "2 tbsp lactose-free milk or other low FODMAP milk alternative",
-        "½ cup mixed herbs e.g. basil and parsley",
-        "¼ cup chives",
-        "¼ cup Danish fetta",
-        "Salt and pepper, to taste"
-      ],
-      "instructions": [
-        "Preheat oven to 180°C/356°F. Toss sweet potato in half of the oil and paprika, place on lined baking tray. Roast in oven for 45 minutes or until tender.",
-        "Heat the remaining oil in a large 22cm ovenproof frying pan over medium heat. Sauté spring onion and once softened, add the broccoli stirring occasionally until charred. Add zucchini; cook for 2 minutes or until softened. Remove from heat.",
-        "Combine eggs, milk and mixed herbs in a food processor. Process until herbs are finely chopped and egg mixture is fluffy",
-        "Once cooked, add the roasted sweet potato to the broccoli mixture in the frying pan, and turn heat back to medium. Add the egg mixture to the frying pan and stir until well combined. Sprinkle with feta and chives and season with salt and pepper. Reduce heat to low and cook for 8 minutes or until the egg mixture has mostly set.",
-        "In the meantime, preheat the grill on high. Place the frying pan under the grill and grill until golden brown and egg mixture is set."
-      ],
-      "serves": null
-    },
-    {
-      "category": "Breakfast",
-      "name": "Eggs & Chickpeas in Tomato Sauce",
-      "ingredients": [
-        "2 tablespoons extra-virgin olive oil",
-        "4 cups baby spinach, chopped (about 5 ounces)",
-        "4 cloves garlic, sliced",
-        "2 cups canned crushed tomatoes",
-        "1 (15 ounce) can no-salt-added chickpeas, rinsed",
-        "¼ cup heavy cream",
-        "½ teaspoon salt",
-        "4 large eggs",
-        "1 tablespoon chopped fresh thyme",
-        "½ teaspoon ground pepper"
-      ],
-      "instructions": [
-        "Heat oil in large skillet over medium heat. Add spinach and garlic. Cook, stirring, until the spinach has wilted and the garlic is beginning to brown, about 2 minutes.",
-        "Reduce heat to medium-low. Add tomatoes, chickpeas, cream and salt. Adjust heat to maintain a simmer. Crack an egg into a small bowl, taking care not to break the yolk. Make a well in the sauce roughly large enough to hold the egg and slip it in so that the yolk and most of the white is contained (some white may spread out). Repeat with the remaining eggs, evenly spacing them around the pan. Sprinkle the sauce with thyme; cover and cook until the eggs reach desired doneness, 6 to 8 minutes for medium-set. Remove from the heat and sprinkle with pepper."
-      ],
-      "serves": null
-    },
-    {
-      "category": "Breakfast",
-      "name": "Sweet Potato & Black Bean Tacos",
-      "ingredients": [
-        "2 spring onions",
-        "1 x 400g tin of black beans",
-        "2 tsp Cajun seasoning",
-        "2 sweet potatoes (250g each)",
-        "red wine vinegar",
-        "olive oil",
-        "4 regular flour tortillas",
-        "160g watermelon",
-        "½ a bunch of coriander (15g)",
-        "½ a fresh red chilli",
-        "1 lime",
-        "extra virgin olive oil",
-        "30g feta cheese"
-      ],
-      "instructions": [
-        "Trim and finely slice the spring onions, then remove the shelf from the air-fryer drawer and scatter them into the base. Add the beans, along with half their juice, mix in 1 teaspoon of Cajun seasoning, then replace the shelf.",
-        "Scrub the sweet potatoes, then chop into 3cm chunks and add to the drawer. Drizzle with 1 tablespoon each of red wine vinegar and olive oil, add 1 teaspoon of Cajun seasoning and a pinch of sea salt and black pepper, and rub together. Cook for 30 minutes at 180ºC, or until soft and golden, shaking halfway, and adding the tortillas to warm through for the last 2 minutes.",
-        "Meanwhile, peel and finely dice the watermelon, finely chop the coriander stalks, reserving the leaves, deseed and finely chop the chilli, then squeeze over half the lime juice, add ½ a tablespoon of extra virgin olive oil, gently toss together, and season to perfection.",
-        "Remove the tortillas and sweet potato chunks and carefully remove the shelf. Roughly chop the coriander leaves and add most of them to the beans, reserving a few for garnish. Roughly mash the beans to create a thick saucy consistency, season to perfection, then spoon over the tortillas.",
-        "Top with the sweet potato chunks and watermelon salsa, crumble over the feta, and sprinkle over the reserved coriander leaves. Serve with lime wedges."
-      ],
-      "serves": null
-    },
-    {
-      "category": "Vegetarian",
+      "category": "Quick & Easy",
       "name": "Creamy Mushroom & Silverbeet Pasta",
       "ingredients": [
         "250g linguine",
@@ -320,11 +173,68 @@
         "In a blender add cottage cheese, milk and cornflour, and blitz to a smooth and cream-like consistency. Set aside.",
         "Heat oil in a large frypan over medium to high heat. Add mushrooms and cook for 8-10 minutes until browned. Add silverbeet and garlic and cook, stirring, for 5 minutes until wilted.",
         "Add pasta and reserved pasta water to the pan. Pour in cottage cheese mixture and swirl pasta in sauce to emulsify and thicken. Stir in parmesan, parsley, lemon zest and season with pepper. Remove from heat and serve."
-      ],
-      "serves": null
+      ]
     },
     {
-      "category": "Vegetarian",
+      "category": "Quick & Easy",
+      "name": "Scrambled Tofu",
+      "ingredients": [
+        "1 tablespoon reduced-fat spread",
+        "1 teaspoon ground turmeric",
+        "1 teaspoon ground cumin",
+        "1/2 teaspoon smoked paprika",
+        "300g tofu, drained and mashed with a fork",
+        "pinch salt and cracked black pepper",
+        "4 tomatoes, diced",
+        "handful fresh flat-leaf parsley, roughly chopped",
+        "4 slices wholegrain toast, to serve"
+      ],
+      "instructions": [
+        "In a nonstick frypan, melt spread over medium heat. Add spices and cook, stirring, for about 30 seconds or until fragrant.",
+        "Add tofu and mash well into spices until fully combined. Season with salt and pepper. Cook, stirring, for 1 minute, then add tomatoes. Cook, stirring occasionally, for another couple of minutes until tomatoes are softened and heated through.",
+        "Garnish tofu with parsley and serve with toast."
+      ]
+    },
+    {
+      "category": "Quick & Easy",
+      "name": "Salmon Feta & Green Olive Penne",
+      "ingredients": [
+        "350g penne",
+        "415g can pink salmon in brine, drained, skin and bones removed, flaked",
+        "250g cherry tomatoes, quartered",
+        "1/2 cup pimento-stuffed green olives, drained and sliced",
+        "1/2 cup chopped flat-leaf parsley",
+        "100g low-fat ricotta, crumbled",
+        "4 spring onions, trimmed and finely chopped",
+        "80g feta, crumbled",
+        "lemon wedges to serve"
+      ],
+      "instructions": [
+        "Cook pasta in a large saucepan of boiling water following packet directions, or until just tender. Drain and return to the pan.",
+        "Add salmon, tomatoes, olives, parsley, ricotta and onions. Gently toss to combine.",
+        "Spoon into serving bowls. Top with feta and freshly ground black pepper and serve with lemon wedges."
+      ]
+    },
+    {
+      "category": "Quick & Easy",
+      "name": "Chili and Lime Tuna Noodle Salad",
+      "ingredients": [
+        "115g can tuna in chilli",
+        "150g soba noodles",
+        "1 teaspoon reduced-salt soy sauce",
+        "1 teaspoon rice wine vinegar",
+        "Large handful baby spinach",
+        "1 medium celery stalk, sliced",
+        "Lime wedges, to serve"
+      ],
+      "instructions": [
+        "Cook the soba noodles according to the packet instructions and then cool under running water. Drain well.",
+        "Toss the salad ingredients together, except for the lime wedges. Tip into lunchbox.",
+        "Squeeze the lime wedges over the salad just before serving and toss well."
+      ]
+    },
+    {
+      "category": "Quick & Easy",
       "name": "Vegan Mushroom, Pea and Coconut Korma",
       "ingredients": [
         "1 teaspoon olive oil",
@@ -348,11 +258,10 @@
         "Heat the oil in a large saucepan over a medium heat, then fry the onion and garlic for 5–8 min until softened. Add the cumin and mustard seeds, then fry for 30 sec or until they begin to pop. Add the spices and fenugreek leaves and stir to combine.",
         "Add the mushrooms, coconut milk, 1/2 cup water and the tinned and fresh tomatoes to the pan, then bring to a gentle boil, stirring. Reduce the heat and simmer for 20 min or until the mushrooms are soft and the sauce thickened.",
         "Add the broccoli and peas to the curry and cook for 10 min more. Remove from the heat, stir through the almonds, then serve with the brown rice."
-      ],
-      "serves": null
+      ]
     },
     {
-      "category": "Vegetarian",
+      "category": "Quick & Easy",
       "name": "Green Mac and Cheese",
       "ingredients": [
         "250g cherry tomatoes",
@@ -369,11 +278,10 @@
         "Meanwhile, cook pasta according to packet instructions. Drain, reserving 1½ cups liquid.",
         "Heat oil in a large saucepan over medium heat. Add onion, garlic, dried herbs and freshly ground black pepper and cook for 5 minutes or until onion is softened. Add spinach and cook for 3 minutes or until wilted. Add reserved pasta water. Using a handheld blender, blend until combined and smooth.",
         "Return pasta to pan, stirring well to coat in green sauce. Transfer pasta mixture to an ovenproof dish, top with cheese and roasted tomatoes, then bake for 5 minutes or until cheese is melted and golden. Serve green mac and cheese garnished with extra spinach."
-      ],
-      "serves": null
+      ]
     },
     {
-      "category": "Vegetarian",
+      "category": "Quick & Easy",
       "name": "Tofu and Vegetable Fried Rice",
       "ingredients": [
         "1 tablespoon sesame oil",
@@ -391,11 +299,10 @@
         "Heat half the sesame oil in a large frying pan over high heat. Add brown onion, garlic and tofu and cook for 10 minutes or until onion is softened. Add spring onion and broccoli and cook for a further 2 minutes. Transfer tofu and vegetables to a plate.",
         "Heat remaining oil in pan, add cooked rice mix and honey soy, stirring to combine. Return tofu and vegies to pan, stirring to combine. Stir through light soy.",
         "Divide fried rice among bowls and serve garnished with extra spring onion and chilli, if using."
-      ],
-      "serves": null
+      ]
     },
     {
-      "category": "Red Meat",
+      "category": "Quick & Easy",
       "name": "Pork and Vegetable Gyoza Soup",
       "ingredients": [
         "10 fresh or frozen pork gyozas",
@@ -416,11 +323,99 @@
         "Meanwhile, place 5 cups water, stock, kecap manis, star anise, ginger and garlic in a large heavy-based saucepan and bring to the boil over high heat.",
         "Add gyoza, carrot, corn, onion and capsicum to soup. Reduce heat to low. Simmer for 3 minutes or until veg are warmed through.",
         "Divide hot soup among four bowls. Top with tofu and serve sprinkled with extra onion."
-      ],
-      "serves": null
+      ]
     },
     {
-      "category": "Vegetarian",
+      "category": "Quick & Easy",
+      "name": "Indian Style Chickpea Toasties",
+      "ingredients": [
+        "125g can chickpeas, drained, rinsed",
+        "100g cherry tomatoes, chopped",
+        "2 green onions, sliced thinly (green part only)",
+        "1 tbsp chopped coriander",
+        "1/2 tsp ground cumin",
+        "4 slices of wholegrain gluten-free bread",
+        "spray olive oil",
+        "1/4 cup (25g) ricotta",
+        "30g baby spinach leaves"
+      ],
+      "instructions": [
+        "Place chickpeas in a medium bowl; roughly mash with a fork. Add tomatoes, green onion, coriander and cumin; stir to combine. Season.",
+        "Lay a sheet of baking paper on a chopping board; top with bread slices. Lightly spray slices with olive oil. Turn 2 slices so the oiled side faces down; spread with ricotta and top with chickpea mixture and spinach. Sandwich with the remaining bread slices, oiled-side up.",
+        "Preheat a sandwich press. Toast sandwiches in hot sandwich press for 3 minutes or until golden and crisp."
+      ]
+    },
+    {
+      "category": "Quick & Easy",
+      "name": "Green Spanish Omelette",
+      "ingredients": [
+        "1 small potato, peeled and diced",
+        "1 teaspoon olive oil",
+        "2 spring onions, finely chopped",
+        "1/2 red or yellow capsicum, diced",
+        "1/2 teaspoon dried oregano",
+        "80g frozen peas",
+        "2 eggs, plus 1 egg white",
+        "50g baby spinach",
+        "1 tablespoon grated parmesan",
+        "1 teaspoon balsamic vinegar, to serve"
+      ],
+      "instructions": [
+        "Put the potato in a microwave-safe bowl, cover, then heat on high for 3 min (or steam until tender). Heat the oil in an 18–20cm non-stick frying pan that has a lid, then add the potato along with the spring onions, capsicum and oregano and fry for 3–4 min, stirring occasionally. Add the peas and cook for 1 min.",
+        "Beat the eggs and egg white in a small bowl, then season with black pepper. Pour the whisked eggs over the vegetables, tilting the pan from side to side so the egg covers the veg and the base of the pan.",
+        "Cover the frying pan with the lid and cook for 5 min over a low heat or until the omelette is set.",
+        "Turn the omelette out onto a dinner plate, scatter with the spinach and cheese, then drizzle with the balsamic vinegar. Serve straight away."
+      ]
+    },
+    {
+      "category": "Nourishing & Comforting",
+      "name": "Chicken Pesto Gnocchi Bake",
+      "ingredients": [
+        "1 kg chicken breast fillets",
+        "500g packet gnocchi",
+        "1 yellow capsicum, chopped into 1cm long pieces",
+        "500g cherry tomatoes, halved",
+        "2 zucchinis, chopped into 1cm long pieces",
+        "1/4 cup basil pesto",
+        "250g baby spinach",
+        "2 tablespoons grated parmesan"
+      ],
+      "instructions": [
+        "Preheat oven to 200°C. Prepare a large oven proof dish with baking paper. Heat up 1 Tbspn olive oil in a large fry pan.",
+        "Cook chicken breast fillets in the fry pan for 8-10 minutes on each side. Once cooked, shred chicken into small pieces using a fork.",
+        "Bring a large pot of water to the boil and cook and the gnocchi according to packet instructions. Drain gnocchi, setting aside 1 cup of the water it was cooked in.",
+        "In the prepared oven proof dish, toss the capsicum, tomatoes and zucchini and drizzle with olive oil. Place in the oven to bake for 10–15 minutes, or until softened.",
+        "Combine pesto with gnocchi cooking water, then add to the dish along with the gnocchi, tossing gently. Stir in chicken and spinach.",
+        "Sprinkle with parmesan and bake for a further 10–15 minutes or until golden"
+      ]
+    },
+    {
+      "category": "Nourishing & Comforting",
+      "name": "Amanda's Tuna Pasta",
+      "ingredients": [
+        "1 can (185g) tuna in oil",
+        "1 large onion, diced",
+        "1 green capsicum, sliced",
+        "1-2 cloves garlic, crushed (or 1-2 tsp crushed or minced garlic)",
+        "2 cans diced tomatoes, salt reduced",
+        "1 tablespoon tomato paste, no added salt",
+        "2 teaspoons white wine vinegar (or any vinegar you have handy)",
+        "10-12 pitted black olives (kalamata preferred)",
+        "1 teaspoon cracked black pepper",
+        "200g wholemeal pasta",
+        "Chopped fresh herbs to serve",
+        "50g grated parmesan"
+      ],
+      "instructions": [
+        "For Tzatziki sauce, mix the first 6 ingredients; refrigerate until serving.",
+        "In a shallow bowl, whisk together flour, salt, pepper and baking powder. In another bowl, whisk together egg and milk.",
+        "Pound chicken breasts with a meat mallet until ½ inch thickness. Dip in flour mixture to coat both sides; shake off excess. Dip in egg mixture, then again in flour mixture.",
+        "In a large skillet, heat oil over medium heat. Cook chicken until golden brown and juices run clear, 5-7 minutes per side. Top with cheese.",
+        "Serve with sauce and, if desired, lemon wedges."
+      ]
+    },
+    {
+      "category": "Nourishing & Comforting",
       "name": "Pumpkin & Thyme Risotto",
       "ingredients": [
         "Kent/Japanese pumpkin, peeled, seeded, cut into 2cm cubes",
@@ -437,11 +432,10 @@
         "Heat 1 tbsp of garlic infused olive oil over medium heat in a heavy based saucepan. Add the thyme leaves and let cook for 1 minute. Stir in the rice for 1 minute and then pour in the white wine and cook, stirring, until the wine reduces by half.",
         "Add half a cup of the stock to the rice and stir with a wooden spoon until the liquid is absorbed. Keep adding the stock ½ cup at a time, stirring constantly and allow the liquid to be absorbed before adding more stock. Continue this for approximately 15 minutes. Add the roasted pumpkin to the mix along with any stock that is left, and cook stirring for a further 5 minutes until the rice is tender and risotto is creamy.",
         "Turn off the heat, cover and let stand for 5 minutes. Stir through the pepitas and feta before serving, divide amongst bowls and top with fresh thyme leaves."
-      ],
-      "serves": null
+      ]
     },
     {
-      "category": "Vegetarian",
+      "category": "Nourishing & Comforting",
       "name": "Tofu & Vegetable Stir-Fry",
       "ingredients": [
         "270g soba noodles",
@@ -466,11 +460,10 @@
         "Add the remaining oil to the wok or pan with the combined mushroom, ginger and garlic. Stir-fry for 3 minutes or until the mushroom is light golden.",
         "Return the tofu to the pan with the beans, spring onion, sweet chilli sauce and soy sauce. Stir-fry for 1-2 minutes or until the beans are just tender.",
         "Divide the noodles and tofu mixture among bowls. Top with coriander, chilli, if using, cashew and sesame seeds."
-      ],
-      "serves": null
+      ]
     },
     {
-      "category": "White Meat",
+      "category": "Nourishing & Comforting",
       "name": "Salmon & Quinoa Salad",
       "ingredients": [
         "1/2 cup (100g) quinoa, rinsed, drained",
@@ -497,11 +490,10 @@
         "Combine the salmon, cumin, coriander and paprika in a large bowl. Place on the lined tray and spray with olive oil spray. Bake for 10 minutes or until the salmon is cooked to your liking.",
         "Add the quinoa to the broad beans in the bowl with the spinach, kale, spring onion, tomato, mint and almond. Toss to combine. Combine the yoghurt, tahini, lemon juice and garlic in a small bowl.",
         "Divide the quinoa salad and salmon among serving plates. Drizzle the salad with yoghurt dressing. Season with pepper to serve."
-      ],
-      "serves": null
+      ]
     },
     {
-      "category": "Vegetarian",
+      "category": "Nourishing & Comforting",
       "name": "Sweet Potato Grain Bowls",
       "ingredients": [
         "1 cup whole-grain sorghum or whole-grain farro, rinsed",
@@ -526,11 +518,10 @@
         "Meanwhile, place a large rimmed baking sheet on center oven rack; preheat to 425°F. Place sweet potatoes in a large bowl. Add 1½ tablespoons oil and ½ teaspoon each paprika, coriander and onion powder; toss to coat. Remove the hot pan from the oven; spread the sweet potato mixture on it in an even layer, ensuring most of the sweet potatoes are not touching. Using a rubber spatula, scrape as much oil and seasoning as possible from the bowl onto the potatoes; reserve the bowl. Roast the sweet potatoes for 10 minutes.",
         "Meanwhile, place chickpeas in the reserved bowl. Add 1½ tablespoons oil, ¼ teaspoon salt and the remaining ½ teaspoon each paprika and coriander; toss to coat. Remove the sweet potatoes from the oven; stir and move them to the edges of the pan to create space in the center. Spread the chickpeas in an even layer in the center space. Roast, stirring every 10 minutes, until the chickpeas are crispy and the sweet potatoes are tender and browned in spots, 20 to 30 minutes. Let cool completely, about 15 minutes.",
         "Whisk ½ cup yogurt, 3 tablespoons each water and lemon juice, 2 tablespoons oil, 1 tablespoon tahini, 1 teaspoon mustard and ¼ teaspoon salt in a medium bowl until combined. Combine 3 cups salad greens, the sorghum (or farro) and the remaining ¼ teaspoon salt in a large bowl. Drizzle with ¼ cup of the dressing; toss to coat. Divide among 4 wide bowls; top each bowl with sweet potatoes, chickpeas, avocado and 2 tablespoons feta; drizzle each with ¾ teaspoon oil and about 2 tablespoons dressing."
-      ],
-      "serves": null
+      ]
     },
     {
-      "category": "White Meat",
+      "category": "Nourishing & Comforting",
       "name": "Roasted Salmon & Vegetable Tray Bake",
       "ingredients": [
         "400g baby potatoes",
@@ -551,11 +542,10 @@
         "Drain the veg and tip into a large bowl. Halve and add the tomatoes, then destone and add the olives along with half the basil leaves. Add ½ a tablespoon of olive oil, toss together and tip into a roasting tray. Shake into an even layer and season with sea salt and black pepper.",
         "Place the salmon fillets into the bowl, add ½ a tablespoon of olive oil, and squeeze in the juice of ½ a lemon. Season lightly and toss to coat. Lay the salmon fillets on top of the vegetables, skin-side up. Slice off 4 rounds of lemon and lay on top of the fillets, then roast for 10 minutes, or until cooked through.",
         "To make the basil & mustard yoghurt, bash the remaining basil leaves in a pestle and mortar with a pinch of sea salt. Peel and add the garlic and bash again. Scrape the mixture into a bowl and add the mustard, 4 tablespoons of Greek yoghurt and the remaining lemon juice. Add 1 tablespoon of extra virgin olive oil, mix well, season to taste and serve with the salmon traybake."
-      ],
-      "serves": null
+      ]
     },
     {
-      "category": "White Meat",
+      "category": "Nourishing & Comforting",
       "name": "Crispy Salmon Tacos",
       "ingredients": [
         "160g ripe mixed-colour cherry tomatoes",
@@ -572,11 +562,10 @@
         "Pat the Cajun seasoning all over the salmon fillets, then fry for 5 minutes, turning to get them golden on each of their sides. Once the skin is crispy, move it to sit on top of the salmon. Meanwhile, use tongs to toast the tortillas directly over the flame of your gas hob for 15 seconds, or use a hot pan.",
         "Sprinkle the mango, avocado and spring onions over the tortillas, then flake over the salmon and crack over the skin.",
         "Toss the tomatoes and the juice of 1 lime in the residual heat of the pan for 30 seconds, then spoon over the tortillas. Serve with lime wedges, for squeezing over."
-      ],
-      "serves": "Serves 4"
+      ]
     },
     {
-      "category": "Red Meat",
+      "category": "Nourishing & Comforting",
       "name": "Stuffed Peppers",
       "ingredients": [
         "Greek extra virgin olive oil",
@@ -601,11 +590,36 @@
         "Assemble stuffed peppers. Assemble the bell peppers open-side up in a baking dish filled with 3/4 cup broth or water. Fill each of the bell peppers with the the cooked stuffing mixture of meat, rice and chickpeas.",
         "Cover and bake. Cover the baking dish with foil (making sure the foil does not touch the stuffed peppers) and place the dish on the middle rack of your heated oven. Bake for 20-30 minutes.",
         "Remove from the oven and garnish with parsley, if you like, and serve. To serve stuffed peppers as a main dish Greek-style, add Tztaziki sauce and Greek salad for sides."
-      ],
-      "serves": "Serves 6"
+      ]
     },
     {
-      "category": "White Meat",
+      "category": "Nourishing & Comforting",
+      "name": "Sweet Potato & Black Bean Tacos",
+      "ingredients": [
+        "2 spring onions",
+        "1 x 400g tin of black beans",
+        "2 tsp Cajun seasoning",
+        "2 sweet potatoes (250g each)",
+        "red wine vinegar",
+        "olive oil",
+        "4 regular flour tortillas",
+        "160g watermelon",
+        "½ a bunch of coriander (15g)",
+        "½ a fresh red chilli",
+        "1 lime",
+        "extra virgin olive oil",
+        "30g feta cheese"
+      ],
+      "instructions": [
+        "Trim and finely slice the spring onions, then remove the shelf from the air-fryer drawer and scatter them into the base. Add the beans, along with half their juice, mix in 1 teaspoon of Cajun seasoning, then replace the shelf.",
+        "Scrub the sweet potatoes, then chop into 3cm chunks and add to the drawer. Drizzle with 1 tablespoon each of red wine vinegar and olive oil, add 1 teaspoon of Cajun seasoning and a pinch of sea salt and black pepper, and rub together. Cook for 30 minutes at 180ºC, or until soft and golden, shaking halfway, and adding the tortillas to warm through for the last 2 minutes.",
+        "Meanwhile, peel and finely dice the watermelon, finely chop the coriander stalks, reserving the leaves, deseed and finely chop the chilli, then squeeze over half the lime juice, add ½ a tablespoon of extra virgin olive oil, gently toss together, and season to perfection.",
+        "Remove the tortillas and sweet potato chunks and carefully remove the shelf. Roughly chop the coriander leaves and add most of them to the beans, reserving a few for garnish. Roughly mash the beans to create a thick saucy consistency, season to perfection, then spoon over the tortillas.",
+        "Top with the sweet potato chunks and watermelon salsa, crumble over the feta, and sprinkle over the reserved coriander leaves. Serve with lime wedges."
+      ]
+    },
+    {
+      "category": "Nourishing & Comforting",
       "name": "Salmon, Leek & Mushroom Quiche",
       "ingredients": [
         "1 (5½-ounce) salmon fillet",
@@ -625,11 +639,30 @@
         "Meanwhile, place the remaining 1 tablespoon oil in a large skillet; heat over medium heat. Add ½ cup leek; cook, stirring, until slightly softened, about 1 minute. Add 2 cups mushrooms, 1 cup spinach and ¼ teaspoon salt; stir to combine. Cook, stirring occasionally, until the vegetables are tender and any liquid released from the vegetables has evaporated, 5 to 8 minutes. Set aside to cool slightly.",
         "Add the flaked cooked salmon to the vegetables and combine. Transfer to the prepared pie pan and spread in an even layer. Whisk 5 eggs, 1 cup milk and the remaining ¼ teaspoon salt in a large bowl. Pour the egg mixture over the vegetables. Sprinkle with 1 tablespoon dill.",
         "Bake until the top starts to turn golden brown and the center is set, 35 to 40 minutes. Let stand for 10 minutes before slicing. Garnish with lemon zest, if desired."
-      ],
-      "serves": null
+      ]
     },
     {
-      "category": "Vegetarian",
+      "category": "Nourishing & Comforting",
+      "name": "Eggs & Chickpeas in Tomato Sauce",
+      "ingredients": [
+        "2 tablespoons extra-virgin olive oil",
+        "4 cups baby spinach, chopped (about 5 ounces)",
+        "4 cloves garlic, sliced",
+        "2 cups canned crushed tomatoes",
+        "1 (15 ounce) can no-salt-added chickpeas, rinsed",
+        "¼ cup heavy cream",
+        "½ teaspoon salt",
+        "4 large eggs",
+        "1 tablespoon chopped fresh thyme",
+        "½ teaspoon ground pepper"
+      ],
+      "instructions": [
+        "Heat oil in large skillet over medium heat. Add spinach and garlic. Cook, stirring, until the spinach has wilted and the garlic is beginning to brown, about 2 minutes.",
+        "Reduce heat to medium-low. Add tomatoes, chickpeas, cream and salt. Adjust heat to maintain a simmer. Crack an egg into a small bowl, taking care not to break the yolk. Make a well in the sauce roughly large enough to hold the egg and slip it in so that the yolk and most of the white is contained (some white may spread out). Repeat with the remaining eggs, evenly spacing them around the pan. Sprinkle the sauce with thyme; cover and cook until the eggs reach desired doneness, 6 to 8 minutes for medium-set. Remove from the heat and sprinkle with pepper."
+      ]
+    },
+    {
+      "category": "Freezer Friendly",
       "name": "Pumpkin & Carrot Soup",
       "ingredients": [
         "Kent pumpkin, peeled and cut into 1cm pieces",
@@ -651,11 +684,35 @@
         "Add the roasted carrot and pumpkin to the pot along with the stock and the water. Increase heat to medium, cover and bring to the boil. Reduce heat to low and cook covered for 15 minutes.",
         "After 15 minutes, uncover and leave to cool slightly for 15 minutes",
         "Transfer half of the mixture to a jug and blitz with a stick mixer, repeat with the remaining pumpkin mixture."
-      ],
-      "serves": null
+      ]
     },
     {
-      "category": "Vegetarian",
+      "category": "Freezer Friendly",
+      "name": "Vegetable Frittata",
+      "ingredients": [
+        "½ medium sweet potato, cubed",
+        "2 tbsp olive oil",
+        "1 tsp paprika",
+        "3 spring onions, green tops only, sliced",
+        "Broccoli florets, chopped",
+        "1 zucchini, grated",
+        "5 eggs",
+        "2 tbsp lactose-free milk or other low FODMAP milk alternative",
+        "½ cup mixed herbs e.g. basil and parsley",
+        "¼ cup chives",
+        "¼ cup Danish fetta",
+        "Salt and pepper, to taste"
+      ],
+      "instructions": [
+        "Preheat oven to 180°C/356°F. Toss sweet potato in half of the oil and paprika, place on lined baking tray. Roast in oven for 45 minutes or until tender.",
+        "Heat the remaining oil in a large 22cm ovenproof frying pan over medium heat. Sauté spring onion and once softened, add the broccoli stirring occasionally until charred. Add zucchini; cook for 2 minutes or until softened. Remove from heat.",
+        "Combine eggs, milk and mixed herbs in a food processor. Process until herbs are finely chopped and egg mixture is fluffy",
+        "Once cooked, add the roasted sweet potato to the broccoli mixture in the frying pan, and turn heat back to medium. Add the egg mixture to the frying pan and stir until well combined. Sprinkle with feta and chives and season with salt and pepper. Reduce heat to low and cook for 8 minutes or until the egg mixture has mostly set.",
+        "In the meantime, preheat the grill on high. Place the frying pan under the grill and grill until golden brown and egg mixture is set."
+      ]
+    },
+    {
+      "category": "Freezer Friendly",
       "name": "Curried Roasted Vegetable Soup",
       "ingredients": [
         "500g potato, skin on",
@@ -675,11 +732,10 @@
         "Add some ground black pepper, then bring the soup to the boil then immediately reduce to a simmer. Simmer for 40-45 minutes.",
         "Get out a stick blender/ food processing stick then obliterate it until it becomes smooth. It doesn't have to be completely smooth, it's ok if it's a bit rough.",
         "Serve with toasted sourdough"
-      ],
-      "serves": null
+      ]
     },
     {
-      "category": "White Meat",
+      "category": "Freezer Friendly",
       "name": "Chicken Noodle Soup",
       "ingredients": [
         "½ bunch spring onions (finely sliced)",
@@ -699,11 +755,10 @@
         "Using tongs or a fork, carefully remove the chicken, and place in a medium sized bowl. Using two forks, shred the chicken into thin strips. You could also use a knife and chop the chicken into thin pieces. Add in the frozen spinach, and the shredded chicken and stir until the spinach is no longer frozen, and is distributed evenly throughout the soup, roughly 2 minutes",
         "(Optional) before adding the noodles, remove the pot from the heat and allow it to cool slightly. Using a stick blender, roughly chop the soup mixture. The aim is to roughly chop, rather than blend to a smooth consistency. Be mindful that blending hot food can be dangerous due to spills and splashes, ensure that you are using an appropriate container to minimise spills and splashes. Return the pot to the heat and bring the soup back to a simmer",
         "Roughly break up the egg noodles (about 2 cm long pieces) and add to the pot, cook the noodles with the vegetables and chicken stock for around 3-5 minutes, until the noodles are just cooked"
-      ],
-      "serves": null
+      ]
     },
     {
-      "category": "Red Meat",
+      "category": "Freezer Friendly",
       "name": "Lamb & Chickpea Tagine",
       "ingredients": [
         "1½ tablespoons olive oil",
@@ -722,11 +777,10 @@
         "Heat remaining oil in same pot. Add onions. Cook, stirring, for 3-5 minutes, until light golden. Add spice blend. Cook, stirring, for 1 minute.",
         "Return lamb to pot with carrots, chickpeas and honey. Stir in passata, stock and 2 cups water. Bring to the boil. Reduce heat. Cover and simmer for 1½ hours, stirring occasionally, until lamb is tender. Uncover, simmer for a further 10 to 15 minutes, or until thickened.",
         "Transfer half the tagine to a large freezer-safe container (or divide into smaller containers) and set aside to cool for 1 hour. Label, date, then seal and refrigerate for up to 3 days or freeze for up to 3 months."
-      ],
-      "serves": null
+      ]
     },
     {
-      "category": "Vegetarian",
+      "category": "Freezer Friendly",
       "name": "Vegetable & Chickpea Soup",
       "ingredients": [
         "1½ tablespoons olive oil",
@@ -745,11 +799,10 @@
         "Heat remaining oil in same pot. Add onions. Cook, stirring, for 3-5 minutes, until light golden. Add spice blend. Cook, stirring, for 1 minute.",
         "Return lamb to pot with carrots, chickpeas and honey. Stir in passata, stock and 2 cups water. Bring to the boil. Reduce heat. Cover and simmer for 1½ hours, stirring occasionally, until lamb is tender. Uncover, simmer for a further 10 to 15 minutes, or until thickened.",
         "Transfer half the tagine to a large freezer-safe container (or divide into smaller containers) and set aside to cool for 1 hour. Label, date, then seal and refrigerate for up to 3 days or freeze for up to 3 months."
-      ],
-      "serves": null
+      ]
     },
     {
-      "category": "Vegetarian",
+      "category": "Freezer Friendly",
       "name": "Kale & White Bean Stew",
       "ingredients": [
         "4 cups low-sodium vegetable broth",
@@ -771,11 +824,10 @@
       ],
       "instructions": [
         "Combine broth, beans, tomatoes, tomato sauce, carrots, onion, garlic, tomato paste, oregano, thyme and paprika in a 3 1/2-quart slow cooker. Cover and cook on High for 3 1/2 hours. Stir in kale. Cover and cook until the kale is tender, 10 to 15 minutes. Stir in salt. Top with Parmesan and za'atar, if using. Serve with bread."
-      ],
-      "serves": null
+      ]
     },
     {
-      "category": "Vegetarian",
+      "category": "Freezer Friendly",
       "name": "Spinach & Ricotta Cannelloni",
       "ingredients": [
         "400g low fat ricotta",
@@ -794,11 +846,10 @@
         "Cut each lasagne sheet in half crosswise. Place 1/3 cup of ricotta mixture along the length of each lasagne sheet and roll up to form a tube. The mixture should make 8 tube",
         "Lay tubes side by side in the oven tray. Pour remaining tomato passata over the tubes and sprinkle over the cheese",
         "Cook for 25 minutes or until golden brown"
-      ],
-      "serves": null
+      ]
     },
     {
-      "category": "Red Meat",
+      "category": "Freezer Friendly",
       "name": "Chilli con Carne",
       "ingredients": [
         "2 tablespoons olive oil",
@@ -826,11 +877,10 @@
         "Add chopped tomatoes, tomato paste and water. Bring to the boil, then reduce heat and cook over low heat for 20-25 minutes or until mixture slightly thickens.",
         "Allow to cool. Freeze in an airtight container.",
         "Once reheated, stir through coriander before serving."
-      ],
-      "serves": null
+      ]
     },
     {
-      "category": "White Meat",
+      "category": "Freezer Friendly",
       "name": "Wild Rice & Chicken Casserole",
       "ingredients": [
         "1 cup wild rice",
@@ -853,11 +903,10 @@
         "Once the veggies and rice have finished baking, remove the foil. Stir in the sauce and raw chopped chicken. Increase oven heat to 425 degrees F. Place casserole back in the oven and bake another 20 to 25 minutes, until casserole is bubbly and chicken is cooked through.",
         "Top with chopped hazelnuts (optional) and chopped parsley.",
         "Serve heaping portions and enjoy!"
-      ],
-      "serves": null
+      ]
     },
     {
-      "category": "White Meat",
+      "category": "Freezer Friendly",
       "name": "Chicken & Root Vegetable Soup",
       "ingredients": [
         "1 tablespoon extra-virgin olive oil",
@@ -877,11 +926,10 @@
       ],
       "instructions": [
         "Heat oil in a large Dutch oven over medium-high heat. Add onion; cook, stirring occasionally, until tender, about 3 minutes. Stir in carrot, celery and root vegetables; cook, stirring occasionally, until tender, about 5 minutes. Stir in garlic, oregano, thyme, salt and pepper; cook, stirring occasionally, until aromatic, about 1 minute. Stir in broth, chicken and rice; bring to a boil over high heat. Reduce heat to maintain a simmer; cover and cook, undisturbed, until the rice is just tender and the chicken is cooked through, 30 to 35 minutes. Remove from heat and stir in parsley and lemon juice."
-      ],
-      "serves": null
+      ]
     },
     {
-      "category": "Red Meat",
+      "category": "Freezer Friendly",
       "name": "Beef & Lentil Bolognese",
       "ingredients": [
         "1 tablespoon olive oil",
@@ -902,555 +950,7 @@
         "Add mince. Cook, breaking up lumps, for about 10 minutes or until well browned. Add carrot, mushrooms, lentils, herbs and tomato paste. Cook, stirring occasionally, for a further 5 minutes.",
         "Stir in tomatoes, passata, stock and 2 cups water. Bring to the boil. Reduce heat. Simmer for 40-45 minutes, stirring occasionally, until thickened.",
         "Transfer half the Bolognese sauce to a large freezer-safe container (or divide into smaller containers) and set aside to cool for 1 hour. Label and date, then seal and refrigerate for up to 3 days or freeze for up to 3 months."
-      ],
-      "serves": null
-    },
-    {
-      "category": "White Meat",
-      "name": "Salmon Feta & Green Olive Penne",
-      "ingredients": [
-        "350g penne",
-        "415g can pink salmon in brine, drained, skin and bones removed, flaked",
-        "250g cherry tomatoes, quartered",
-        "1/2 cup pimento-stuffed green olives, drained and sliced",
-        "1/2 cup chopped flat-leaf parsley",
-        "100g low-fat ricotta, crumbled",
-        "4 spring onions, trimmed and finely chopped",
-        "80g feta, crumbled",
-        "lemon wedges to serve"
-      ],
-      "instructions": [
-        "Cook pasta in a large saucepan of boiling water following packet directions, or until just tender. Drain and return to the pan.",
-        "Add salmon, tomatoes, olives, parsley, ricotta and onions. Gently toss to combine.",
-        "Spoon into serving bowls. Top with feta and freshly ground black pepper and serve with lemon wedges."
-      ],
-      "serves": null
-    },
-    {
-      "category": "White Meat",
-      "name": "Chili and Lime Tuna Noodle Salad",
-      "ingredients": [
-        "115g can tuna in chilli",
-        "150g soba noodles",
-        "1 teaspoon reduced-salt soy sauce",
-        "1 teaspoon rice wine vinegar",
-        "Large handful baby spinach",
-        "1 medium celery stalk, sliced",
-        "Lime wedges, to serve"
-      ],
-      "instructions": [
-        "Cook the soba noodles according to the packet instructions and then cool under running water. Drain well.",
-        "Toss the salad ingredients together, except for the lime wedges. Tip into lunchbox.",
-        "Squeeze the lime wedges over the salad just before serving and toss well."
-      ],
-      "serves": null
-    },
-    {
-      "category": "White Meat",
-      "name": "Chicken Pesto Gnocchi Bake",
-      "ingredients": [
-        "1 kg chicken breast fillets",
-        "500g packet gnocchi",
-        "1 yellow capsicum, chopped into 1cm long pieces",
-        "500g cherry tomatoes, halved",
-        "2 zucchinis, chopped into 1cm long pieces",
-        "1/4 cup basil pesto",
-        "250g baby spinach",
-        "2 tablespoons grated parmesan"
-      ],
-      "instructions": [
-        "Preheat oven to 200°C. Prepare a large oven proof dish with baking paper. Heat up 1 Tbspn olive oil in a large fry pan.",
-        "Cook chicken breast fillets in the fry pan for 8-10 minutes on each side. Once cooked, shred chicken into small pieces using a fork.",
-        "Bring a large pot of water to the boil and cook and the gnocchi according to packet instructions. Drain gnocchi, setting aside 1 cup of the water it was cooked in.",
-        "In the prepared oven proof dish, toss the capsicum, tomatoes and zucchini and drizzle with olive oil. Place in the oven to bake for 10–15 minutes, or until softened.",
-        "Combine pesto with gnocchi cooking water, then add to the dish along with the gnocchi, tossing gently. Stir in chicken and spinach.",
-        "Sprinkle with parmesan and bake for a further 10–15 minutes or until golden"
-      ],
-      "serves": null
-    },
-    {
-      "category": "White Meat",
-      "name": "Amanda's Tuna Pasta",
-      "ingredients": [
-        "1 can (185g) tuna in oil",
-        "1 large onion, diced",
-        "1 green capsicum, sliced",
-        "1-2 cloves garlic, crushed (or 1-2 tsp crushed or minced garlic)",
-        "2 cans diced tomatoes, salt reduced",
-        "1 tablespoon tomato paste, no added salt",
-        "2 teaspoons white wine vinegar (or any vinegar you have handy)",
-        "10-12 pitted black olives (kalamata preferred)",
-        "1 teaspoon cracked black pepper",
-        "200g wholemeal pasta",
-        "Chopped fresh herbs to serve",
-        "50g grated parmesan"
-      ],
-      "instructions": [
-        "For Tzatziki sauce, mix the first 6 ingredients; refrigerate until serving.",
-        "In a shallow bowl, whisk together flour, salt, pepper and baking powder. In another bowl, whisk together egg and milk.",
-        "Pound chicken breasts with a meat mallet until ½ inch thickness. Dip in flour mixture to coat both sides; shake off excess. Dip in egg mixture, then again in flour mixture.",
-        "In a large skillet, heat oil over medium heat. Cook chicken until golden brown and juices run clear, 5-7 minutes per side. Top with cheese.",
-        "Serve with sauce and, if desired, lemon wedges."
-      ],
-      "serves": null
-    },
-    {
-      "category": "White Meat",
-      "name": "Lemon Herb Salmon with Roasted Vegetables",
-      "ingredients": [
-        "4 salmon fillets (6 oz each)",
-        "2 zucchini, sliced",
-        "2 bell peppers, cut into strips",
-        "3 large carrots, cut into chunks",
-        "1/4 cup olive oil",
-        "2 lemons (juiced and zested)",
-        "2 tsp dried oregano",
-        "1 tsp dried thyme",
-        "Salt and pepper to taste"
-      ],
-      "instructions": [
-        "Preheat oven to 400°F (200°C).",
-        "Toss vegetables with half the olive oil, salt, and pepper. Spread on a large baking sheet.",
-        "Place salmon on the same sheet or a separate one. Brush with remaining olive oil.",
-        "Mix lemon juice, zest, oregano, and thyme. Pour over salmon and vegetables.",
-        "Roast for 15-20 minutes until salmon flakes easily and vegetables are tender."
-      ],
-      "serves": "Serves 4"
-    },
-    {
-      "category": "White Meat",
-      "name": "Mediterranean Tuna and Vegetable Pasta",
-      "ingredients": [
-        "12 oz rice pasta or corn pasta",
-        "2 cans (5 oz each) tuna in olive oil",
-        "2 cups cherry tomatoes, halved",
-        "1/2 cup kalamata olives, pitted",
-        "2 tbsp capers",
-        "4 cups fresh spinach",
-        "1/4 cup olive oil",
-        "2 lemons, juiced",
-        "1/4 cup fresh basil, chopped",
-        "Salt and pepper to taste"
-      ],
-      "instructions": [
-        "Cook pasta according to package directions. Reserve 1/2 cup pasta water before draining.",
-        "Heat olive oil in a large pan over medium heat.",
-        "Add cherry tomatoes and cook for 3-4 minutes until softened.",
-        "Add tuna (with oil), olives, capers, and spinach. Cook until spinach wilts.",
-        "Add cooked pasta and toss. Add pasta water if needed for consistency.",
-        "Finish with lemon juice, basil, salt, and pepper."
-      ],
-      "serves": "Serves 4"
-    },
-    {
-      "category": "White Meat",
-      "name": "Herb-Crusted White Fish",
-      "ingredients": [
-        "4 white fish fillets (cod or halibut, 6 oz each)",
-        "1 cup rice crackers, crushed",
-        "1/4 cup fresh parsley, chopped",
-        "2 tbsp fresh dill, chopped",
-        "1 tbsp fresh chives, chopped",
-        "1/4 cup olive oil",
-        "2 tbsp lemon juice",
-        "3 medium potatoes, cubed",
-        "2 large carrots, cut into chunks",
-        "Salt and pepper to taste"
-      ],
-      "instructions": [
-        "Preheat oven to 425°F (220°C).",
-        "Toss potatoes and carrots with 2 tbsp olive oil, salt, and pepper. Roast for 20 minutes.",
-        "Mix crushed crackers with herbs, remaining olive oil, and lemon juice.",
-        "Season fish with salt and pepper. Press herb mixture onto fish fillets.",
-        "Add fish to the pan with vegetables and roast for 12-15 minutes until fish flakes easily."
-      ],
-      "serves": "Serves 4"
-    },
-    {
-      "category": "Red Meat",
-      "name": "Greek-Style Lamb with Feta and Tomatoes",
-      "ingredients": [
-        "8 lamb chops or 2 lbs leg of lamb, cut into portions",
-        "4 large tomatoes, cut into thick slices",
-        "6 oz feta cheese, crumbled",
-        "1/4 cup olive oil",
-        "2 tbsp fresh oregano (or 1 tbsp dried)",
-        "1 tbsp fresh rosemary, chopped",
-        "2 lemons, juiced",
-        "Salt and pepper to taste"
-      ],
-      "instructions": [
-        "Preheat oven to 400°F (200°C).",
-        "Season lamb with salt, pepper, oregano, and rosemary.",
-        "Heat 2 tbsp olive oil in an oven-safe pan over medium-high heat.",
-        "Sear lamb for 2-3 minutes per side until browned.",
-        "Arrange tomato slices around lamb, drizzle with remaining olive oil and lemon juice.",
-        "Transfer to oven and roast for 15-20 minutes for medium doneness.",
-        "Top with crumbled feta in the last 5 minutes of cooking."
-      ],
-      "serves": "Serves 4"
-    },
-    {
-      "category": "Red Meat",
-      "name": "Italian Beef and Zucchini Bake",
-      "ingredients": [
-        "2 lbs ground beef",
-        "4 large zucchini, sliced lengthwise into 1/4-inch strips",
-        "1 can (28 oz) crushed tomatoes",
-        "2 cups mozzarella cheese, shredded",
-        "1/4 cup fresh basil, chopped",
-        "3 tbsp olive oil",
-        "1 tsp dried oregano",
-        "Salt and pepper to taste"
-      ],
-      "instructions": [
-        "Preheat oven to 375°F (190°C).",
-        "Brown ground beef in a large pan, breaking it up as it cooks. Season with salt, pepper, and oregano.",
-        "Add crushed tomatoes and simmer for 10 minutes. Stir in fresh basil.",
-        "Meanwhile, brush zucchini slices with olive oil and season with salt and pepper.",
-        "Layer half the zucchini in a greased 9×13 baking dish.",
-        "Spread meat sauce over zucchini, then layer remaining zucchini on top.",
-        "Top with mozzarella and bake for 35-40 minutes until bubbly and golden."
-      ],
-      "serves": "Serves 6"
-    },
-    {
-      "category": "Red Meat",
-      "name": "Steak with Herb Butter and Grilled Vegetables",
-      "ingredients": [
-        "4 ribeye or sirloin steaks (8 oz each)",
-        "1 large eggplant, sliced into rounds",
-        "2 zucchini, sliced lengthwise",
-        "2 red bell peppers, cut into strips",
-        "1/2 cup butter, softened",
-        "1/4 cup fresh parsley, chopped",
-        "2 tbsp fresh chives, chopped",
-        "1 lemon, zested",
-        "3 tbsp olive oil",
-        "Salt and pepper to taste"
-      ],
-      "instructions": [
-        "Mix softened butter with herbs and lemon zest. Set aside.",
-        "Preheat grill to medium-high heat.",
-        "Brush vegetables with olive oil and season with salt and pepper.",
-        "Grill vegetables for 4-5 minutes per side until tender with grill marks.",
-        "Season steaks with salt and pepper. Grill for 4-6 minutes per side for medium-rare.",
-        "Let steaks rest for 5 minutes, then top with herb butter before serving."
-      ],
-      "serves": "Serves 4"
-    },
-    {
-      "category": "Red Meat",
-      "name": "Spanish-Style Beef and Potato Skillet",
-      "ingredients": [
-        "2 lbs beef chuck, cut into 1-inch cubes",
-        "4 medium potatoes, cubed",
-        "2 bell peppers, cut into strips",
-        "1 can (14 oz) diced tomatoes",
-        "4 oz manchego cheese, cubed",
-        "2 tsp smoked paprika",
-        "1/4 cup olive oil",
-        "Salt and pepper to taste"
-      ],
-      "instructions": [
-        "Heat olive oil in a large skillet over medium-high heat.",
-        "Brown beef cubes on all sides, about 8 minutes total. Season with salt and pepper.",
-        "Add potatoes and cook for 5 minutes, stirring occasionally.",
-        "Add bell peppers, tomatoes, and paprika. Bring to a simmer.",
-        "Cover and cook for 25-30 minutes until beef is tender and potatoes are cooked through.",
-        "Stir in manchego cheese just before serving."
-      ],
-      "serves": "Serves 4"
-    },
-    {
-      "category": "Red Meat",
-      "name": "Mediterranean Meatballs with Parmesan",
-      "ingredients": [
-        "1 lb ground beef",
-        "1/2 lb ground pork",
-        "1/2 cup rice breadcrumbs (or finely ground rice crackers)",
-        "1 egg",
-        "1/4 cup fresh parsley, chopped",
-        "1 tbsp fresh oregano",
-        "1 can (28 oz) crushed tomatoes",
-        "1/2 cup parmesan cheese, grated",
-        "3 tbsp olive oil",
-        "Salt and pepper to taste"
-      ],
-      "instructions": [
-        "Preheat oven to 400°F (200°C).",
-        "Mix ground meats, breadcrumbs, egg, parsley, oregano, salt, and pepper.",
-        "Form into 1.5-inch meatballs and place on a baking sheet.",
-        "Drizzle with olive oil and bake for 20 minutes.",
-        "Meanwhile, heat crushed tomatoes in a large pan and season with salt and pepper.",
-        "Add meatballs to the sauce and simmer for 10 minutes.",
-        "Serve topped with grated parmesan."
-      ],
-      "serves": "Serves 4-6"
-    },
-    {
-      "category": "Red Meat",
-      "name": "Pork Tenderloin with Olive Tapenade",
-      "ingredients": [
-        "2 pork tenderloins (1 lb each)",
-        "1 cup mixed olives, pitted",
-        "2 tbsp capers",
-        "1/4 cup olive oil",
-        "1 lemon, juiced",
-        "4 oz goat cheese, crumbled",
-        "3 medium carrots, cut into chunks",
-        "3 medium parsnips, cut into chunks",
-        "Salt and pepper to taste"
-      ],
-      "instructions": [
-        "Preheat oven to 425°F (220°C).",
-        "For tapenade: pulse olives, capers, 2 tbsp olive oil, and lemon juice in a food processor until chunky.",
-        "Toss root vegetables with remaining olive oil, salt, and pepper. Roast for 20 minutes.",
-        "Season pork with salt and pepper. Sear in an oven-safe pan for 2-3 minutes per side.",
-        "Transfer to oven and roast for 15-20 minutes until internal temperature reaches 145°F.",
-        "Let rest 5 minutes, then slice and serve with tapenade and crumbled goat cheese."
-      ],
-      "serves": "Serves 4"
-    },
-    {
-      "category": "White Meat",
-      "name": "Chicken Thighs with Olives and Tomatoes",
-      "ingredients": [
-        "8 bone-in chicken thighs",
-        "2 cups cherry tomatoes",
-        "1/2 cup kalamata olives, pitted",
-        "1/4 cup olive oil",
-        "2 tbsp fresh oregano (or 1 tbsp dried)",
-        "1 lemon, juiced",
-        "Salt and pepper to taste"
-      ],
-      "instructions": [
-        "Preheat oven to 375°F (190°C).",
-        "Season chicken thighs with salt, pepper, and oregano.",
-        "Heat olive oil in a large oven-safe pan over medium-high heat.",
-        "Brown chicken thighs skin-side down for 5-6 minutes until crispy.",
-        "Flip chicken and add tomatoes and olives around the pan.",
-        "Transfer to oven and roast for 25-30 minutes until chicken is cooked through.",
-        "Drizzle with lemon juice before serving."
-      ],
-      "serves": "Serves 4"
-    },
-    {
-      "category": "White Meat",
-      "name": "Mediterranean Chicken and Rice Skillet",
-      "ingredients": [
-        "2 lbs chicken thighs, cut into pieces",
-        "1.5 cups arborio rice",
-        "3 cups chicken broth",
-        "1 can (14 oz) diced tomatoes",
-        "1/2 tsp saffron (or 1 tsp turmeric)",
-        "4 oz feta cheese, crumbled",
-        "1/4 cup fresh parsley, chopped",
-        "3 tbsp olive oil",
-        "Salt and pepper to taste"
-      ],
-      "instructions": [
-        "Heat olive oil in a large skillet over medium-high heat.",
-        "Brown chicken pieces and season with salt and pepper. Remove and set aside.",
-        "Add rice to the same pan and stir for 2 minutes until lightly toasted.",
-        "Add broth, tomatoes, and saffron. Bring to a boil.",
-        "Return chicken to pan, reduce heat to low, cover and simmer for 20 minutes.",
-        "Let stand 5 minutes, then top with feta and parsley."
-      ],
-      "serves": "Serves 4"
-    },
-    {
-      "category": "White Meat",
-      "name": "Grilled Chicken with Caprese Salad",
-      "ingredients": [
-        "4 chicken breasts (6 oz each)",
-        "8 oz fresh mozzarella, sliced",
-        "4 large tomatoes, sliced",
-        "1/2 cup fresh basil leaves",
-        "1/4 cup olive oil",
-        "2 tbsp balsamic vinegar",
-        "Salt and pepper to taste"
-      ],
-      "instructions": [
-        "Season chicken with salt and pepper. Grill for 6-7 minutes per side until cooked through.",
-        "Let chicken rest for 5 minutes, then slice.",
-        "Arrange tomato and mozzarella slices on plates, alternating.",
-        "Add sliced chicken and fresh basil leaves.",
-        "Drizzle with olive oil and balsamic vinegar just before serving."
-      ],
-      "serves": "Serves 4"
-    },
-    {
-      "category": "White Meat",
-      "name": "Chicken and Vegetable Casserole with Parmesan",
-      "ingredients": [
-        "2 lbs chicken thighs, cut into pieces",
-        "3 zucchini, sliced",
-        "2 bell peppers, cut into strips",
-        "4 medium potatoes, cubed",
-        "1/2 cup parmesan cheese, grated",
-        "1/4 cup olive oil",
-        "1 tbsp fresh rosemary, chopped",
-        "1 tbsp fresh thyme",
-        "Salt and pepper to taste"
-      ],
-      "instructions": [
-        "Preheat oven to 400°F (200°C).",
-        "Toss chicken and vegetables with olive oil, herbs, salt, and pepper.",
-        "Arrange in a large baking dish.",
-        "Roast for 30 minutes, then sprinkle with parmesan.",
-        "Continue roasting for 15 minutes until chicken is cooked through and vegetables are tender."
-      ],
-      "serves": "Serves 6"
-    },
-    {
-      "category": "White Meat",
-      "name": "Spanish Chicken with Peppers and Manchego",
-      "ingredients": [
-        "8 chicken thighs",
-        "3 red bell peppers, cut into strips",
-        "1 tsp smoked paprika",
-        "1/4 cup white wine",
-        "4 oz manchego cheese, cubed",
-        "3 tbsp olive oil",
-        "Salt and pepper to taste"
-      ],
-      "instructions": [
-        "Heat olive oil in a large oven-safe pan over medium-high heat.",
-        "Season chicken with salt, pepper, and paprika.",
-        "Brown chicken skin-side down for 5-6 minutes until crispy.",
-        "Flip chicken and add peppers around the pan.",
-        "Add white wine and transfer to a 375°F oven.",
-        "Roast for 25 minutes, then add manchego cheese and roast 5 more minutes."
-      ],
-      "serves": "Serves 4"
-    },
-    {
-      "category": "White Meat",
-      "name": "Herb-Roasted Whole Chicken",
-      "ingredients": [
-        "1 whole chicken (4-5 lbs)",
-        "2 lemons (1 juiced, 1 quartered)",
-        "2 tbsp fresh rosemary, chopped",
-        "1 tbsp fresh thyme",
-        "1/4 cup olive oil",
-        "4 medium potatoes, halved",
-        "2 large carrots, cut into chunks",
-        "Salt and pepper to taste"
-      ],
-      "instructions": [
-        "Preheat oven to 425°F (220°C).",
-        "Pat chicken dry and season inside and out with salt and pepper.",
-        "Stuff cavity with lemon quarters and half the herbs.",
-        "Rub skin with olive oil and remaining herbs.",
-        "Surround with vegetables and drizzle with lemon juice.",
-        "Roast for 60-75 minutes until internal temperature reaches 165°F.",
-        "Let rest 10 minutes before carving."
-      ],
-      "serves": "Serves 4-6"
-    },
-    {
-      "category": "White Meat",
-      "name": "Chicken Saltimbocca Style",
-      "ingredients": [
-        "4 chicken breasts, pounded thin",
-        "8 thin slices prosciutto",
-        "8 fresh sage leaves",
-        "1/4 cup white wine",
-        "1/4 cup parmesan cheese, grated",
-        "2 tbsp olive oil",
-        "Salt and pepper to taste"
-      ],
-      "instructions": [
-        "Season chicken with salt and pepper.",
-        "Top each breast with 2 sage leaves and 2 slices prosciutto. Secure with toothpicks.",
-        "Heat olive oil in a large skillet over medium-high heat.",
-        "Cook chicken prosciutto-side down for 4-5 minutes until crispy.",
-        "Flip and cook 3-4 minutes more until chicken is cooked through.",
-        "Add wine to deglaze pan, scraping up any browned bits.",
-        "Sprinkle with parmesan before serving."
-      ],
-      "serves": "Serves 4"
-    },
-    {
-      "category": "Vegetarian",
-      "name": "Quinoa Tabbouleh (Modified)",
-      "ingredients": [
-        "1 cup quinoa, cooked and cooled",
-        "2 cups cherry tomatoes, diced",
-        "1 large cucumber, diced",
-        "1 cup fresh parsley, chopped",
-        "1/2 cup fresh mint, chopped",
-        "3 green onions (green parts only), chopped",
-        "1/4 cup olive oil",
-        "2 lemons, juiced",
-        "Salt and pepper to taste"
-      ],
-      "instructions": [
-        "Cook quinoa according to package directions and let cool completely.",
-        "Combine quinoa with tomatoes, cucumber, herbs, and green onion tops.",
-        "Whisk together olive oil and lemon juice.",
-        "Toss salad with dressing and season with salt and pepper.",
-        "Chill for at least 30 minutes before serving."
-      ],
-      "serves": "Serves 4-6"
-    },
-    {
-      "category": "Vegetarian",
-      "name": "Grilled Eggplant and Red Pepper Salad",
-      "ingredients": [
-        "2 large eggplants, sliced into rounds",
-        "3 red bell peppers",
-        "1/4 cup olive oil",
-        "2 tbsp balsamic vinegar",
-        "1/4 cup pine nuts",
-        "4 oz feta cheese, crumbled",
-        "1/4 cup fresh basil, chopped",
-        "Salt and pepper to taste"
-      ],
-      "instructions": [
-        "Preheat grill to medium-high heat.",
-        "Brush eggplant slices with olive oil and season with salt and pepper.",
-        "Grill whole peppers until charred all over, about 12 minutes total.",
-        "Grill eggplant for 4-5 minutes per side until tender.",
-        "Place peppers in a bowl and cover with plastic wrap for 10 minutes.",
-        "Peel, seed, and slice peppers into strips.",
-        "Arrange eggplant and peppers on a platter.",
-        "Drizzle with balsamic vinegar, sprinkle with pine nuts, feta, and basil."
-      ],
-      "serves": "Serves 4"
-    },
-    {
-      "category": "Vegetarian",
-      "name": "Herb & Vegetable Rice Pilaf",
-      "ingredients": [
-        "2½ tbsp olive oil",
-        "1⅓ tbsp garlic-infused oil",
-        "½ medium eggplant, finely diced",
-        "1 small zucchini, finely diced",
-        "½ red capsicum (bell pepper), finely diced",
-        "1 tsp turmeric powder",
-        "3 tsp curry powder",
-        "2 cups uncooked white basmati rice",
-        "2¾ cups low-FODMAP beef or vegetable stock",
-        "1½ tsp cracked black pepper",
-        "⅓ cup chives, finely chopped",
-        "⅔ cup basil, roughly chopped",
-        "Salt, to taste",
-        "Lemon juice, to serve",
-        "Greek or natural yogurt (lactose-free if required), to serve"
-      ],
-      "instructions": [
-        "Heat oils in a non-stick heavy-based saucepan with a tightly fitting lid.",
-        "Sauté eggplant, capsicum and zucchini over high heat for about 5 minutes or until they start to brown.",
-        "Add spices and cook for a couple more minutes. You can also add some chilli if you like.",
-        "Add rice and briefly sauté, then add boiling stock. Stir constantly for another 10 minutes.",
-        "Cover with the tightly fitting lid and either bake in a preheated 180°C/356°F oven (160°C/320°F fan-forced) for 30 minutes OR keep on the stove, reduce the heat to very low and cook for 30 minutes or until water absorbed.",
-        "Remove from oven or stove and let sit with lid on for 15 minutes.",
-        "Uncover, cool slightly and stir through basil and chives.",
-        "Serve with a dollop of yogurt and a squeeze of lemon."
-      ],
-      "serves": "Serves 4-6"
+      ]
     }
   ]
 }
