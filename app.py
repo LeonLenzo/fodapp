@@ -434,22 +434,22 @@ def fodmap_search_tab():
         st.error("❌ Unable to load FODMAP data. Please check that 'data.csv' exists and is properly formatted.")
 
 def recipes_tab():
-    """Recipe browser functionality"""
+    """Recipe browser functionality with category tabs"""
     recipes_data = load_recipes()
     
     if recipes_data:
         recipes_by_category = parse_recipes(recipes_data)
         
         if recipes_by_category:
-            # Recipe search
+            # Recipe search at the top
             recipe_search = st.text_input(
-                "🔍 Search Recipes:",
+                "🔍 Search All Recipes:",
                 placeholder="Search by recipe name or ingredient...",
                 help="💕 Find the perfect meal for you and dad!",
                 key="recipe_search"
             )
             
-            # Filter recipes based on search
+            # If there's a search, show filtered results
             if recipe_search:
                 filtered_recipes = {}
                 search_lower = recipe_search.lower()
@@ -476,16 +476,31 @@ def recipes_tab():
                     st.info(f"💭 No recipes found matching '{recipe_search}'. Try different keywords, beautiful! 💕")
             
             else:
-                # Show all recipes by category
+                # Show recipes organized by category tabs
                 st.markdown("### 💖 Low-FODMAP Recipes 💖")
                 st.markdown("*Delicious recipes for your poopy butt* ✨")
                 
-                for category, recipes in recipes_by_category.items():
-                    st.markdown(f"#### {category}")
+                # Create tabs for each category
+                if recipes_by_category:
+                    # Sort categories to ensure consistent order
+                    category_order = ["🌅 Breakfast", "🥗 Vegetarian", "🐟 White Meat", "🥩 Red Meat"]
+                    available_categories = [cat for cat in category_order if cat in recipes_by_category]
+                    # Add any other categories that might exist
+                    for cat in recipes_by_category.keys():
+                        if cat not in available_categories:
+                            available_categories.append(cat)
                     
-                    for recipe in recipes:
-                        with st.expander(f"✨ {recipe['name']} ✨"):
-                            display_recipe(recipe)
+                    if available_categories:
+                        category_tabs = st.tabs(available_categories)
+                        
+                        for i, category in enumerate(available_categories):
+                            with category_tabs[i]:
+                                recipes = recipes_by_category[category]
+                                st.markdown(f"*{len(recipes)} recipes in this category*")
+                                
+                                for recipe in recipes:
+                                    with st.expander(f"✨ {recipe['name']} ✨"):
+                                        display_recipe(recipe)
         else:
             st.error("❌ Unable to parse recipes. Please check the format of your recipes.json file.")
     else:
