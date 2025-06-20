@@ -1,0 +1,418 @@
+{
+  "seafood": [
+    {
+      "title": "Lemon Herb Salmon with Roasted Vegetables",
+      "serves": "Serves 4",
+      "ingredients": [
+        "4 salmon fillets (6 oz each)",
+        "2 zucchini, sliced",
+        "2 bell peppers, cut into strips",
+        "3 large carrots, cut into chunks",
+        "1/4 cup olive oil",
+        "2 lemons (juiced and zested)",
+        "2 tsp dried oregano",
+        "1 tsp dried thyme",
+        "Salt and pepper to taste"
+      ],
+      "instructions": [
+        "Preheat oven to 400°F (200°C).",
+        "Toss vegetables with half the olive oil, salt, and pepper. Spread on a large baking sheet.",
+        "Place salmon on the same sheet or a separate one. Brush with remaining olive oil.",
+        "Mix lemon juice, zest, oregano, and thyme. Pour over salmon and vegetables.",
+        "Roast for 15-20 minutes until salmon flakes easily and vegetables are tender."
+      ]
+    },
+    {
+      "title": "Mediterranean Tuna and Vegetable Pasta",
+      "serves": "Serves 4",
+      "ingredients": [
+        "12 oz rice pasta or corn pasta",
+        "2 cans (5 oz each) tuna in olive oil",
+        "2 cups cherry tomatoes, halved",
+        "1/2 cup kalamata olives, pitted",
+        "2 tbsp capers",
+        "4 cups fresh spinach",
+        "1/4 cup olive oil",
+        "2 lemons, juiced",
+        "1/4 cup fresh basil, chopped",
+        "Salt and pepper to taste"
+      ],
+      "instructions": [
+        "Cook pasta according to package directions. Reserve 1/2 cup pasta water before draining.",
+        "Heat olive oil in a large pan over medium heat.",
+        "Add cherry tomatoes and cook for 3-4 minutes until softened.",
+        "Add tuna (with oil), olives, capers, and spinach. Cook until spinach wilts.",
+        "Add cooked pasta and toss. Add pasta water if needed for consistency.",
+        "Finish with lemon juice, basil, salt, and pepper."
+      ]
+    },
+    {
+      "title": "Herb-Crusted White Fish",
+      "serves": "Serves 4",
+      "ingredients": [
+        "4 white fish fillets (cod or halibut, 6 oz each)",
+        "1 cup rice crackers, crushed",
+        "1/4 cup fresh parsley, chopped",
+        "2 tbsp fresh dill, chopped",
+        "1 tbsp fresh chives, chopped",
+        "1/4 cup olive oil",
+        "2 tbsp lemon juice",
+        "3 medium potatoes, cubed",
+        "2 large carrots, cut into chunks",
+        "Salt and pepper to taste"
+      ],
+      "instructions": [
+        "Preheat oven to 425°F (220°C).",
+        "Toss potatoes and carrots with 2 tbsp olive oil, salt, and pepper. Roast for 20 minutes.",
+        "Mix crushed crackers with herbs, remaining olive oil, and lemon juice.",
+        "Season fish with salt and pepper. Press herb mixture onto fish fillets.",
+        "Add fish to the pan with vegetables and roast for 12-15 minutes until fish flakes easily."
+      ]
+    }
+  ],
+  "red_meat": [
+    {
+      "title": "Greek-Style Lamb with Feta and Tomatoes",
+      "serves": "Serves 4",
+      "ingredients": [
+        "8 lamb chops or 2 lbs leg of lamb, cut into portions",
+        "4 large tomatoes, cut into thick slices",
+        "6 oz feta cheese, crumbled",
+        "1/4 cup olive oil",
+        "2 tbsp fresh oregano (or 1 tbsp dried)",
+        "1 tbsp fresh rosemary, chopped",
+        "2 lemons, juiced",
+        "Salt and pepper to taste"
+      ],
+      "instructions": [
+        "Preheat oven to 400°F (200°C).",
+        "Season lamb with salt, pepper, oregano, and rosemary.",
+        "Heat 2 tbsp olive oil in an oven-safe pan over medium-high heat.",
+        "Sear lamb for 2-3 minutes per side until browned.",
+        "Arrange tomato slices around lamb, drizzle with remaining olive oil and lemon juice.",
+        "Transfer to oven and roast for 15-20 minutes for medium doneness.",
+        "Top with crumbled feta in the last 5 minutes of cooking."
+      ]
+    },
+    {
+      "title": "Italian Beef and Zucchini Bake",
+      "serves": "Serves 6",
+      "ingredients": [
+        "2 lbs ground beef",
+        "4 large zucchini, sliced lengthwise into 1/4-inch strips",
+        "1 can (28 oz) crushed tomatoes",
+        "2 cups mozzarella cheese, shredded",
+        "1/4 cup fresh basil, chopped",
+        "3 tbsp olive oil",
+        "1 tsp dried oregano",
+        "Salt and pepper to taste"
+      ],
+      "instructions": [
+        "Preheat oven to 375°F (190°C).",
+        "Brown ground beef in a large pan, breaking it up as it cooks. Season with salt, pepper, and oregano.",
+        "Add crushed tomatoes and simmer for 10 minutes. Stir in fresh basil.",
+        "Meanwhile, brush zucchini slices with olive oil and season with salt and pepper.",
+        "Layer half the zucchini in a greased 9×13 baking dish.",
+        "Spread meat sauce over zucchini, then layer remaining zucchini on top.",
+        "Top with mozzarella and bake for 35-40 minutes until bubbly and golden."
+      ]
+    },
+    {
+      "title": "Steak with Herb Butter and Grilled Vegetables",
+      "serves": "Serves 4",
+      "ingredients": [
+        "4 ribeye or sirloin steaks (8 oz each)",
+        "1 large eggplant, sliced into rounds",
+        "2 zucchini, sliced lengthwise",
+        "2 red bell peppers, cut into strips",
+        "1/2 cup butter, softened",
+        "1/4 cup fresh parsley, chopped",
+        "2 tbsp fresh chives, chopped",
+        "1 lemon, zested",
+        "3 tbsp olive oil",
+        "Salt and pepper to taste"
+      ],
+      "instructions": [
+        "Mix softened butter with herbs and lemon zest. Set aside.",
+        "Preheat grill to medium-high heat.",
+        "Brush vegetables with olive oil and season with salt and pepper.",
+        "Grill vegetables for 4-5 minutes per side until tender with grill marks.",
+        "Season steaks with salt and pepper. Grill for 4-6 minutes per side for medium-rare.",
+        "Let steaks rest for 5 minutes, then top with herb butter before serving."
+      ]
+    },
+    {
+      "title": "Spanish-Style Beef and Potato Skillet",
+      "serves": "Serves 4",
+      "ingredients": [
+        "2 lbs beef chuck, cut into 1-inch cubes",
+        "4 medium potatoes, cubed",
+        "2 bell peppers, cut into strips",
+        "1 can (14 oz) diced tomatoes",
+        "4 oz manchego cheese, cubed",
+        "2 tsp smoked paprika",
+        "1/4 cup olive oil",
+        "Salt and pepper to taste"
+      ],
+      "instructions": [
+        "Heat olive oil in a large skillet over medium-high heat.",
+        "Brown beef cubes on all sides, about 8 minutes total. Season with salt and pepper.",
+        "Add potatoes and cook for 5 minutes, stirring occasionally.",
+        "Add bell peppers, tomatoes, and paprika. Bring to a simmer.",
+        "Cover and cook for 25-30 minutes until beef is tender and potatoes are cooked through.",
+        "Stir in manchego cheese just before serving."
+      ]
+    },
+    {
+      "title": "Mediterranean Meatballs with Parmesan",
+      "serves": "Serves 4-6",
+      "ingredients": [
+        "1 lb ground beef",
+        "1/2 lb ground pork",
+        "1/2 cup rice breadcrumbs (or finely ground rice crackers)",
+        "1 egg",
+        "1/4 cup fresh parsley, chopped",
+        "1 tbsp fresh oregano",
+        "1 can (28 oz) crushed tomatoes",
+        "1/2 cup parmesan cheese, grated",
+        "3 tbsp olive oil",
+        "Salt and pepper to taste"
+      ],
+      "instructions": [
+        "Preheat oven to 400°F (200°C).",
+        "Mix ground meats, breadcrumbs, egg, parsley, oregano, salt, and pepper.",
+        "Form into 1.5-inch meatballs and place on a baking sheet.",
+        "Drizzle with olive oil and bake for 20 minutes.",
+        "Meanwhile, heat crushed tomatoes in a large pan and season with salt and pepper.",
+        "Add meatballs to the sauce and simmer for 10 minutes.",
+        "Serve topped with grated parmesan."
+      ]
+    },
+    {
+      "title": "Pork Tenderloin with Olive Tapenade",
+      "serves": "Serves 4",
+      "ingredients": [
+        "2 pork tenderloins (1 lb each)",
+        "1 cup mixed olives, pitted",
+        "2 tbsp capers",
+        "1/4 cup olive oil",
+        "1 lemon, juiced",
+        "4 oz goat cheese, crumbled",
+        "3 medium carrots, cut into chunks",
+        "3 medium parsnips, cut into chunks",
+        "Salt and pepper to taste"
+      ],
+      "instructions": [
+        "Preheat oven to 425°F (220°C).",
+        "For tapenade: pulse olives, capers, 2 tbsp olive oil, and lemon juice in a food processor until chunky.",
+        "Toss root vegetables with remaining olive oil, salt, and pepper. Roast for 20 minutes.",
+        "Season pork with salt and pepper. Sear in an oven-safe pan for 2-3 minutes per side.",
+        "Transfer to oven and roast for 15-20 minutes until internal temperature reaches 145°F.",
+        "Let rest 5 minutes, then slice and serve with tapenade and crumbled goat cheese."
+      ]
+    }
+  ],
+  "chicken": [
+    {
+      "title": "Chicken Thighs with Olives and Tomatoes",
+      "serves": "Serves 4",
+      "ingredients": [
+        "8 bone-in chicken thighs",
+        "2 cups cherry tomatoes",
+        "1/2 cup kalamata olives, pitted",
+        "1/4 cup olive oil",
+        "2 tbsp fresh oregano (or 1 tbsp dried)",
+        "1 lemon, juiced",
+        "Salt and pepper to taste"
+      ],
+      "instructions": [
+        "Preheat oven to 375°F (190°C).",
+        "Season chicken thighs with salt, pepper, and oregano.",
+        "Heat olive oil in a large oven-safe pan over medium-high heat.",
+        "Brown chicken thighs skin-side down for 5-6 minutes until crispy.",
+        "Flip chicken and add tomatoes and olives around the pan.",
+        "Transfer to oven and roast for 25-30 minutes until chicken is cooked through.",
+        "Drizzle with lemon juice before serving."
+      ]
+    },
+    {
+      "title": "Mediterranean Chicken and Rice Skillet",
+      "serves": "Serves 4",
+      "ingredients": [
+        "2 lbs chicken thighs, cut into pieces",
+        "1.5 cups arborio rice",
+        "3 cups chicken broth",
+        "1 can (14 oz) diced tomatoes",
+        "1/2 tsp saffron (or 1 tsp turmeric)",
+        "4 oz feta cheese, crumbled",
+        "1/4 cup fresh parsley, chopped",
+        "3 tbsp olive oil",
+        "Salt and pepper to taste"
+      ],
+      "instructions": [
+        "Heat olive oil in a large skillet over medium-high heat.",
+        "Brown chicken pieces and season with salt and pepper. Remove and set aside.",
+        "Add rice to the same pan and stir for 2 minutes until lightly toasted.",
+        "Add broth, tomatoes, and saffron. Bring to a boil.",
+        "Return chicken to pan, reduce heat to low, cover and simmer for 20 minutes.",
+        "Let stand 5 minutes, then top with feta and parsley."
+      ]
+    },
+    {
+      "title": "Grilled Chicken with Caprese Salad",
+      "serves": "Serves 4",
+      "ingredients": [
+        "4 chicken breasts (6 oz each)",
+        "8 oz fresh mozzarella, sliced",
+        "4 large tomatoes, sliced",
+        "1/2 cup fresh basil leaves",
+        "1/4 cup olive oil",
+        "2 tbsp balsamic vinegar",
+        "Salt and pepper to taste"
+      ],
+      "instructions": [
+        "Season chicken with salt and pepper. Grill for 6-7 minutes per side until cooked through.",
+        "Let chicken rest for 5 minutes, then slice.",
+        "Arrange tomato and mozzarella slices on plates, alternating.",
+        "Add sliced chicken and fresh basil leaves.",
+        "Drizzle with olive oil and balsamic vinegar just before serving."
+      ]
+    },
+    {
+      "title": "Chicken and Vegetable Casserole with Parmesan",
+      "serves": "Serves 6",
+      "ingredients": [
+        "2 lbs chicken thighs, cut into pieces",
+        "3 zucchini, sliced",
+        "2 bell peppers, cut into strips",
+        "4 medium potatoes, cubed",
+        "1/2 cup parmesan cheese, grated",
+        "1/4 cup olive oil",
+        "1 tbsp fresh rosemary, chopped",
+        "1 tbsp fresh thyme",
+        "Salt and pepper to taste"
+      ],
+      "instructions": [
+        "Preheat oven to 400°F (200°C).",
+        "Toss chicken and vegetables with olive oil, herbs, salt, and pepper.",
+        "Arrange in a large baking dish.",
+        "Roast for 30 minutes, then sprinkle with parmesan.",
+        "Continue roasting for 15 minutes until chicken is cooked through and vegetables are tender."
+      ]
+    },
+    {
+      "title": "Spanish Chicken with Peppers and Manchego",
+      "serves": "Serves 4",
+      "ingredients": [
+        "8 chicken thighs",
+        "3 red bell peppers, cut into strips",
+        "1 tsp smoked paprika",
+        "1/4 cup white wine",
+        "4 oz manchego cheese, cubed",
+        "3 tbsp olive oil",
+        "Salt and pepper to taste"
+      ],
+      "instructions": [
+        "Heat olive oil in a large oven-safe pan over medium-high heat.",
+        "Season chicken with salt, pepper, and paprika.",
+        "Brown chicken skin-side down for 5-6 minutes until crispy.",
+        "Flip chicken and add peppers around the pan.",
+        "Add white wine and transfer to a 375°F oven.",
+        "Roast for 25 minutes, then add manchego cheese and roast 5 more minutes."
+      ]
+    },
+    {
+      "title": "Herb-Roasted Whole Chicken",
+      "serves": "Serves 4-6",
+      "ingredients": [
+        "1 whole chicken (4-5 lbs)",
+        "2 lemons (1 juiced, 1 quartered)",
+        "2 tbsp fresh rosemary, chopped",
+        "1 tbsp fresh thyme",
+        "1/4 cup olive oil",
+        "4 medium potatoes, halved",
+        "2 large carrots, cut into chunks",
+        "Salt and pepper to taste"
+      ],
+      "instructions": [
+        "Preheat oven to 425°F (220°C).",
+        "Pat chicken dry and season inside and out with salt and pepper.",
+        "Stuff cavity with lemon quarters and half the herbs.",
+        "Rub skin with olive oil and remaining herbs.",
+        "Surround with vegetables and drizzle with lemon juice.",
+        "Roast for 60-75 minutes until internal temperature reaches 165°F.",
+        "Let rest 10 minutes before carving."
+      ]
+    },
+    {
+      "title": "Chicken Saltimbocca Style",
+      "serves": "Serves 4",
+      "ingredients": [
+        "4 chicken breasts, pounded thin",
+        "8 thin slices prosciutto",
+        "8 fresh sage leaves",
+        "1/4 cup white wine",
+        "1/4 cup parmesan cheese, grated",
+        "2 tbsp olive oil",
+        "Salt and pepper to taste"
+      ],
+      "instructions": [
+        "Season chicken with salt and pepper.",
+        "Top each breast with 2 sage leaves and 2 slices prosciutto. Secure with toothpicks.",
+        "Heat olive oil in a large skillet over medium-high heat.",
+        "Cook chicken prosciutto-side down for 4-5 minutes until crispy.",
+        "Flip and cook 3-4 minutes more until chicken is cooked through.",
+        "Add wine to deglaze pan, scraping up any browned bits.",
+        "Sprinkle with parmesan before serving."
+      ]
+    }
+  ],
+  "vegetarian": [
+    {
+      "title": "Quinoa Tabbouleh (Modified)",
+      "serves": "Serves 4-6",
+      "ingredients": [
+        "1 cup quinoa, cooked and cooled",
+        "2 cups cherry tomatoes, diced",
+        "1 large cucumber, diced",
+        "1 cup fresh parsley, chopped",
+        "1/2 cup fresh mint, chopped",
+        "3 green onions (green parts only), chopped",
+        "1/4 cup olive oil",
+        "2 lemons, juiced",
+        "Salt and pepper to taste"
+      ],
+      "instructions": [
+        "Cook quinoa according to package directions and let cool completely.",
+        "Combine quinoa with tomatoes, cucumber, herbs, and green onion tops.",
+        "Whisk together olive oil and lemon juice.",
+        "Toss salad with dressing and season with salt and pepper.",
+        "Chill for at least 30 minutes before serving."
+      ]
+    },
+    {
+      "title": "Grilled Eggplant and Red Pepper Salad",
+      "serves": "Serves 4",
+      "ingredients": [
+        "2 large eggplants, sliced into rounds",
+        "3 red bell peppers",
+        "1/4 cup olive oil",
+        "2 tbsp balsamic vinegar",
+        "1/4 cup pine nuts",
+        "4 oz feta cheese, crumbled",
+        "1/4 cup fresh basil, chopped",
+        "Salt and pepper to taste"
+      ],
+      "instructions": [
+        "Preheat grill to medium-high heat.",
+        "Brush eggplant slices with olive oil and season with salt and pepper.",
+        "Grill whole peppers until charred all over, about 12 minutes total.",
+        "Grill eggplant for 4-5 minutes per side until tender.",
+        "Place peppers in a bowl and cover with plastic wrap for 10 minutes.",
+        "Peel, seed, and slice peppers into strips.",
+        "Arrange eggplant and peppers on a platter.",
+        "Drizzle with balsamic vinegar, sprinkle with pine nuts, feta, and basil."
+      ]
+    }
+  ]
+}
