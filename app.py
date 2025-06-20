@@ -244,13 +244,14 @@ def load_fodmap_data():
 
 @st.cache_data
 def load_recipes():
-    """Load recipes from text file"""
+    """Load recipes from JSON file"""
     try:
-        with open("recipes.txt", "r", encoding="utf-8") as f:
-            content = f.read()
-        return content
+        import json
+        with open("recipes.json", "r", encoding="utf-8") as f:
+            recipes = json.load(f)
+        return recipes
     except FileNotFoundError:
-        st.error("❌ Could not find 'recipes.txt' file. Please make sure it's in the same directory as your app.")
+        st.error("❌ Could not find 'recipes.json' file. Please make sure it's in the same directory as your app.")
         return None
     except Exception as e:
         st.error(f"❌ Error loading recipes file: {e}")
@@ -282,74 +283,24 @@ def get_fodmap_list(row):
     
     return ', '.join(fodmaps) if fodmaps else 'None detected'
 
-def parse_recipes(content):
-    """Parse the recipes content into structured data"""
-    if not content:
+def parse_recipes(recipes_data):
+    """Parse the recipes JSON data into display format"""
+    if not recipes_data:
         return {}
     
-    # Split by main sections
-    sections = content.split("## ")
     recipes_by_category = {}
     
-    for section in sections[1:]:  # Skip the first empty split
-        lines = section.strip().split('\n')
-        if not lines:
-            continue
-            
-        category = lines[0].strip()
-        
-        # Clean up category name
-        if category == "Seafood Dishes":
-            category_emoji = "🐟"
-        elif category == "Red Meat Dishes":
-            category_emoji = "🥩"
-        elif category == "Chicken Dishes":
-            category_emoji = "🐔"
-        elif category == "Vegetarian Sides & Salads":
-            category_emoji = "🥗"
-        else:
-            category_emoji = "🍽️"
-        
-        recipes_by_category[f"{category_emoji} {category}"] = []
-        
-        # Parse individual recipes
-        current_recipe = None
-        current_section = None
-        
-        for line in lines[1:]:
-            line = line.strip()
-            if not line:
-                continue
-                
-            if line.startswith("### "):
-                # New recipe
-                if current_recipe:
-                    recipes_by_category[f"{category_emoji} {category}"].append(current_recipe)
-                current_recipe = {
-                    "title": line[4:],
-                    "serves": "",
-                    "ingredients": [],
-                    "instructions": []
-                }
-                current_section = None
-            elif line.startswith("**Serves") and current_recipe:
-                current_recipe["serves"] = line
-                current_section = "meta"
-            elif line.startswith("**Ingredients:**") and current_recipe:
-                current_section = "ingredients"
-            elif line.startswith("**Instructions:**") and current_recipe:
-                current_section = "instructions"
-            elif line.startswith("- ") and current_section == "ingredients" and current_recipe:
-                current_recipe["ingredients"].append(line[2:])
-            elif (line and current_section == "instructions" and current_recipe and 
-                  (line[0].isdigit() or line.startswith("1."))):
-                current_recipe["instructions"].append(line)
-            elif line.startswith("---"):
-                continue
-        
-        # Add the last recipe
-        if current_recipe:
-            recipes_by_category[f"{category_emoji} {category}"].append(current_recipe)
+    # Category mapping
+    category_mapping = {
+        "seafood": "🐟 Seafood Dishes",
+        "red_meat": "🥩 Red Meat Dishes", 
+        "chicken": "🐔 Chicken Dishes",
+        "vegetarian": "🥗 Vegetarian Sides & Salads"
+    }
+    
+    for category_key, category_name in category_mapping.items():
+        if category_key in recipes_data:
+            recipes_by_category[category_name] = recipes_data[category_key]
     
     return recipes_by_category
 
@@ -468,10 +419,10 @@ def fodmap_search_tab():
 
 def recipes_tab():
     """Recipe browser functionality"""
-    recipes_content = load_recipes()
+    recipes_data = load_recipes()
     
-    if recipes_content:
-        recipes_by_category = parse_recipes(recipes_content)
+    if recipes_data:
+        recipes_by_category = parse_recipes(recipes_data)
         
         if recipes_by_category:
             # Recipe search
@@ -520,9 +471,9 @@ def recipes_tab():
                         with st.expander(f"✨ {recipe['title']} ✨"):
                             display_recipe(recipe)
         else:
-            st.error("❌ Unable to parse recipes. Please check the format of your recipes.txt file.")
+            st.error("❌ Unable to parse recipes. Please check the format of your recipes.json file.")
     else:
-        st.error("❌ Unable to load recipes. Please check that 'recipes.txt' exists and is properly formatted.")
+        st.error("❌ Unable to load recipes. Please check that 'recipes.json' exists and is properly formatted.")
 
 def main():
     # Main search interface
